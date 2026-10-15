@@ -1,0 +1,323 @@
+Microsoft 2025 Annual Report (https://www.microsoft.com/investor/reports/ar25/)
+citeturn8view0 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://www.microsoft.com/investor/reports/ar25/","lineno":1372}); Total lines: 2168
+L1335: Equity and other investments  | 272  |  | 0  |  | 0  |  | 0
+L1336: Other long-term assets  | 17  |  | 0  |  | 19  |  | 0
+L1337: Other current liabilities  | 0  |  | (1,639)  |  | 0  |  | (401)
+L1338: Other long-term liabilities  | 0  |  | (37)  |  | 0  |  | (351)
+L1340: Gross derivative assets and liabilities subject to legally enforceable master netting agreements for which we have elected to offset were $452 million and $1.8 billion, respectively, as of June 30, 2025, and $304 million and $800 million, respectively, as of June 30, 2024.
+L1341: 
+L1342: The following table presents the fair value of our derivatives instruments on a gross basis:
+L1343: (In millions)  | Level 1  |  | Level 2  |  | Level 3  |  | Total
+L1344: June 30, 2025
+L1345: Derivative assets  | $ 1  |  | $ 474  |  | $ 283  |  | $ 758
+L1346: Derivative liabilities  | 0  |  | (1,832)  |  | (5)  |  | (1,837)
+L1347: June 30, 2024
+L1348: Derivative assets  | 0  |  | 327  |  | 4  |  | 331
+L1349: Derivative liabilities  | (1)  |  | (799)  |  | 0  |  | (800)
+L1350: 
+L1351: Gains (losses) on derivative instruments recognized in other income (expense), net were as follows:
+L1352: (In millions)
+L1353: Year Ended June 30,  |  | 2025  |  | 2024  |  | 2023
+L1354: Designated as Fair Value Hedging Instruments
+L1355: Interest rate contracts
+L1356: Derivatives  |  | $ 5  |  | $ (23)  |  | $ (65)
+L1357: Hedged items  |  | (45)  |  | (25)  |  | 38
+L1358: Designated as Cash Flow Hedging Instruments
+L1359: Foreign exchange contracts
+L1360: Amount reclassified from accumulated other comprehensive loss  |  | 103  |  | (48)  |  | 61
+L1361: Not Designated as Hedging Instruments
+L1362: Foreign exchange contracts  |  | (938)  |  | 367  |  | (73)
+L1363: Equity contracts  |  | (266)  |  | (177)  |  | (420)
+L1364: Other contracts  |  | 21  |  | (15)  |  | (41)
+L1365: Gains (losses), net of tax, on derivative instruments recognized in our consolidated comprehensive income statements were as follows:
+L1366: 
+L1367: (In millions)
+L1368: Year Ended June 30,  | 2025  |  | 2024  |  | 2023
+L1369: Designated as Cash Flow Hedging Instruments
+L1370: Foreign exchange contracts
+L1371: Included in effectiveness assessment  | $ 77  |  | $ (14)  |  | $ 34
+L1372: ### NOTE 6 — PROPERTY AND EQUIPMENT
+L1373: 
+L1374: The components of property and equipment were as follows:
+L1375: 
+L1376: (In millions)
+L1377: June 30,  | 2025  |  | 2024
+L1378: Land  | $ 9,338  |  | $ 8,163
+L1379: Buildings and improvements  | 137,921  |  | 93,943
+L1380: Leasehold improvements  | 12,117  |  | 9,594
+L1381: Computer equipment and software  | 132,836  |  | 93,780
+L1382: Furniture and equipment  | 6,407  |  | 6,532
+L1383: Total, at cost  | 298,619  |  | 212,012
+L1384: Accumulated depreciation  | (93,653)  |  | (76,421)
+L1385: Total, net  | $ 204,966  |  | $ 135,591
+L1386: During fiscal years 2025, 2024, and 2023, depreciation expense was $22.0 billion, $15.2 billion, and $11.0 billion, respectively.
+L1387: 
+L1388: As of June 30, 2025, 2024, and 2023, purchases of property and equipment remaining in accounts payable were $6.9 billion, $4.3 billion, and $3.8 billion, respectively. As of June 30, 2025, we have committed $32.1 billion for the construction of new buildings, building improvements, and leasehold improvements, primarily related to datacenters.
+L1389: ### NOTE 7 — BUSINESS COMBINATIONS
+L1390: 
+L1391: Activision Blizzard, Inc.
+L1392: On October 13, 2023, we completed our acquisition of Activision Blizzard, Inc. (“Activision Blizzard”) for a total purchase price of $75.4 billion, consisting primarily of cash. Activision Blizzard is a leader in game development and an interactive entertainment content publisher. The acquisition will accelerate the growth in our gaming business across mobile, PC, console, and cloud gaming.
+L1393: The financial results of Activision Blizzard have been included in our consolidated financial statements since the date of the acquisition. Activision Blizzard is reported as part of our More Personal Computing segment.
+L1394: The allocation of the purchase price to the assets acquired and liabilities assumed was completed as of September 30, 2024. The major classes of assets and liabilities to which we have allocated the purchase price were as follows:
+L1395: 
+L1396: (In millions)
+L1397: Cash and cash equivalents  | $ 12,976
+L1398: Goodwill  | 51,001
+L1399: Intangible assets  | 21,969
+L1400: Other assets  | 2,503
+L1401: Long-term debt  | (2,799)
+L1402: Long-term income taxes  | (1,946)
+L1403: Deferred income taxes  | (4,676)
+L1404: Other liabilities  | (3,620)
+L1405: Total purchase price  | $ 75,408
+L1406: Goodwill was assigned to our More Personal Computing segment. The goodwill was primarily attributed to increased synergies that are expected to be achieved from the integration of Activision Blizzard. Substantially all of the goodwill is expected to be non-deductible for income tax purposes.
+L1407: 
+L1408: Following are the details of the purchase price allocated to the intangible assets acquired:
+L1409: (In millions, except average life)  | Amount  |  | Weighted
+L1410: Average Life
+L1411: Marketing-related  | $ 11,619  |  | 24 years
+L1412: Technology-based  | 9,689  |  | 4 years
+L1413: Customer-related  | 661  |  | 4 years
+L1414: Fair value of intangible assets acquired  | $ 21,969  |  | 15 years
+L1415: 
+L1416: Following are the supplemental consolidated financial results of Microsoft Corporation on an unaudited pro forma basis, as if the acquisition had been consummated on July 1, 2022:
+L1417: (In millions, except per share amounts)
+L1418: Year Ended June 30,  |  | 2024  |  | 2023
+L1419: Revenue  |  | $ 247,442  |  | $ 219,790
+L1420: Net income  |  | 88,308  |  | 71,383
+L1421: Diluted earnings per share  |  | 11.82  |  | 9.55
+L1422: These pro forma results were based on estimates and assumptions, which we believe are reasonable. They are not the results that would have been realized had we been a combined company during the periods presented and are not necessarily indicative of our consolidated results of operations in future periods. The pro forma results include adjustments related to purchase accounting, primarily amortization of intangible assets.
+L1423: Acquisition costs and other nonrecurring charges were immaterial and are included in the earliest period presented.
+L1424: ### NOTE 8 — GOODWILL
+L1425: 
+L1426: Changes in the carrying amount of goodwill were as follows:
+L1427: (In millions)  | June 30,
+L1428: 2023  |  | Acquisitions  |  | Other  |  | June 30,
+L1429: 2024  |  | Acquisitions  |  | Other  |  | June 30,
+L1430: 2025
+L1431: Productivity and Business Processes  | $ 31,359  |  | $ 0  |  | $ 2  |  | $ 31,361  |  | $ 0  |  | $ 96  |  | $ 31,457
+L1432: Intelligent Cloud  | 25,676  |  | 0  |  | (28)  |  | 25,648  |  | 0  |  | 41  |  | 25,689
+L1433: More Personal Computing  | 10,851  |  | 51,235  |  | 125  |  | 62,211  |  | 0  |  | 152  |  | 62,363
+L1434: Total  | $ 67,886  |  | $ 51,235  |  | $ 99  |  | $ 119,220  |  | $ 0  |  | $ 289  |  | $ 119,509
+L1435: We have recast certain prior period amounts to conform to the way we internally manage and monitor our business. Refer to Note 1 – Accounting Policies for further information.
+--------------------------------------------------------------------------------
+Microsoft 2025 Annual Report (https://www.microsoft.com/investor/reports/ar25/)
+citeturn8view1 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://www.microsoft.com/investor/reports/ar25/","lineno":1470}); Total lines: 2168
+L1438: As discussed in Note 1 – Accounting Policies, during the first quarter of fiscal year 2025 we made changes to our segments. These segment changes also resulted in changes to our reporting units. We reallocated goodwill across impacted reporting units using a relative fair value approach. In addition, we completed an assessment of any potential goodwill impairment for all reporting units immediately prior to the reallocation and determined that no impairment existed.
+L1439: 
+L1440: Goodwill Impairment
+L1441: We test goodwill for impairment annually on May 1 at the reporting unit level, primarily using a discounted cash flow methodology with a peer-based, risk-adjusted weighted average cost of capital. We believe use of a discounted cash flow approach is the most reliable indicator of the fair values of the businesses.
+L1442: 
+L1443: No instances of impairment were identified in our May 1, 2025, May 1, 2024, or May 1, 2023 tests. As of June 30, 2025 and 2024, accumulated goodwill impairment was $11.3 billion.
+L1444: ### NOTE 9 — INTANGIBLE ASSETS
+L1445: 
+L1446: The components of intangible assets, all of which are finite-lived, were as follows:
+L1447: (In millions)  | Gross
+L1448: Carrying
+L1449: Amount  |  | Accumulated
+L1450: Amortization  |  | Net
+L1451: Carrying
+L1452: Amount  |  | Gross
+L1453: Carrying
+L1454: Amount  |  | Accumulated
+L1455: Amortization  |  | Net
+L1456: Carrying
+L1457: Amount
+L1458: June 30,  |  |  |  |  | 2025  |  |  |  |  |  | 2024
+L1459: Marketing-related  | $ 16,502  |  | $ (3,901)  |  | $ 12,601  |  | $ 16,500  |  | $ (3,101)  |  | $ 13,399
+L1460: Technology-based  | 22,560  |  | (14,959)  |  | 7,601  |  | 21,913  |  | (10,741)  |  | 11,172
+L1461: Customer-related  | 4,278  |  | (2,050)  |  | 2,228  |  | 6,038  |  | (3,051)  |  | 2,987
+L1462: Contract-based  | 217  |  | (43)  |  | 174  |  | 58  |  | (19)  |  | 39
+L1463: Total  | $ 43,557  |  | $ (20,953)  |  | $ 22,604  |  | $ 44,509  |  | $ (16,912)  |  | $ 27,597
+L1464: No material impairments of intangible assets were identified during fiscal years 2025, 2024, or 2023. We estimate that we have no significant residual value related to our intangible assets.
+L1465: 
+L1466: The components of intangible assets acquired during the periods presented were as follows:
+L1467: (In millions)  |  | Amount  | Weighted
+L1468: Average Life  |  | Amount  | Weighted
+L1469: Average Life
+L1470: Year Ended June 30,  |  | 2025  |  |  | 2024  |
+L1471: Marketing-related  |  | $ 13  | 10 years  |  | $ 11,619  | 24 years
+L1472: Technology-based  |  | 912  | 9 years  |  | 10,947  | 4 years
+L1473: Customer-related  |  | 0  | 0 years  |  | 660  | 4 years
+L1474: Contract-based  |  | 171  | 5 years  |  | 38  | 4 years
+L1475: Total  |  | $ 1,096  | 9 years  |  | $ 23,264  | 14 years
+L1476: Intangible assets amortization expense was $6.0 billion, $4.8 billion, and $2.5 billion for fiscal years 2025, 2024, and 2023, respectively.
+L1477: 
+L1478: The following table outlines the estimated future amortization expense related to intangible assets held as of June 30, 2025:
+L1479: 
+L1480: (In millions)  |
+L1481: Year Ending June 30,  |
+L1482: 2026  | $ 4,594
+L1483: 2027  | 2,901
+L1484: 2028  | 2,034
+L1485: 2029  | 1,851
+L1486: 2030  | 1,382
+L1487: Thereafter  | 9,842
+L1488: Total  | $ 22,604
+L1489: ### NOTE 10 — DEBT
+L1490: 
+L1491: Short-term Debt
+L1492: 
+L1493: As of June 30, 2025, we had no commercial paper issued or outstanding. As of June 30, 2024, we had $6.7 billion of commercial paper issued and outstanding, with a weighted average interest rate of 5.4% and maturities ranging from 28 days to 152 days. The estimated fair value of this commercial paper approximates its carrying value.
+L1494: 
+L1495: Long-term Debt
+L1496: 
+L1497: The components of long-term debt were as follows:
+L1498: (In millions, issuance by calendar year)  | Maturities
+L1499: (calendar year)  |  | Stated Interest
+L1500: Rate  |  | Effective
+L1501: Interest
+L1502: Rate  |  | June 30,
+L1503: 2025  |  | June 30,
+L1504: 2024
+L1505: 2009 issuance of $3.8 billion  | 2039  |  | 5.20%  |  | 5.24%  |  | $ 520  |  | $ 520
+L1506: 2010 issuance of $4.8 billion  | 2040  |  | 4.50%  |  | 4.57%  |  | 486  |  | 486
+L1507: 2011 issuance of $2.3 billion  | 2041  |  | 5.30%  |  | 5.36%  |  | 718  |  | 718
+L1508: 2012 issuance of $2.3 billion  | 2042  |  | 3.50%  |  | 3.57%  |  | 454  |  | 454
+L1509: 2013 issuance of $5.2 billion  | 2043  |  | 3.75%–4.88%  |  | 3.83%–4.92%  |  | 314  |  | 314
+L1510: 2013 issuance of €4.1 billion  | 2028–2033  |  | 2.63%–3.13%  |  | 2.69%–3.22%  |  | 2,700  |  | 2,465
+L1511: 2015 issuance of $23.8 billion  | 2025–2055  |  | 3.13%–4.75%  |  | 3.18%–4.78%  |  | 7,555  |  | 9,805
+L1512: 2016 issuance of $19.8 billion  | 2026–2056  |  | 2.40%–3.95%  |  | 2.46%–4.03%  |  | 7,930  |  | 7,930
+L1513: 2017 issuance of $17.1 billion  | 2026–2057  |  | 3.30%–4.50%  |  | 3.38%–5.49%  |  | 6,833  |  | 6,833
+L1514: 2020 issuance of $10.1 billion  | 2030–2060  |  | 1.35%–2.68%  |  | 2.53%–5.43%  |  | 10,111  |  | 10,111
+L1515: 2021 issuance of $8.2 billion  | 2052–2062  |  | 2.92%–3.04%  |  | 2.92%–3.04%  |  | 8,185  |  | 8,185
+L1516: 2023 issuance of $0.1 billion  | 2026–2050  |  | 1.35%–4.50%  |  | 5.16%–5.49%  |  | 56  |  | 56
+L1517: 2024 issuance of $3.3 billion  | 2026–2050  |  | 1.35%–4.50%  |  | 5.16%–5.49%  |  | 3,344  |  | 3,344
+L1518: Total face value  | 49,206  |  | 51,221
+L1519: Unamortized discount and issuance costs  | (1,155)  |  | (1,227)
+L1520: Hedge fair value adjustments ^{(a)}  | (36)  |  | (81)
+L1521: Premium on debt exchange  | (4,864)  |  | (4,976)
+L1522: Total debt  | 43,151  |  | 44,937
+L1523: Current portion of long-term debt  | (2,999)  |  | (2,249)
+L1524: Long-term debt  | $ 40,152  |  | $ 42,688
+L1525:   1. Refer to Note 5 – Derivatives for further information on the interest rate swaps related to fixed-rate debt.
+L1526: 
+L1527: As of June 30, 2025 and 2024, the estimated fair value of long-term debt, including the current portion, was $40.4 billion and $42.3 billion, respectively. The estimated fair values are based on Level 2 inputs.
+L1528: Debt in the table above is comprised of senior unsecured obligations and ranks equally with our other outstanding obligations. Interest is paid semi-annually, except for the Euro-denominated debt, which is paid annually. Cash paid for interest on our debt for fiscal years 2025, 2024, and 2023 was $1.6 billion, $1.7 billion, and $1.7 billion, respectively.
+L1529: 
+L1530: The following table outlines maturities of our long-term debt, including the current portion, as of June 30, 2025:
+L1531: (In millions)  |
+L1532: Year Ending June 30,  |
+L1533: 2026  | $ 3,000
+L1534: 2027  | 9,250
+L1535: 2028  | 0
+L1536: 2029  | 2,054
+L1537: 2030  | 0
+L1538: Thereafter  | 34,902
+L1539: Total  | $ 49,206
+L1540: ### NOTE 11 — INCOME TAXES
+L1541: 
+L1542: Provision for Income Taxes
+L1543: 
+L1544: The components of the provision for income taxes were as follows:
+L1545: (In millions)  |  |  |  |  |
+L1546: Year Ended June 30,  | 2025  |  | 2024  |  | 2023
+L1547: Current Taxes  |  |  |  |  |
+L1548: U.S. federal  | $ 14,086  |  | $ 12,165  |  | $ 14,009
+L1549: U.S. state and local  | 3,342  |  | 2,366  |  | 2,322
+L1550: Foreign  | 11,423  |  | 9,858  |  | 6,678
+L1551: Current taxes  | $ 28,851  |  | $ 24,389  |  | $ 23,009
+L1552: Deferred Taxes  |  |  |  |  |
+L1553: U.S. federal  | $ (6,250)  |  | $ (4,791)  |  | $ (6,146)
+L1554: U.S. state and local  | (1,087)  |  | (379)  |  | (477)
+L1555: Foreign  | 281  |  | 432  |  | 564
+--------------------------------------------------------------------------------
+Microsoft 2025 Annual Report (https://www.microsoft.com/investor/reports/ar25/)
+citeturn8view2 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://www.microsoft.com/investor/reports/ar25/","lineno":1634}); Total lines: 2168
+L1622: (In millions)  |  |  |  |  |
+L1623: Year Ended June 30,  | 2025  |  | 2024  |  | 2023
+L1624: Beginning unrecognized tax benefits  | $ 22,760  |  | $ 17,120  |  | $ 15,593
+L1625: Decreases related to settlements  | (240)  |  | (76)  |  | (329)
+L1626: Increases for tax positions related to the current year  | 2,066  |  | 1,903  |  | 1,051
+L1627: Increases for tax positions related to prior years  | 468  |  | 4,289  |  | 870
+L1628: Decreases for tax positions related to prior years  | (300)  |  | (464)  |  | (60)
+L1629: Decreases due to lapsed statutes of limitations  | (25)  |  | (12)  |  | (5)
+L1630: Ending unrecognized tax benefits  | $ 24,729  |  | $ 22,760  |  | $ 17,120
+L1631: We remain under audit by the IRS for tax years 2014 to 2017. With respect to the audit for tax years 2004 to 2013, on September 26, 2023, we received Notices of Proposed Adjustment (“NOPAs”) from the IRS. The primary issues in the NOPAs relate to intercompany transfer pricing. In the NOPAs, the IRS is seeking an additional tax payment of $28.9 billion plus penalties and interest. As of June 30, 2025, we believe our allowances for income tax contingencies are adequate.
+L1632: We disagree with the proposed adjustments and will vigorously contest the NOPAs through the IRS’s administrative appeals office and, if necessary, judicial proceedings. We do not expect a final resolution of these issues in the next 12 months. Based on the information currently available, we do not anticipate a significant increase or decrease to our income tax contingencies for these issues within the next 12 months.
+L1633: We are subject to income tax in many jurisdictions outside the U.S., some of which are currently under audit by local tax authorities. The resolution of these audits is not expected to be material to our consolidated financial statements. Our operations in Ireland remain subject to examination for tax years 2020 and thereafter.
+L1634: ### NOTE 12 — UNEARNED REVENUE
+L1635: 
+L1636: Unearned revenue by segment was as follows:
+L1637: 
+L1638: (In millions)  |  |  |
+L1639: June 30,  | 2025  |  | 2024
+L1640: Productivity and Business Processes  | $ 50,567  |  | $ 43,599
+L1641: Intelligent Cloud  | 14,022  |  | 13,683
+L1642: More Personal Computing  | 2,676  |  | 2,902
+L1643: Total  | $ 67,265  |  | $ 60,184
+L1644: 
+L1645: We have recast certain prior period amounts to conform to the way we internally manage and monitor our business. Refer to Note 1 – Accounting Policies for further information.
+L1646: Changes in unearned revenue were as follows:
+L1647: 
+L1648: (In millions)  |  |
+L1649: Year Ended June 30, 2025  |  |
+L1650: Balance, beginning of period  |  | $ 60,184
+L1651: Deferral of revenue  |  | 186,957
+L1652: Recognition of unearned revenue  |  | (179,876)
+L1653: Balance, end of period  |  | $ 67,265
+L1654: Revenue allocated to remaining performance obligations, which includes unearned revenue and amounts that will be invoiced and recognized as revenue in future periods, was $375 billion as of June 30, 2025, of which $368 billion is related to the commercial portion of revenue. We expect to recognize approximately 40% of our total company remaining performance obligation revenue over the next 12 months and the remainder thereafter.
+L1655: ### NOTE 13 — LEASES
+L1656: 
+L1657: We have operating and finance leases for datacenters, corporate offices, research and development facilities, Microsoft Experience Centers, and certain equipment. Our leases have remaining lease terms of less than 1 year to 20 years, some of which include options to extend the leases for up to 5 years, and some of which include options to terminate the leases within 1 year.
+L1658: 
+L1659: The components of lease expense were as follows:
+L1660: (In millions)  |  |  |  |  |
+L1661: Year Ended June 30,  | 2025  |  | 2024  |  | 2023
+L1662: Operating lease cost  | $ 5,524  |  | $ 3,555  |  | $ 2,875
+L1663: Finance lease cost:  |  |  |  |  |
+L1664: Amortization of right-of-use assets  | $ 3,408  |  | $ 1,800  |  | $ 1,352
+L1665: Interest on lease liabilities  | 1,417  |  | 734  |  | 501
+L1666: Total finance lease cost  | $ 4,825  |  | $ 2,534  |  | $ 1,853
+L1667: Supplemental cash flow information related to leases was as follows:
+L1668: (In millions)  |  |  |  |  |
+L1669: Year Ended June 30,  | 2025  |  | 2024  |  | 2023
+L1670: Cash paid for amounts included in the measurement of lease liabilities:  |  |  |  |  |
+L1671: Operating cash flows from operating leases  | $ 4,931  |  | $ 3,550  |  | $ 2,706
+L1672: Operating cash flows from finance leases  | 1,372  |  | 734  |  | 501
+L1673: Financing cash flows from finance leases  | 2,283  |  | 1,286  |  | 1,056
+L1674: Right-of-use assets obtained in exchange for lease obligations:  |  |  |  |  |
+L1675: Operating leases  | 7,826  |  | 6,703  |  | 3,514
+L1676: Finance leases  | 20,511  |  | 11,633  |  | 3,128
+L1677: Supplemental balance sheet information related to leases was as follows:
+L1678: (In millions, except lease term and discount rate)  |  |  |
+L1679: June 30,  | 2025  |  | 2024
+L1680: Operating Leases  |  |  |
+L1681: Operating lease right-of-use assets  | $ 24,823  |  | $ 18,961
+L1682: Other current liabilities  | $ 5,424  |  | $ 3,580
+L1683: Operating lease liabilities  | 17,437  |  | 15,497
+L1684: Total operating lease liabilities  | $ 22,861  |  | $ 19,077
+L1685: Finance Leases  |  |  |
+L1686: Property and equipment, at cost  | $ 53,876  |  | $ 32,248
+L1687: Accumulated depreciation  | (9,861)  |  | (6,386)
+L1688: Property and equipment, net  | $ 44,015  |  | $ 25,862
+L1689: Other current liabilities  | $ 3,172  |  | $ 2,349
+L1690: Other long-term liabilities  | 43,000  |  | 24,796
+L1691: Total finance lease liabilities  | $ 46,172  |  | $ 27,145
+L1692: Weighted Average Remaining Lease Term  |  |  |
+L1693: Operating leases  | 6 years  |  | 7 years
+L1694: Finance leases  | 13 years  |  | 12 years
+L1695: Weighted Average Discount Rate  |  |  |
+L1696: Operating leases  | 3.5%  |  | 3.3%
+L1697: Finance leases  | 4.2%  |  | 3.9%
+L1698: The following table outlines maturities of our lease liabilities as of June 30, 2025:
+L1699: 
+L1700: (In millions)  |  |  |
+L1701: Year Ending June 30,  | Operating
+L1702: Leases  |  | Finance
+L1703: Leases
+L1704: 2026  | $ 6,111  |  | $ 5,008
+L1705: 2027  | 5,237  |  | 5,157
+L1706: 2028  | 3,495  |  | 5,187
+L1707: 2029  | 2,419  |  | 4,521
+L1708: 2030  | 2,017  |  | 4,382
+L1709: Thereafter  | 6,202  |  | 36,251
+L1710: Total lease payments  | 25,481  |  | 60,506
+L1711: Less imputed interest  | (2,620)  |  | (14,334)
+L1712: Total  | $ 22,861  |  | $ 46,172
+L1713: As of June 30, 2025, we had additional leases, primarily for datacenters, that had not yet commenced of $92.7 billion. These leases will commence between fiscal year 2026 and fiscal year 2031 with lease terms of 1 year to 20 years.
+L1714: ### NOTE 14 — CONTINGENCIES
+L1715: 
+L1716: Irish Data Protection Commission Matter
+L1717: In 2018, the Irish Data Protection Commission (“IDPC”) began investigating a complaint against LinkedIn as to whether LinkedIn’s targeted advertising practices violated the recently implemented European Union General Data Protection Regulation (“GDPR”). Microsoft cooperated throughout the period of inquiry. In October 2024, the IDPC provided LinkedIn with a final decision alleging GDPR violations and assessing a fine.
+

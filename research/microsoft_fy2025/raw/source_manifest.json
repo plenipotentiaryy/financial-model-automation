@@ -1,0 +1,19 @@
+{
+  "source_url": "https://www.microsoft.com/investor/reports/ar25/",
+  "retrieved_on": "2026-10-15",
+  "source_acquisition": "Official report excerpts retrieved through web tool. Direct urllib HTML download returned HTTP 403; original HTML was not archived.",
+  "source_files": [
+    {
+      "path": "research/microsoft_fy2025/raw/definition_notes_excerpts.txt",
+      "sha256": "a6692b935a84d49b38c6fc1ba22169c52a093b0cb09251b6a59cb6773d4e66a9"
+    },
+    {
+      "path": "research/microsoft_fy2025/raw/disclosure_searches.txt",
+      "sha256": "28b7327a44bdd2f07030b3a80b620982fe83bafba1a8e0c965c378c9c9ab5ef9"
+    },
+    {
+      "path": "research/microsoft_fy2025/raw/official_report_excerpts.txt",
+      "sha256": "639edbc6f0c3cc02cad90a481c9789d9e5c48814c7710462b22a635c4f517744"
+    }
+  ]
+}

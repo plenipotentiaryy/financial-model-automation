@@ -1,0 +1,102 @@
+version: 2
+metadata:
+  company_name: Inputs!B2
+  company_id: Inputs!B5
+  latest_fiscal_year: Inputs!C3
+  previous_fiscal_year: Inputs!B3
+  first_fiscal_year: Inputs!D3
+  currency: Inputs!C4
+  scope: Inputs!C5
+financials:
+  revenue:
+    previous: Inputs!B7
+    latest: Inputs!C7
+    start: Inputs!D7
+  ebitda:
+    previous: Inputs!B8
+    latest: Inputs!C8
+    start: Inputs!D8
+  total_debt:
+    previous: Inputs!B9
+    latest: Inputs!C9
+  cash_and_equivalents:
+    previous: Inputs!B10
+    latest: Inputs!C10
+  cogs:
+    previous: Inputs!B11
+    latest: Inputs!C11
+  gross_profit:
+    previous: Inputs!B12
+    latest: Inputs!C12
+  ebit:
+    previous: Inputs!B13
+    latest: Inputs!C13
+  net_income:
+    previous: Inputs!B14
+    latest: Inputs!C14
+  interest_expense:
+    previous: Inputs!B15
+    latest: Inputs!C15
+  income_tax_expense:
+    previous: Inputs!B16
+    latest: Inputs!C16
+  cash_flow_from_operations:
+    previous: Inputs!B17
+    latest: Inputs!C17
+  capex:
+    previous: Inputs!B18
+    latest: Inputs!C18
+  dividends_paid:
+    previous: Inputs!B19
+    latest: Inputs!C19
+  total_assets:
+    previous: Inputs!B20
+    latest: Inputs!C20
+  total_equity:
+    previous: Inputs!B21
+    latest: Inputs!C21
+  current_assets:
+    previous: Inputs!B22
+    latest: Inputs!C22
+  current_liabilities:
+    previous: Inputs!B23
+    latest: Inputs!C23
+  inventory:
+    previous: Inputs!B24
+    latest: Inputs!C24
+  accounts_receivable:
+    previous: Inputs!B25
+    latest: Inputs!C25
+  accounts_payable:
+    previous: Inputs!B26
+    latest: Inputs!C26
+  market_cap:
+    previous: Inputs!B27
+    latest: Inputs!C27
+  share_price:
+    previous: Inputs!B28
+    latest: Inputs!C28
+  shares_outstanding:
+    previous: Inputs!B29
+    latest: Inputs!C29
+  monthly_recurring_revenue:
+    previous: Inputs!B30
+    latest: Inputs!C30
+assumptions:
+  market_value_debt:
+    latest: Assumptions!B5
+  pre_tax_cost_of_debt:
+    latest: Assumptions!B6
+  risk_free_rate:
+    latest: Assumptions!B7
+  equity_beta:
+    latest: Assumptions!B8
+  equity_risk_premium:
+    latest: Assumptions!B9
+  marginal_tax_rate:
+    latest: Assumptions!B10
+regions:
+  checks: Checks!A5:F1004
+  source_map: Source_Map!A5:Q10004
+  metric_statuses: Report!D7:E34
+  run_status: Report!B38:B38

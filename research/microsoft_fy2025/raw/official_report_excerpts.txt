@@ -1,0 +1,313 @@
+Microsoft 2025 Annual Report (https://www.microsoft.com/investor/reports/ar25/)
+citeturn7view0 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://www.microsoft.com/investor/reports/ar25/","lineno":808}); Total lines: 2168
+L796: ### SENSITIVITY ANALYSIS
+L797: 
+L798: The following table sets forth the potential loss in future earnings or fair values, including associated derivatives, resulting from hypothetical changes in relevant market rates or prices:
+L799: (In millions)
+L800: Risk Categories  |         | Hypothetical Change  | June 30,
+L801: 2025  |  |  | Impact
+L802: Foreign currency – Revenue  |  | 10% decrease in foreign exchange rates  | $ (11,596)  |  |  | Earnings
+L803: Foreign currency – Investments  |  | 10% decrease in foreign exchange rates  | (17)  |  |  | Fair Value
+L804: Interest rate  |  | 100 basis point increase in U.S. treasury interest rates  | (1,415)  |  |  | Fair Value
+L805: Credit  |  | 100 basis point increase in credit spreads  | (436)  |  |  | Fair Value
+L806: Equity  |  | 10% decrease in equity market prices  | (1,213)  |  |  | Earnings
+L807: ### FINANCIAL STATEMENTS AND SUPPLEMENTARY DATA
+L808: ## INCOME STATEMENTS
+L809: (In millions, except per share amounts)
+L810: Year Ended June 30,  | 2025  |  | 2024  |  | 2023
+L811: Revenue:  |  |  |  |  |
+L812: Product  | $ 63,946  |  | $ 64,773  |  | $ 64,699
+L813: Service and other  | 217,778  |  | 180,349  |  | 147,216
+L814: Total revenue  | 281,724  |  | 245,122  |  | 211,915
+L815: Cost of revenue:  |  |  |  |  |
+L816: Product  | 13,501  |  | 15,272  |  | 17,804
+L817: Service and other  | 74,330  |  | 58,842  |  | 48,059
+L818: Total cost of revenue  | 87,831  |  | 74,114  |  | 65,863
+L819: Gross margin  | 193,893  |  | 171,008  |  | 146,052
+L820: Research and development  | 32,488  |  | 29,510  |  | 27,195
+L821: Sales and marketing  | 25,654  |  | 24,456  |  | 22,759
+L822: General and administrative  | 7,223  |  | 7,609  |  | 7,575
+L823: Operating income  | 128,528  |  | 109,433  |  | 88,523
+L824: Other income (expense), net  | (4,901)  |  | (1,646)  |  | 788
+L825: Income before income taxes  | 123,627  |  | 107,787  |  | 89,311
+L826: Provision for income taxes  | 21,795  |  | 19,651  |  | 16,950
+L827: Net income  | $ 101,832  |  | $ 88,136  |  | $ 72,361
+L828: Earnings per share:  |  |  |  |  |
+L829: Basic  | $ 13.70  |  | $ 11.86  |  | $ 9.72
+L830: Diluted  | $ 13.64  |  | $ 11.80  |  | $ 9.68
+L831: Weighted average shares outstanding:  |  |  |  |  |
+L832: Basic  | 7,433  |  | 7,431  |  | 7,446
+L833: Diluted  | 7,465  |  | 7,469  |  | 7,472
+L834: Refer to accompanying notes.
+L835: ## COMPREHENSIVE INCOME STATEMENTS
+L836: (In millions)
+L837: Year Ended June 30,  | 2025  |  | 2024  |  | 2023
+L838: Net income  | $ 101,832  |  | $ 88,136  |  | $ 72,361
+L839: Other comprehensive income (loss), net of tax:  |  |  |  |  |
+L840: Net change related to derivatives  | (5)  |  | 24  |  | (14)
+L841: Net change related to investments  | 1,574  |  | 957  |  | (1,444)
+L842: Translation adjustments and other  | 674  |  | (228)  |  | (207)
+L843: Other comprehensive income (loss)  | 2,243  |  | 753  |  | (1,665)
+L844: Comprehensive income  | $ 104,075  |  | $ 88,889  |  | $ 70,696
+--------------------------------------------------------------------------------
+Microsoft 2025 Annual Report (https://www.microsoft.com/investor/reports/ar25/)
+citeturn7view1 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://www.microsoft.com/investor/reports/ar25/","lineno":860}); Total lines: 2168
+L847: (In millions)
+L848: June 30,  | 2025  |  | 2024
+L849: Assets  |  |  |
+L850: Current assets:  |  |  |
+L851: Cash and cash equivalents  | $ 30,242  |  | $ 18,315
+L852: Short-term investments  | 64,323  |  | 57,228
+L853: Total cash, cash equivalents, and short-term investments  | 94,565  |  | 75,543
+L854: Accounts receivable, net of allowance for doubtful accounts of $944 and $830  | 69,905  |  | 56,924
+L855: Inventories  | 938  |  | 1,246
+L856: Other current assets  | 25,723  |  | 26,021
+L857: Total current assets  | 191,131  |  | 159,734
+L858: Property and equipment, net of accumulated depreciation of $93,653 and $76,421  | 204,966  |  | 135,591
+L859: Operating lease right-of-use assets  | 24,823  |  | 18,961
+L860: Equity and other investments  | 15,405  |  | 14,600
+L861: Goodwill  | 119,509  |  | 119,220
+L862: Intangible assets, net  | 22,604  |  | 27,597
+L863: Other long-term assets  | 40,565  |  | 36,460
+L864: Total assets  | $ 619,003  |  | $ 512,163
+L865: Liabilities and stockholders’ equity  |  |  |
+L866: Current liabilities:  |  |  |
+L867: Accounts payable  | $ 27,724  |  | $ 21,996
+L868: Short-term debt  | 0  |  | 6,693
+L869: Current portion of long-term debt  | 2,999  |  | 2,249
+L870: Accrued compensation  | 13,709  |  | 12,564
+L871: Short-term income taxes  | 7,211  |  | 5,017
+L872: Short-term unearned revenue  | 64,555  |  | 57,582
+L873: Other current liabilities  | 25,020  |  | 19,185
+L874: Total current liabilities  | 141,218  |  | 125,286
+L875: Long-term debt  | 40,152  |  | 42,688
+L876: Long-term income taxes  | 25,986  |  | 27,931
+L877: Long-term unearned revenue  | 2,710  |  | 2,602
+L878: Deferred income taxes  | 2,835  |  | 2,618
+L879: Operating lease liabilities  | 17,437  |  | 15,497
+L880: Other long-term liabilities  | 45,186  |  | 27,064
+L881: Total liabilities  | 275,524  |  | 243,686
+L882: Commitments and contingencies  |  |  |
+L883: Stockholders’ equity:  |  |  |
+L884: Common stock and paid-in capital – shares authorized 24,000; outstanding 7,434 and 7,434  | 109,095  |  | 100,923
+L885: Retained earnings  | 237,731  |  | 173,144
+L886: Accumulated other comprehensive loss  | (3,347)  |  | (5,590)
+L887: Total stockholders’ equity  | 343,479  |  | 268,477
+L888: Total liabilities and stockholders’ equity  | $ 619,003  |  | $ 512,163
+L889: Refer to accompanying notes.
+L890: ## CASH FLOWS STATEMENTS
+L891: (In millions)
+L892: Year Ended June 30,  | 2025  |  | 2024  |  | 2023
+L893: Operations  |  |  |  |  |
+L894: Net income  | $ 101,832  |  | $ 88,136  |  | $ 72,361
+L895: Adjustments to reconcile net income to net cash from operations:  |  |  |  |  |
+L896: Depreciation, amortization, and other  | 34,153  |  | 22,287  |  | 13,861
+L897: Stock-based compensation expense  | 11,974  |  | 10,734  |  | 9,611
+L898: Net recognized losses on investments and derivatives  | 609  |  | 305  |  | 196
+L899: Deferred income taxes  | (7,056)  |  | (4,738)  |  | (6,059)
+--------------------------------------------------------------------------------
+Microsoft 2025 Annual Report (https://www.microsoft.com/investor/reports/ar25/)
+citeturn7view2 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://www.microsoft.com/investor/reports/ar25/","lineno":915}); Total lines: 2168
+L900: Changes in operating assets and liabilities:  |  |  |  |  |
+L901: Accounts receivable  | (10,581)  |  | (7,191)  |  | (4,087)
+L902: Inventories  | 309  |  | 1,284  |  | 1,242
+L903: Other current assets  | (3,044)  |  | (1,648)  |  | (1,991)
+L904: Other long-term assets  | (2,950)  |  | (6,817)  |  | (2,833)
+L905: Accounts payable  | 569  |  | 3,545  |  | (2,721)
+L906: Unearned revenue  | 5,438  |  | 5,348  |  | 5,535
+L907: Income taxes  | (38)  |  | 1,687  |  | (358)
+L908: Other current liabilities  | 5,922  |  | 4,867  |  | 2,272
+L909: Other long-term liabilities  | (975)  |  | 749  |  | 553
+L910: Net cash from operations  | 136,162  |  | 118,548  |  | 87,582
+L911: Financing  |  |  |  |  |
+L912: Proceeds from issuance (repayments) of debt, maturities of 90 days or less, net  | (5,746)  |  | 5,250  |  | 0
+L913: Proceeds from issuance of debt  | 0  |  | 24,395  |  | 0
+L914: Repayments of debt  | (3,216)  |  | (29,070)  |  | (2,750)
+L915: Common stock issued  | 2,056  |  | 2,002  |  | 1,866
+L916: Common stock repurchased  | (18,420)  |  | (17,254)  |  | (22,245)
+L917: Common stock cash dividends paid  | (24,082)  |  | (21,771)  |  | (19,800)
+L918: Other, net  | (2,291)  |  | (1,309)  |  | (1,006)
+L919: Net cash used in financing  | (51,699)  |  | (37,757)  |  | (43,935)
+L920: Investing  |  |  |  |  |
+L921: Additions to property and equipment  | (64,551)  |  | (44,477)  |  | (28,107)
+L922: Acquisition of companies, net of cash acquired and divestitures, and purchases of intangible and other assets  | (5,978)  |  | (69,132)  |  | (1,670)
+L923: Purchases of investments  | (29,775)  |  | (17,732)  |  | (37,651)
+L924: Maturities of investments  | 16,079  |  | 24,775  |  | 33,510
+L925: Sales of investments  | 9,309  |  | 10,894  |  | 14,354
+L926: Other, net  | 2,317  |  | (1,298)  |  | (3,116)
+L927: Net cash used in investing  | (72,599)  |  | (96,970)  |  | (22,680)
+L928: Effect of foreign exchange rates on cash and cash equivalents  | 63  |  | (210)  |  | (194)
+L929: Net change in cash and cash equivalents  | 11,927  |  | (16,389)  |  | 20,773
+L930: Cash and cash equivalents, beginning of period  | 18,315  |  | 34,704  |  | 13,931
+L931: Cash and cash equivalents, end of period  | $ 30,242  |  | $ 18,315  |  | $ 34,704
+L932: Refer to accompanying notes.
+L933: ## STOCKHOLDERS’ EQUITY STATEMENTS
+L934: (In millions, except per share amounts)
+L935: Year Ended June 30,  | 2025  |  | 2024  |  | 2023
+L936: Common stock and paid-in capital  |  |  |  |  |
+L937: Balance, beginning of period  | $ 100,923  |  | $ 93,718  |  | $ 86,939
+--------------------------------------------------------------------------------
+Microsoft 2025 Annual Report (https://www.microsoft.com/investor/reports/ar25/)
+citeturn7view3 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://www.microsoft.com/investor/reports/ar25/","lineno":1120}); Total lines: 2168
+L1112: ### NOTE 2 — EARNINGS PER SHARE
+L1113: 
+L1114: Basic earnings per share (“EPS”) is computed based on the weighted average number of shares of common stock outstanding during the period. Diluted EPS is computed based on the weighted average number of shares of common stock plus the effect of dilutive potential common shares outstanding during the period using the treasury stock method. Dilutive potential common shares include outstanding stock options and stock awards.
+L1115: The components of basic and diluted EPS were as follows:
+L1116: (In millions, except per share amounts)  |  |  |  |  |
+L1117: Year Ended June 30,  | 2025  |  | 2024  |  | 2023
+L1118: Net income available for common shareholders (A)  | $ 101,832  |  | $ 88,136  |  | $ 72,361
+L1119: Weighted average outstanding shares of common stock (B)  | 7,433  |  | 7,431  |  | 7,446
+L1120: Dilutive effect of stock-based awards  | 32  |  | 38  |  | 26
+L1121: Common stock and common stock equivalents (C)  | 7,465  |  | 7,469  |  | 7,472
+L1122: Earnings Per Share  |  |  |  |  |
+L1123: Basic (A/B)  | $ 13.70  |  | $ 11.86  |  | $ 9.72
+L1124: Diluted (A/C)  | $ 13.64  |  | $ 11.80  |  | $ 9.68
+L1125: Anti-dilutive stock-based awards excluded from the calculations of diluted EPS were immaterial during the periods presented.
+L1126: ### NOTE 3 — OTHER INCOME (EXPENSE), NET
+L1127: 
+L1128: The components of other income (expense), net were as follows:
+L1129: (In millions)
+L1130: Year Ended June 30,  | 2025  |  | 2024  |  | 2023
+L1131: Interest and dividends income  | $ 2,647  |  | $ 3,157  |  | $ 2,994
+L1132: Interest expense  | (2,385)  |  | (2,935)  |  | (1,968)
+L1133: Net recognized gains (losses) on investments  | (349)  |  | (118)  |  | 260
+L1134: Net losses on derivatives  | (260)  |  | (187)  |  | (456)
+L1135: Net gains (losses) on foreign currency remeasurements  | 171  |  | (244)  |  | 181
+L1136: Other, net  | (4,725)  |  | (1,319)  |  | (223)
+L1137: Total  | $ (4,901)  |  | $ (1,646)  |  | $ 788
+L1138: Other, net primarily reflects net recognized losses on equity method investments, including OpenAI.
+L1139: 
+L1140: Net Recognized Gains (Losses) on Investments
+L1141: 
+L1142: Net recognized gains (losses) on debt investments were as follows:
+L1143: (In millions)
+L1144: Year Ended June 30,  | 2025  |  | 2024  |  | 2023
+L1145: Realized gains from sales of available-for-sale securities  | $ 40  |  | $ 22  |  | $ 36
+L1146: Realized losses from sales of available-for-sale securities  | (65)  |  | (98)  |  | (124)
+L1147: Impairments and allowance for credit losses  | 8  |  | 23  |  | (10)
+L1148: Total  | $ (17)  |  | $ (53)  |  | $ (98)
+L1149: 
+L1150: Net recognized gains (losses) on equity investments were as follows:
+--------------------------------------------------------------------------------
+Microsoft 2025 Annual Report (https://www.microsoft.com/investor/reports/ar25/)
+citeturn7view4 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://www.microsoft.com/investor/reports/ar25/","lineno":1489}); Total lines: 2168
+L1476: Intangible assets amortization expense was $6.0 billion, $4.8 billion, and $2.5 billion for fiscal years 2025, 2024, and 2023, respectively.
+L1477: 
+L1478: The following table outlines the estimated future amortization expense related to intangible assets held as of June 30, 2025:
+L1479: 
+L1480: (In millions)  |
+L1481: Year Ending June 30,  |
+L1482: 2026  | $ 4,594
+L1483: 2027  | 2,901
+L1484: 2028  | 2,034
+L1485: 2029  | 1,851
+L1486: 2030  | 1,382
+L1487: Thereafter  | 9,842
+L1488: Total  | $ 22,604
+L1489: ### NOTE 10 — DEBT
+L1490: 
+L1491: Short-term Debt
+L1492: 
+L1493: As of June 30, 2025, we had no commercial paper issued or outstanding. As of June 30, 2024, we had $6.7 billion of commercial paper issued and outstanding, with a weighted average interest rate of 5.4% and maturities ranging from 28 days to 152 days. The estimated fair value of this commercial paper approximates its carrying value.
+L1494: 
+L1495: Long-term Debt
+L1496: 
+L1497: The components of long-term debt were as follows:
+L1498: (In millions, issuance by calendar year)  | Maturities
+L1499: (calendar year)  |  | Stated Interest
+L1500: Rate  |  | Effective
+L1501: Interest
+L1502: Rate  |  | June 30,
+L1503: 2025  |  | June 30,
+L1504: 2024
+L1505: 2009 issuance of $3.8 billion  | 2039  |  | 5.20%  |  | 5.24%  |  | $ 520  |  | $ 520
+L1506: 2010 issuance of $4.8 billion  | 2040  |  | 4.50%  |  | 4.57%  |  | 486  |  | 486
+L1507: 2011 issuance of $2.3 billion  | 2041  |  | 5.30%  |  | 5.36%  |  | 718  |  | 718
+L1508: 2012 issuance of $2.3 billion  | 2042  |  | 3.50%  |  | 3.57%  |  | 454  |  | 454
+L1509: 2013 issuance of $5.2 billion  | 2043  |  | 3.75%–4.88%  |  | 3.83%–4.92%  |  | 314  |  | 314
+L1510: 2013 issuance of €4.1 billion  | 2028–2033  |  | 2.63%–3.13%  |  | 2.69%–3.22%  |  | 2,700  |  | 2,465
+L1511: 2015 issuance of $23.8 billion  | 2025–2055  |  | 3.13%–4.75%  |  | 3.18%–4.78%  |  | 7,555  |  | 9,805
+L1512: 2016 issuance of $19.8 billion  | 2026–2056  |  | 2.40%–3.95%  |  | 2.46%–4.03%  |  | 7,930  |  | 7,930
+L1513: 2017 issuance of $17.1 billion  | 2026–2057  |  | 3.30%–4.50%  |  | 3.38%–5.49%  |  | 6,833  |  | 6,833
+L1514: 2020 issuance of $10.1 billion  | 2030–2060  |  | 1.35%–2.68%  |  | 2.53%–5.43%  |  | 10,111  |  | 10,111
+L1515: 2021 issuance of $8.2 billion  | 2052–2062  |  | 2.92%–3.04%  |  | 2.92%–3.04%  |  | 8,185  |  | 8,185
+L1516: 2023 issuance of $0.1 billion  | 2026–2050  |  | 1.35%–4.50%  |  | 5.16%–5.49%  |  | 56  |  | 56
+L1517: 2024 issuance of $3.3 billion  | 2026–2050  |  | 1.35%–4.50%  |  | 5.16%–5.49%  |  | 3,344  |  | 3,344
+L1518: Total face value  | 49,206  |  | 51,221
+--------------------------------------------------------------------------------
+Microsoft 2025 Annual Report (https://www.microsoft.com/investor/reports/ar25/)
+citeturn7view5 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://www.microsoft.com/investor/reports/ar25/","lineno":1660}); Total lines: 2168
+L1655: ### NOTE 13 — LEASES
+L1656: 
+L1657: We have operating and finance leases for datacenters, corporate offices, research and development facilities, Microsoft Experience Centers, and certain equipment. Our leases have remaining lease terms of less than 1 year to 20 years, some of which include options to extend the leases for up to 5 years, and some of which include options to terminate the leases within 1 year.
+L1658: 
+L1659: The components of lease expense were as follows:
+L1660: (In millions)  |  |  |  |  |
+L1661: Year Ended June 30,  | 2025  |  | 2024  |  | 2023
+L1662: Operating lease cost  | $ 5,524  |  | $ 3,555  |  | $ 2,875
+L1663: Finance lease cost:  |  |  |  |  |
+L1664: Amortization of right-of-use assets  | $ 3,408  |  | $ 1,800  |  | $ 1,352
+L1665: Interest on lease liabilities  | 1,417  |  | 734  |  | 501
+L1666: Total finance lease cost  | $ 4,825  |  | $ 2,534  |  | $ 1,853
+L1667: Supplemental cash flow information related to leases was as follows:
+L1668: (In millions)  |  |  |  |  |
+L1669: Year Ended June 30,  | 2025  |  | 2024  |  | 2023
+L1670: Cash paid for amounts included in the measurement of lease liabilities:  |  |  |  |  |
+L1671: Operating cash flows from operating leases  | $ 4,931  |  | $ 3,550  |  | $ 2,706
+L1672: Operating cash flows from finance leases  | 1,372  |  | 734  |  | 501
+L1673: Financing cash flows from finance leases  | 2,283  |  | 1,286  |  | 1,056
+L1674: Right-of-use assets obtained in exchange for lease obligations:  |  |  |  |  |
+L1675: Operating leases  | 7,826  |  | 6,703  |  | 3,514
+L1676: Finance leases  | 20,511  |  | 11,633  |  | 3,128
+L1677: Supplemental balance sheet information related to leases was as follows:
+L1678: (In millions, except lease term and discount rate)  |  |  |
+L1679: June 30,  | 2025  |  | 2024
+L1680: Operating Leases  |  |  |
+L1681: Operating lease right-of-use assets  | $ 24,823  |  | $ 18,961
+L1682: Other current liabilities  | $ 5,424  |  | $ 3,580
+L1683: Operating lease liabilities  | 17,437  |  | 15,497
+L1684: Total operating lease liabilities  | $ 22,861  |  | $ 19,077
+L1685: Finance Leases  |  |  |
+L1686: Property and equipment, at cost  | $ 53,876  |  | $ 32,248
+L1687: Accumulated depreciation  | (9,861)  |  | (6,386)
+L1688: Property and equipment, net  | $ 44,015  |  | $ 25,862
+L1689: Other current liabilities  | $ 3,172  |  | $ 2,349
+L1690: Other long-term liabilities  | 43,000  |  | 24,796
+L1691: Total finance lease liabilities  | $ 46,172  |  | $ 27,145
+L1692: Weighted Average Remaining Lease Term  |  |  |
+L1693: Operating leases  | 6 years  |  | 7 years
+L1694: Finance leases  | 13 years  |  | 12 years
+L1695: Weighted Average Discount Rate  |  |  |
+L1696: Operating leases  | 3.5%  |  | 3.3%
+L1697: Finance leases  | 4.2%  |  | 3.9%
+--------------------------------------------------------------------------------
+Microsoft 2025 Annual Report (https://www.microsoft.com/investor/reports/ar25/)
+citeturn7view6 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://www.microsoft.com/investor/reports/ar25/","lineno":1723}); Total lines: 2168
+L1722: As of June 30, 2025, we accrued aggregate legal liabilities of $541 million. While we intend to defend these matters vigorously, adverse outcomes that we estimate could reach approximately $600 million in aggregate beyond recorded amounts are reasonably possible. Were unfavorable final outcomes to occur, there exists the possibility of a material adverse impact in our consolidated financial statements for the period in which the effects become reasonably estimable.
+L1723: ### NOTE 15 — STOCKHOLDERS’ EQUITY
+L1724: 
+L1725: Shares Outstanding
+L1726: 
+L1727: Shares of common stock outstanding were as follows:
+L1728: 
+L1729: (In millions)  |  |  |  |  |
+L1730: Year Ended June 30,  | 2025  |  | 2024  |  | 2023
+L1731: Balance, beginning of year  | 7,434  |  | 7,432  |  | 7,464
+L1732: Issued  | 31  |  | 34  |  | 37
+L1733: Repurchased  | (31)  |  | (32)  |  | (69)
+L1734: Balance, end of year  | 7,434  |  | 7,434  |  | 7,432
+L1735: 
+L1736: Share Repurchases
+L1737: On September 14, 2021, our Board of Directors approved a share repurchase program authorizing up to $60.0 billion in share repurchases. This share repurchase program commenced in November 2021 and was completed in April 2025.
+L1738: On September 16, 2024, our Board of Directors approved a share repurchase program authorizing up to $60.0 billion in share repurchases. This share repurchase program commenced in April 2025, following completion of the program approved on September 14, 2021, has no expiration date, and may be terminated at any time. As of June 30, 2025, $57.3 billion remained of this $60.0 billion share repurchase program.
+L1739: 
+L1740: We repurchased the following shares of common stock under the share repurchase programs:
+L1741: (In millions)  | Shares  |  | Amount  |  | Shares  |  | Amount  |  | Shares  |  | Amount
+L1742: Year Ended June 30,  | 2025  | 2024  | 2023
+L1743: First Quarter  | 7  |  | $ 2,800  |  | 11  |  | $ 3,560  |  | 17  |  | $ 4,600
+L1744: Second Quarter  | 8  |  | 3,500  |  | 7  |  | 2,800  |  | 20  |  | 4,600
+L1745: Third Quarter  | 8  |  | 3,500  |  | 7  |  | 2,800  |  | 18  |  | 4,600
+L1746: Fourth Quarter  | 8  |  | 3,200  |  | 7  |  | 2,800  |  | 14  |  | 4,600
+L1747: Total  | 31  |  | $ 13,000  |  | 32  |  | $ 11,960  |  | 69  |  | $ 18,400
+L1748: All repurchases were made using cash resources. Shares repurchased during the fourth quarter of fiscal year 2025 were under the share repurchase programs approved on September 14, 2021 and September 16, 2024. All other shares repurchased were under the share repurchase program approved on September 14, 2021.
+

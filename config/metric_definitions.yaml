@@ -1,0 +1,651 @@
+revenue_growth_yoy:
+  label: Revenue growth YoY
+  formula: Revenue FY / Revenue FY-1 - 1
+  requires:
+  - revenue:previous
+  - revenue:latest
+  unit: '%'
+  cell: Calculations!B2
+  report_cell: Report!B7
+  implementation: implemented
+  limitations: Consecutive comparable fiscal years; nonzero prior revenue.
+  rules:
+  - - nonzero
+    - revenue:previous
+    - INVALID_DENOMINATOR
+  depends_on: []
+  excel_formula: =IF(AND(ISNUMBER(Inputs!B7),ISNUMBER(Inputs!C7),Inputs!B7<>0),Inputs!C7/Inputs!B7-1,"")
+ebitda_margin:
+  label: EBITDA margin
+  formula: EBITDA / Revenue
+  requires:
+  - ebitda:latest
+  - revenue:latest
+  unit: '%'
+  cell: Calculations!B3
+  report_cell: Report!B8
+  implementation: implemented
+  limitations: Same FY, scope and currency; nonzero revenue.
+  rules:
+  - - nonzero
+    - revenue:latest
+    - INVALID_DENOMINATOR
+  depends_on: []
+  excel_formula: =IF(AND(ISNUMBER(Inputs!C8),ISNUMBER(Inputs!C7),Inputs!C7<>0),Inputs!C8/Inputs!C7,"")
+net_debt:
+  label: Net debt
+  formula: Total debt - Cash and equivalents
+  requires:
+  - total_debt:latest
+  - cash_and_equivalents:latest
+  unit: currency
+  cell: Calculations!B4
+  report_cell: Report!B9
+  implementation: implemented
+  limitations: Both balances at the same fiscal year end; negative net debt is allowed.
+  rules: []
+  depends_on: []
+  excel_formula: =IF(AND(ISNUMBER(Inputs!C9),ISNUMBER(Inputs!C10)),Inputs!C9-Inputs!C10,"")
+net_debt_to_ebitda:
+  label: Net debt / EBITDA
+  formula: Net debt / EBITDA
+  requires:
+  - total_debt:latest
+  - cash_and_equivalents:latest
+  - ebitda:latest
+  unit: x
+  cell: Calculations!B5
+  report_cell: Report!B10
+  implementation: implemented
+  limitations: Positive annual EBITDA required.
+  rules:
+  - - positive
+    - ebitda:latest
+    - INVALID_DENOMINATOR
+  depends_on:
+  - net_debt
+  excel_formula: =IF(AND(ISNUMBER(Inputs!C9),ISNUMBER(Inputs!C10),ISNUMBER(Inputs!C8),Inputs!C8>0,ISNUMBER(Calculations!B4)),B4/Inputs!C8,"")
+arr:
+  label: ARR
+  formula: Explicit fiscal-year-end MRR x 12
+  requires:
+  - monthly_recurring_revenue:latest
+  unit: currency
+  cell: Calculations!B6
+  report_cell: Report!B11
+  implementation: implemented
+  limitations: Annualized recurring run rate, not recognized annual revenue. Input
+    MRR explicitly excludes nonrecurring revenue.
+  rules:
+  - - nonnegative
+    - monthly_recurring_revenue:latest
+    - INVALID_INPUT
+  depends_on: []
+  excel_formula: =IF(AND(ISNUMBER(Inputs!C30),Inputs!C30>=0),Inputs!C30*12,"")
+wacc:
+  label: WACC
+  formula: E/(E+D)*(Rf+beta*ERP) + D/(E+D)*Kd*(1-tax)
+  requires:
+  - market_cap:latest
+  - market_value_debt:latest
+  - pre_tax_cost_of_debt:latest
+  - risk_free_rate:latest
+  - equity_beta:latest
+  - equity_risk_premium:latest
+  - marginal_tax_rate:latest
+  unit: '%'
+  cell: Calculations!B7
+  report_cell: Report!B12
+  implementation: implemented
+  limitations: Two-component CAPM model; explicit market equity/debt at FY end. Rates
+    are decimal fractions; no book-debt substitution or inferred assumptions.
+  rules:
+  - - nonnegative
+    - market_cap:latest
+    - INVALID_INPUT
+  - - nonnegative
+    - market_value_debt:latest
+    - INVALID_INPUT
+  - - sum_positive
+    - market_cap:latest
+    - market_value_debt:latest
+    - INVALID_DENOMINATOR
+  - - nonnegative
+    - pre_tax_cost_of_debt:latest
+    - INVALID_INPUT
+  - - nonnegative
+    - equity_risk_premium:latest
+    - INVALID_INPUT
+  - - fraction
+    - marginal_tax_rate:latest
+    - INVALID_ASSUMPTION
+  depends_on: []
+  excel_formula: =IF(AND(ISNUMBER(Inputs!C27),ISNUMBER(Assumptions!B5),ISNUMBER(Assumptions!B6),ISNUMBER(Assumptions!B7),ISNUMBER(Assumptions!B8),ISNUMBER(Assumptions!B9),ISNUMBER(Assumptions!B10),Inputs!C27>=0,Assumptions!B5>=0,SUM(Inputs!C27,Assumptions!B5)>0,Assumptions!B6>=0,Assumptions!B9>=0,Assumptions!B10>=0,Assumptions!B10<=1),Inputs!C27/SUM(Inputs!C27,Assumptions!B5)*(Assumptions!B7+Assumptions!B8*Assumptions!B9)+Assumptions!B5/SUM(Inputs!C27,Assumptions!B5)*Assumptions!B6*(1-Assumptions!B10),"")
+gross_margin:
+  label: Gross margin
+  formula: gross_profit / Revenue
+  requires:
+  - gross_profit:latest
+  - revenue:latest
+  unit: '%'
+  cell: Calculations!B8
+  report_cell: Report!B13
+  implementation: implemented
+  limitations: Reported numerator and positive annual revenue; no inferred numerator.
+  rules:
+  - - positive
+    - revenue:latest
+    - INVALID_DENOMINATOR
+  depends_on: []
+  excel_formula: =IF(AND(ISNUMBER(Inputs!C12),ISNUMBER(Inputs!C7),Inputs!C7>0),Inputs!C12/Inputs!C7,"")
+ebit_margin:
+  label: EBIT margin
+  formula: ebit / Revenue
+  requires:
+  - ebit:latest
+  - revenue:latest
+  unit: '%'
+  cell: Calculations!B9
+  report_cell: Report!B14
+  implementation: implemented
+  limitations: Reported numerator and positive annual revenue; no inferred numerator.
+  rules:
+  - - positive
+    - revenue:latest
+    - INVALID_DENOMINATOR
+  depends_on: []
+  excel_formula: =IF(AND(ISNUMBER(Inputs!C13),ISNUMBER(Inputs!C7),Inputs!C7>0),Inputs!C13/Inputs!C7,"")
+net_profit_margin:
+  label: Net profit margin
+  formula: net_income / Revenue
+  requires:
+  - net_income:latest
+  - revenue:latest
+  unit: '%'
+  cell: Calculations!B10
+  report_cell: Report!B15
+  implementation: implemented
+  limitations: Reported numerator and positive annual revenue; no inferred numerator.
+  rules:
+  - - positive
+    - revenue:latest
+    - INVALID_DENOMINATOR
+  depends_on: []
+  excel_formula: =IF(AND(ISNUMBER(Inputs!C14),ISNUMBER(Inputs!C7),Inputs!C7>0),Inputs!C14/Inputs!C7,"")
+free_cash_flow:
+  label: Free cash flow
+  formula: Operating cash flow - positive capex spending
+  requires:
+  - cash_flow_from_operations:latest
+  - capex:latest
+  unit: currency
+  cell: Calculations!B11
+  report_cell: Report!B16
+  implementation: implemented
+  limitations: CFO less capex spending; this is not FCFF or FCFE.
+  rules:
+  - - nonnegative
+    - capex:latest
+    - INVALID_INPUT
+  depends_on: []
+  excel_formula: =IF(AND(ISNUMBER(Inputs!C17),ISNUMBER(Inputs!C18),Inputs!C18>=0),Inputs!C17-Inputs!C18,"")
+fcf_margin:
+  label: FCF margin
+  formula: Free cash flow / Revenue
+  requires:
+  - cash_flow_from_operations:latest
+  - capex:latest
+  - revenue:latest
+  unit: '%'
+  cell: Calculations!B12
+  report_cell: Report!B17
+  implementation: implemented
+  limitations: Same FY and CFO-minus-capex convention.
+  rules:
+  - - nonnegative
+    - capex:latest
+    - INVALID_INPUT
+  - - positive
+    - revenue:latest
+    - INVALID_DENOMINATOR
+  depends_on:
+  - free_cash_flow
+  excel_formula: =IF(AND(ISNUMBER(Inputs!C17),ISNUMBER(Inputs!C18),ISNUMBER(Inputs!C7),Inputs!C18>=0,Inputs!C7>0,ISNUMBER(Calculations!B11)),Calculations!B11/Inputs!C7,"")
+current_ratio:
+  label: Current ratio
+  formula: Current assets / Current liabilities
+  requires:
+  - current_assets:latest
+  - current_liabilities:latest
+  unit: x
+  cell: Calculations!B13
+  report_cell: Report!B18
+  implementation: implemented
+  limitations: FY-end balances; current liabilities must be positive.
+  rules:
+  - - nonnegative
+    - current_assets:latest
+    - INVALID_INPUT
+  - - positive
+    - current_liabilities:latest
+    - INVALID_DENOMINATOR
+  depends_on: []
+  excel_formula: =IF(AND(ISNUMBER(Inputs!C22),ISNUMBER(Inputs!C23),Inputs!C22>=0,Inputs!C23>0),Inputs!C22/Inputs!C23,"")
+quick_ratio:
+  label: Quick ratio
+  formula: (Current assets - Inventory) / Current liabilities
+  requires:
+  - current_assets:latest
+  - inventory:latest
+  - current_liabilities:latest
+  unit: x
+  cell: Calculations!B14
+  report_cell: Report!B19
+  implementation: implemented
+  limitations: Inventory-only exclusion convention; other illiquid current assets
+    are not separately removed.
+  rules:
+  - - nonnegative
+    - current_assets:latest
+    - INVALID_INPUT
+  - - positive
+    - current_liabilities:latest
+    - INVALID_DENOMINATOR
+  - - nonnegative
+    - inventory:latest
+    - INVALID_INPUT
+  - - at_most
+    - inventory:latest
+    - current_assets:latest
+    - INVALID_INPUT
+  depends_on: []
+  excel_formula: =IF(AND(ISNUMBER(Inputs!C22),ISNUMBER(Inputs!C24),ISNUMBER(Inputs!C23),Inputs!C22>=0,Inputs!C23>0,Inputs!C24>=0,Inputs!C24<=Inputs!C22),(Inputs!C22-Inputs!C24)/Inputs!C23,"")
+interest_coverage:
+  label: Interest coverage
+  formula: EBIT / Interest expense
+  requires:
+  - ebit:latest
+  - interest_expense:latest
+  unit: x
+  cell: Calculations!B15
+  report_cell: Report!B20
+  implementation: implemented
+  limitations: Positive interest expense; negative EBIT remains a negative coverage
+    result.
+  rules:
+  - - positive
+    - interest_expense:latest
+    - INVALID_DENOMINATOR
+  depends_on: []
+  excel_formula: =IF(AND(ISNUMBER(Inputs!C13),ISNUMBER(Inputs!C15),Inputs!C15>0),Inputs!C13/Inputs!C15,"")
+roa:
+  label: Return on assets
+  formula: Net income / Average opening and closing total_assets
+  requires:
+  - net_income:latest
+  - total_assets:previous
+  - total_assets:latest
+  unit: '%'
+  cell: Calculations!B16
+  report_cell: Report!B21
+  implementation: implemented
+  limitations: Uses FY-1 and FY-end balances. Negative balance bases are excluded;
+    average denominator must be positive.
+  rules:
+  - - nonnegative
+    - total_assets:previous
+    - INVALID_INPUT
+  - - nonnegative
+    - total_assets:latest
+    - INVALID_INPUT
+  - - sum_positive
+    - total_assets:previous
+    - total_assets:latest
+    - INVALID_DENOMINATOR
+  depends_on: []
+  excel_formula: =IF(AND(ISNUMBER(Inputs!C14),ISNUMBER(Inputs!B20),ISNUMBER(Inputs!C20),Inputs!B20>=0,Inputs!C20>=0,SUM(Inputs!B20,Inputs!C20)>0),Inputs!C14/AVERAGE(Inputs!B20,Inputs!C20),"")
+roe:
+  label: Return on equity
+  formula: Net income / Average opening and closing total_equity
+  requires:
+  - net_income:latest
+  - total_equity:previous
+  - total_equity:latest
+  unit: '%'
+  cell: Calculations!B17
+  report_cell: Report!B22
+  implementation: implemented
+  limitations: Uses FY-1 and FY-end balances. Negative balance bases are excluded;
+    average denominator must be positive.
+  rules:
+  - - nonnegative
+    - total_equity:previous
+    - INVALID_INPUT
+  - - nonnegative
+    - total_equity:latest
+    - INVALID_INPUT
+  - - sum_positive
+    - total_equity:previous
+    - total_equity:latest
+    - INVALID_DENOMINATOR
+  depends_on: []
+  excel_formula: =IF(AND(ISNUMBER(Inputs!C14),ISNUMBER(Inputs!B21),ISNUMBER(Inputs!C21),Inputs!B21>=0,Inputs!C21>=0,SUM(Inputs!B21,Inputs!C21)>0),Inputs!C14/AVERAGE(Inputs!B21,Inputs!C21),"")
+enterprise_value:
+  label: Enterprise value (simplified)
+  formula: Market capitalization + reported debt - Cash
+  requires:
+  - market_cap:latest
+  - total_debt:latest
+  - cash_and_equivalents:latest
+  unit: currency
+  cell: Calculations!B18
+  report_cell: Report!B23
+  implementation: implemented
+  limitations: Reported debt is a proxy here. Excludes preferred stock and noncontrolling
+    interests; market cap and balances must be at FY end.
+  rules:
+  - - nonnegative
+    - market_cap:latest
+    - INVALID_INPUT
+  - - nonnegative
+    - total_debt:latest
+    - INVALID_INPUT
+  - - nonnegative
+    - cash_and_equivalents:latest
+    - INVALID_INPUT
+  depends_on: []
+  excel_formula: =IF(AND(ISNUMBER(Inputs!C27),ISNUMBER(Inputs!C9),ISNUMBER(Inputs!C10),Inputs!C27>=0,Inputs!C9>=0,Inputs!C10>=0),Inputs!C27+Inputs!C9-Inputs!C10,"")
+ev_to_revenue:
+  label: EV / Revenue
+  formula: Simplified enterprise value / Annual revenue
+  requires:
+  - market_cap:latest
+  - total_debt:latest
+  - cash_and_equivalents:latest
+  - revenue:latest
+  unit: x
+  cell: Calculations!B19
+  report_cell: Report!B24
+  implementation: implemented
+  limitations: Inherits simplified EV convention; denominator must be positive.
+  rules:
+  - - nonnegative
+    - market_cap:latest
+    - INVALID_INPUT
+  - - nonnegative
+    - total_debt:latest
+    - INVALID_INPUT
+  - - nonnegative
+    - cash_and_equivalents:latest
+    - INVALID_INPUT
+  - - positive
+    - revenue:latest
+    - INVALID_DENOMINATOR
+  depends_on:
+  - enterprise_value
+  excel_formula: =IF(AND(ISNUMBER(Inputs!C27),ISNUMBER(Inputs!C9),ISNUMBER(Inputs!C10),ISNUMBER(Inputs!C7),Inputs!C27>=0,Inputs!C9>=0,Inputs!C10>=0,Inputs!C7>0,ISNUMBER(Calculations!B18)),Calculations!B18/Inputs!C7,"")
+ev_to_ebitda:
+  label: EV / EBITDA
+  formula: Simplified enterprise value / Annual ebitda
+  requires:
+  - market_cap:latest
+  - total_debt:latest
+  - cash_and_equivalents:latest
+  - ebitda:latest
+  unit: x
+  cell: Calculations!B20
+  report_cell: Report!B25
+  implementation: implemented
+  limitations: Inherits simplified EV convention; denominator must be positive.
+  rules:
+  - - nonnegative
+    - market_cap:latest
+    - INVALID_INPUT
+  - - nonnegative
+    - total_debt:latest
+    - INVALID_INPUT
+  - - nonnegative
+    - cash_and_equivalents:latest
+    - INVALID_INPUT
+  - - positive
+    - ebitda:latest
+    - INVALID_DENOMINATOR
+  depends_on:
+  - enterprise_value
+  excel_formula: =IF(AND(ISNUMBER(Inputs!C27),ISNUMBER(Inputs!C9),ISNUMBER(Inputs!C10),ISNUMBER(Inputs!C8),Inputs!C27>=0,Inputs!C9>=0,Inputs!C10>=0,Inputs!C8>0,ISNUMBER(Calculations!B18)),Calculations!B18/Inputs!C8,"")
+price_to_earnings:
+  label: P/E
+  formula: Market capitalization / Annual net income
+  requires:
+  - market_cap:latest
+  - net_income:latest
+  unit: x
+  cell: Calculations!B21
+  report_cell: Report!B26
+  implementation: implemented
+  limitations: Loss-making and zero-profit periods have no meaningful P/E.
+  rules:
+  - - nonnegative
+    - market_cap:latest
+    - INVALID_INPUT
+  - - positive
+    - net_income:latest
+    - INVALID_DENOMINATOR
+  depends_on: []
+  excel_formula: =IF(AND(ISNUMBER(Inputs!C27),ISNUMBER(Inputs!C14),Inputs!C27>=0,Inputs!C14>0),Inputs!C27/Inputs!C14,"")
+revenue_cagr:
+  label: Revenue CAGR
+  formula: (revenue latest / revenue first)^(1 / elapsed fiscal years) - 1
+  requires:
+  - revenue:start
+  - revenue:latest
+  unit: '%'
+  cell: Calculations!B22
+  report_cell: Report!B27
+  implementation: implemented
+  limitations: First and last presented FY, not count of rows; positive start and
+    nonnegative end. Missing/invalid endpoints are not skipped.
+  rules:
+  - - positive
+    - revenue:start
+    - INVALID_DENOMINATOR
+  - - nonnegative
+    - revenue:latest
+    - INVALID_INPUT
+  - - year_span
+    - INCOMPATIBLE_PERIODS
+  depends_on: []
+  excel_formula: =IF(AND(ISNUMBER(Inputs!D7),ISNUMBER(Inputs!C7),Inputs!D7>0,Inputs!C7>=0,ISNUMBER(Inputs!D3),ISNUMBER(Inputs!C3),Inputs!C3>Inputs!D3),(Inputs!C7/Inputs!D7)^(1/(Inputs!C3-Inputs!D3))-1,"")
+ebitda_cagr:
+  label: EBITDA CAGR
+  formula: (ebitda latest / ebitda first)^(1 / elapsed fiscal years) - 1
+  requires:
+  - ebitda:start
+  - ebitda:latest
+  unit: '%'
+  cell: Calculations!B23
+  report_cell: Report!B28
+  implementation: implemented
+  limitations: First and last presented FY, not count of rows; positive start and
+    nonnegative end. Missing/invalid endpoints are not skipped.
+  rules:
+  - - positive
+    - ebitda:start
+    - INVALID_DENOMINATOR
+  - - nonnegative
+    - ebitda:latest
+    - INVALID_INPUT
+  - - year_span
+    - INCOMPATIBLE_PERIODS
+  depends_on: []
+  excel_formula: =IF(AND(ISNUMBER(Inputs!D8),ISNUMBER(Inputs!C8),Inputs!D8>0,Inputs!C8>=0,ISNUMBER(Inputs!D3),ISNUMBER(Inputs!C3),Inputs!C3>Inputs!D3),(Inputs!C8/Inputs!D8)^(1/(Inputs!C3-Inputs!D3))-1,"")
+net_leverage_trend:
+  label: Net leverage change YoY
+  formula: Latest net debt / EBITDA - Previous FY net debt / EBITDA
+  requires:
+  - total_debt:previous
+  - total_debt:latest
+  - cash_and_equivalents:previous
+  - cash_and_equivalents:latest
+  - ebitda:previous
+  - ebitda:latest
+  unit: x
+  cell: Calculations!B24
+  report_cell: Report!B29
+  implementation: implemented
+  limitations: Change in turns, not percent; positive means increased leverage. Compares
+    consecutive FYs.
+  rules:
+  - - positive
+    - ebitda:previous
+    - INVALID_DENOMINATOR
+  - - positive
+    - ebitda:latest
+    - INVALID_DENOMINATOR
+  depends_on:
+  - net_debt_to_ebitda
+  excel_formula: =IF(AND(ISNUMBER(Inputs!B9),ISNUMBER(Inputs!C9),ISNUMBER(Inputs!B10),ISNUMBER(Inputs!C10),ISNUMBER(Inputs!B8),ISNUMBER(Inputs!C8),Inputs!B8>0,Inputs!C8>0,ISNUMBER(Calculations!B5)),B5-(Inputs!B9-Inputs!B10)/Inputs!B8,"")
+cash_conversion:
+  label: Cash conversion (CFO / EBITDA)
+  formula: Operating cash flow / EBITDA
+  requires:
+  - cash_flow_from_operations:latest
+  - ebitda:latest
+  unit: '%'
+  cell: Calculations!B25
+  report_cell: Report!B30
+  implementation: implemented
+  limitations: Chosen cash conversion definition is CFO/EBITDA; excludes capex. A
+    negative CFO gives negative conversion.
+  rules:
+  - - positive
+    - ebitda:latest
+    - INVALID_DENOMINATOR
+  depends_on: []
+  excel_formula: =IF(AND(ISNUMBER(Inputs!C17),ISNUMBER(Inputs!C8),Inputs!C8>0),Inputs!C17/Inputs!C8,"")
+dso:
+  label: Days sales outstanding
+  formula: Average accounts_receivable / Annual revenue x 365
+  requires:
+  - accounts_receivable:previous
+  - accounts_receivable:latest
+  - revenue:latest
+  unit: days
+  cell: Calculations!B26
+  report_cell: Report!B31
+  implementation: implemented
+  limitations: 365-day convention and opening/closing average. Revenue proxies credit
+    sales for DSO; COGS proxies credit purchases for DPO; seasonal businesses may
+    need finer data.
+  rules:
+  - - nonnegative
+    - accounts_receivable:previous
+    - INVALID_INPUT
+  - - nonnegative
+    - accounts_receivable:latest
+    - INVALID_INPUT
+  - - positive
+    - revenue:latest
+    - INVALID_DENOMINATOR
+  depends_on: []
+  excel_formula: =IF(AND(ISNUMBER(Inputs!B25),ISNUMBER(Inputs!C25),ISNUMBER(Inputs!C7),Inputs!B25>=0,Inputs!C25>=0,Inputs!C7>0),AVERAGE(Inputs!B25,Inputs!C25)/Inputs!C7*365,"")
+dio:
+  label: Days inventory outstanding
+  formula: Average inventory / Annual cogs x 365
+  requires:
+  - inventory:previous
+  - inventory:latest
+  - cogs:latest
+  unit: days
+  cell: Calculations!B27
+  report_cell: Report!B32
+  implementation: implemented
+  limitations: 365-day convention and opening/closing average. Revenue proxies credit
+    sales for DSO; COGS proxies credit purchases for DPO; seasonal businesses may
+    need finer data.
+  rules:
+  - - nonnegative
+    - inventory:previous
+    - INVALID_INPUT
+  - - nonnegative
+    - inventory:latest
+    - INVALID_INPUT
+  - - positive
+    - cogs:latest
+    - INVALID_DENOMINATOR
+  depends_on: []
+  excel_formula: =IF(AND(ISNUMBER(Inputs!B24),ISNUMBER(Inputs!C24),ISNUMBER(Inputs!C11),Inputs!B24>=0,Inputs!C24>=0,Inputs!C11>0),AVERAGE(Inputs!B24,Inputs!C24)/Inputs!C11*365,"")
+dpo:
+  label: Days payable outstanding
+  formula: Average accounts_payable / Annual cogs x 365
+  requires:
+  - accounts_payable:previous
+  - accounts_payable:latest
+  - cogs:latest
+  unit: days
+  cell: Calculations!B28
+  report_cell: Report!B33
+  implementation: implemented
+  limitations: 365-day convention and opening/closing average. Revenue proxies credit
+    sales for DSO; COGS proxies credit purchases for DPO; seasonal businesses may
+    need finer data.
+  rules:
+  - - nonnegative
+    - accounts_payable:previous
+    - INVALID_INPUT
+  - - nonnegative
+    - accounts_payable:latest
+    - INVALID_INPUT
+  - - positive
+    - cogs:latest
+    - INVALID_DENOMINATOR
+  depends_on: []
+  excel_formula: =IF(AND(ISNUMBER(Inputs!B26),ISNUMBER(Inputs!C26),ISNUMBER(Inputs!C11),Inputs!B26>=0,Inputs!C26>=0,Inputs!C11>0),AVERAGE(Inputs!B26,Inputs!C26)/Inputs!C11*365,"")
+cash_conversion_cycle:
+  label: Cash conversion cycle (CCC)
+  formula: DSO + DIO - DPO
+  requires:
+  - accounts_receivable:previous
+  - accounts_receivable:latest
+  - revenue:latest
+  - inventory:previous
+  - inventory:latest
+  - cogs:latest
+  - accounts_payable:previous
+  - accounts_payable:latest
+  unit: days
+  cell: Calculations!B29
+  report_cell: Report!B34
+  implementation: implemented
+  limitations: Inherits DSO/DIO/DPO conventions. Negative CCC is valid. This is a
+    duration, separate from CFO/EBITDA.
+  rules:
+  - - nonnegative
+    - accounts_receivable:previous
+    - INVALID_INPUT
+  - - nonnegative
+    - accounts_receivable:latest
+    - INVALID_INPUT
+  - - positive
+    - revenue:latest
+    - INVALID_DENOMINATOR
+  - - nonnegative
+    - inventory:previous
+    - INVALID_INPUT
+  - - nonnegative
+    - inventory:latest
+    - INVALID_INPUT
+  - - positive
+    - cogs:latest
+    - INVALID_DENOMINATOR
+  - - nonnegative
+    - accounts_payable:previous
+    - INVALID_INPUT
+  - - nonnegative
+    - accounts_payable:latest
+    - INVALID_INPUT
+  depends_on:
+  - dso
+  - dio
+  - dpo
+  excel_formula: =IF(AND(ISNUMBER(Inputs!B25),ISNUMBER(Inputs!C25),ISNUMBER(Inputs!C7),ISNUMBER(Inputs!B24),ISNUMBER(Inputs!C24),ISNUMBER(Inputs!C11),ISNUMBER(Inputs!B26),ISNUMBER(Inputs!C26),Inputs!B25>=0,Inputs!C25>=0,Inputs!C7>0,Inputs!B24>=0,Inputs!C24>=0,Inputs!C11>0,Inputs!B26>=0,Inputs!C26>=0,ISNUMBER(Calculations!B26),ISNUMBER(Calculations!B27),ISNUMBER(Calculations!B28)),Calculations!B26+Calculations!B27-Calculations!B28,"")

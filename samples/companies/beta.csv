@@ -1,0 +1,3 @@
+company_id,company_name,fiscal_year,period_type,scope,currency,monetary_unit,revenue,ebitda,total_debt,cash_and_equivalents
+beta,Beta Example,2024,FY,consolidated,EUR,thousands,200,,,
+beta,Beta Example,2025,FY,consolidated,EUR,thousands,300,60,40,10

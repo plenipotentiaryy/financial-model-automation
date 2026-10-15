@@ -1,0 +1,9 @@
+Microsoft 2025 Annual Report (https://www.microsoft.com/investor/reports/ar25/)
+citeturn13view0 [wordlim: 200] Crawled: today; Content type: text/html; Source: find({"ref_id":"https://www.microsoft.com/investor/reports/ar25/","pattern":"EBITDA"}); Total lines: 2168
+No matching text found for "EBITDA"--------------------------------------------------------------------------------
+Microsoft 2025 Annual Report (https://www.microsoft.com/investor/reports/ar25/)
+citeturn13view1 [wordlim: 200] Crawled: today; Content type: text/html; Source: find({"ref_id":"https://www.microsoft.com/investor/reports/ar25/","pattern":"monthly recurring"}); Total lines: 2168
+No matching text found for "monthly recurring"--------------------------------------------------------------------------------
+Microsoft 2025 Annual Report (https://www.microsoft.com/investor/reports/ar25/)
+citeturn13view2 [wordlim: 200] Crawled: today; Content type: text/html; Source: find({"ref_id":"https://www.microsoft.com/investor/reports/ar25/","pattern":"annual recurring"}); Total lines: 2168
+No matching text found for "annual recurring"

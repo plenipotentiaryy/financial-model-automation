@@ -1,0 +1,3 @@
+company_id,company_name,fiscal_year,period_type,scope,currency,monetary_unit,revenue,ebitda,total_debt,cash_and_equivalents
+acme,Acme Example,2024,FY,consolidated,PLN,millions,80,,,
+acme,Acme Example,2025,FY,consolidated,PLN,millions,100,20,35,5

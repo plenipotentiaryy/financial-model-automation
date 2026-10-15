@@ -1,0 +1,350 @@
+{
+  "company": "Microsoft Corporation",
+  "fiscal_year_end": "2025-06-30",
+  "historical_years": [
+    2023,
+    2024,
+    2025
+  ],
+  "basis": "Historical FY2025 report-only test, not a current valuation or latest-report claim",
+  "source_url": "https://www.microsoft.com/investor/reports/ar25/",
+  "retrieved_on": "2026-10-15",
+  "source_acquisition": "Official report excerpts retrieved through web tool. Direct urllib HTML download returned HTTP 403; original HTML was not archived.",
+  "source_files": [
+    {
+      "path": "research/microsoft_fy2025/raw/definition_notes_excerpts.txt",
+      "sha256": "a6692b935a84d49b38c6fc1ba22169c52a093b0cb09251b6a59cb6773d4e66a9"
+    },
+    {
+      "path": "research/microsoft_fy2025/raw/disclosure_searches.txt",
+      "sha256": "28b7327a44bdd2f07030b3a80b620982fe83bafba1a8e0c965c378c9c9ab5ef9"
+    },
+    {
+      "path": "research/microsoft_fy2025/raw/official_report_excerpts.txt",
+      "sha256": "639edbc6f0c3cc02cad90a481c9789d9e5c48814c7710462b22a635c4f517744"
+    }
+  ],
+  "metrics_computed": 17,
+  "metrics_unavailable": 11,
+  "all_28_verified": true,
+  "source_reconciliations": [
+    {
+      "year": 2025,
+      "income_statement_reconciliations": "PASS"
+    },
+    {
+      "year": 2024,
+      "income_statement_reconciliations": "PASS"
+    },
+    {
+      "year": 2023,
+      "income_statement_reconciliations": "PASS"
+    },
+    {
+      "year": 2024,
+      "balance_sheet_and_debt_reconciliations": "PASS"
+    },
+    {
+      "year": 2025,
+      "balance_sheet_and_debt_reconciliations": "PASS"
+    }
+  ],
+  "calculation": {
+    "status": "RECALCULATED",
+    "engine": "/opt/homebrew/bin/soffice",
+    "cached_formula_cells": 64
+  },
+  "source_gaps": {
+    "ebitda": "No compatible reported EBITDA selected. Cash-flow D&A-and-other is not pure D&A. Notes 6/9 disclose rounded depreciation/amortization, so reconstruction would require an explicit definition and rounding policy; no estimate is inserted.",
+    "monthly_recurring_revenue": "Company-wide fiscal-year-end MRR is not provided in the reviewed report. Cloud revenue, deferred revenue and remaining performance obligations are not MRR/ARR.",
+    "market_cap": "No June 30 closing market capitalization in the selected financial statements. FY-end shares are available, but a verified matching-date share price is required.",
+    "share_price": "No verified June 30 closing share price in the selected report. The total-return performance index is not a share price.",
+    "pre_tax_cost_of_debt": "Current marginal market borrowing cost/YTM is not established. Interest expense / debt and lease discount rates are not substituted.",
+    "risk_free_rate": "Requires a chosen currency-, date- and maturity-matched market assumption; not selected from the report.",
+    "equity_beta": "Requires a documented estimate, benchmark and observation window; not selected from the report.",
+    "equity_risk_premium": "Requires an explicit market-risk-premium assumption; not selected from the report.",
+    "marginal_tax_rate": "Effective tax rate/provision is not a marginal tax-rate assumption for WACC."
+  },
+  "audit": [
+    {
+      "metric_id": "revenue_growth_yoy",
+      "label": "Revenue growth YoY",
+      "status": "OK",
+      "value": 0.149321562324067,
+      "unit": "%",
+      "expected_independent": "0.149321562324067199190607126247338060231",
+      "verification": "PASS",
+      "interpretation": "Reported consolidated growth; acquisition effects are included, not organic growth."
+    },
+    {
+      "metric_id": "ebitda_margin",
+      "label": "EBITDA margin",
+      "status": "MISSING_INPUTS",
+      "value": null,
+      "unit": "%",
+      "expected_independent": null,
+      "verification": "PASS_UNAVAILABLE",
+      "interpretation": "No compatible reported EBITDA selected. Cash-flow D&A-and-other is not pure D&A. Notes 6/9 disclose rounded depreciation/amortization, so reconstruction would require an explicit definition and rounding policy; no estimate is inserted."
+    },
+    {
+      "metric_id": "net_debt",
+      "label": "Net debt",
+      "status": "OK",
+      "value": 12909000000,
+      "unit": "currency",
+      "expected_independent": "12909000000",
+      "verification": "PASS",
+      "interpretation": "Borrowing debt less cash equivalents only; excludes $64.323bn short-term investments and $46.172bn finance-lease liabilities."
+    },
+    {
+      "metric_id": "net_debt_to_ebitda",
+      "label": "Net debt / EBITDA",
+      "status": "MISSING_INPUTS",
+      "value": null,
+      "unit": "x",
+      "expected_independent": null,
+      "verification": "PASS_UNAVAILABLE",
+      "interpretation": "No compatible reported EBITDA selected. Cash-flow D&A-and-other is not pure D&A. Notes 6/9 disclose rounded depreciation/amortization, so reconstruction would require an explicit definition and rounding policy; no estimate is inserted."
+    },
+    {
+      "metric_id": "arr",
+      "label": "ARR",
+      "status": "MISSING_INPUTS",
+      "value": null,
+      "unit": "currency",
+      "expected_independent": null,
+      "verification": "PASS_UNAVAILABLE",
+      "interpretation": "Company-wide fiscal-year-end MRR is not provided in the reviewed report. Cloud revenue, deferred revenue and remaining performance obligations are not MRR/ARR."
+    },
+    {
+      "metric_id": "wacc",
+      "label": "WACC",
+      "status": "MISSING_INPUTS",
+      "value": null,
+      "unit": "%",
+      "expected_independent": null,
+      "verification": "PASS_UNAVAILABLE",
+      "interpretation": "No June 30 closing market capitalization in the selected financial statements. FY-end shares are available, but a verified matching-date share price is required. Current marginal market borrowing cost/YTM is not established. Interest expense / debt and lease discount rates are not substituted. Requires a chosen currency-, date- and maturity-matched market assumption; not selected from the report. Requires a documented estimate, benchmark and observation window; not selected from the report. Requires an explicit market-risk-premium assumption; not selected from the report. Effective tax rate/provision is not a marginal tax-rate assumption for WACC."
+    },
+    {
+      "metric_id": "gross_margin",
+      "label": "Gross margin",
+      "status": "OK",
+      "value": 0.688237423861652,
+      "unit": "%",
+      "expected_independent": "0.6882374238616518294501000979682242194488",
+      "verification": "PASS",
+      "interpretation": "Computed from compatible reported financial-statement inputs under the documented model convention."
+    },
+    {
+      "metric_id": "ebit_margin",
+      "label": "EBIT margin",
+      "status": "OK",
+      "value": 0.456219562408599,
+      "unit": "%",
+      "expected_independent": "0.4562195624085984864619272763413837656714",
+      "verification": "PASS",
+      "interpretation": "Operating income is the selected operating-EBIT definition."
+    },
+    {
+      "metric_id": "net_profit_margin",
+      "label": "Net profit margin",
+      "status": "OK",
+      "value": 0.361460152489671,
+      "unit": "%",
+      "expected_independent": "0.3614601524896707415768624611321719129361",
+      "verification": "PASS",
+      "interpretation": "Computed from compatible reported financial-statement inputs under the documented model convention."
+    },
+    {
+      "metric_id": "free_cash_flow",
+      "label": "Free cash flow",
+      "status": "OK",
+      "value": 71611000000,
+      "unit": "currency",
+      "expected_independent": "71611000000",
+      "verification": "PASS",
+      "interpretation": "CFO less cash PP&E additions. Noncash finance-lease additions and acquisitions are excluded."
+    },
+    {
+      "metric_id": "fcf_margin",
+      "label": "FCF margin",
+      "status": "OK",
+      "value": 0.254188496542716,
+      "unit": "%",
+      "expected_independent": "0.2541884965427155655890162002527296218994",
+      "verification": "PASS",
+      "interpretation": "Uses cash-PP&E FCF, not lease-adjusted FCFF/FCFE."
+    },
+    {
+      "metric_id": "current_ratio",
+      "label": "Current ratio",
+      "status": "OK",
+      "value": 1.35344644450424,
+      "unit": "x",
+      "expected_independent": "1.353446444504241668909062584089846903369",
+      "verification": "PASS",
+      "interpretation": "Computed from compatible reported financial-statement inputs under the documented model convention."
+    },
+    {
+      "metric_id": "quick_ratio",
+      "label": "Quick ratio",
+      "status": "OK",
+      "value": 1.34680423175516,
+      "unit": "x",
+      "expected_independent": "1.346804231755158690818450905691908963447",
+      "verification": "PASS",
+      "interpretation": "Computed from compatible reported financial-statement inputs under the documented model convention."
+    },
+    {
+      "metric_id": "interest_coverage",
+      "label": "Interest coverage",
+      "status": "OK",
+      "value": 53.8901467505241,
+      "unit": "x",
+      "expected_independent": "53.89014675052410901467505241090146750524",
+      "verification": "PASS",
+      "interpretation": "Operating income / reported interest expense; excludes capitalized interest from the denominator."
+    },
+    {
+      "metric_id": "roa",
+      "label": "Return on assets",
+      "status": "OK",
+      "value": 0.180047844436626,
+      "unit": "%",
+      "expected_independent": "0.1800478444366255704290970556045708587422",
+      "verification": "PASS",
+      "interpretation": "Two-point average total assets at June 30, 2024 and 2025."
+    },
+    {
+      "metric_id": "roe",
+      "label": "Return on equity",
+      "status": "OK",
+      "value": 0.332808241115374,
+      "unit": "%",
+      "expected_independent": "0.3328082411153743079567812064919700109158",
+      "verification": "PASS",
+      "interpretation": "Two-point average stockholders' equity at June 30, 2024 and 2025."
+    },
+    {
+      "metric_id": "enterprise_value",
+      "label": "Enterprise value (simplified)",
+      "status": "MISSING_INPUTS",
+      "value": null,
+      "unit": "currency",
+      "expected_independent": null,
+      "verification": "PASS_UNAVAILABLE",
+      "interpretation": "No June 30 closing market capitalization in the selected financial statements. FY-end shares are available, but a verified matching-date share price is required."
+    },
+    {
+      "metric_id": "ev_to_revenue",
+      "label": "EV / Revenue",
+      "status": "MISSING_INPUTS",
+      "value": null,
+      "unit": "x",
+      "expected_independent": null,
+      "verification": "PASS_UNAVAILABLE",
+      "interpretation": "No June 30 closing market capitalization in the selected financial statements. FY-end shares are available, but a verified matching-date share price is required."
+    },
+    {
+      "metric_id": "ev_to_ebitda",
+      "label": "EV / EBITDA",
+      "status": "MISSING_INPUTS",
+      "value": null,
+      "unit": "x",
+      "expected_independent": null,
+      "verification": "PASS_UNAVAILABLE",
+      "interpretation": "No June 30 closing market capitalization in the selected financial statements. FY-end shares are available, but a verified matching-date share price is required. No compatible reported EBITDA selected. Cash-flow D&A-and-other is not pure D&A. Notes 6/9 disclose rounded depreciation/amortization, so reconstruction would require an explicit definition and rounding policy; no estimate is inserted."
+    },
+    {
+      "metric_id": "price_to_earnings",
+      "label": "P/E",
+      "status": "MISSING_INPUTS",
+      "value": null,
+      "unit": "x",
+      "expected_independent": null,
+      "verification": "PASS_UNAVAILABLE",
+      "interpretation": "No June 30 closing market capitalization in the selected financial statements. FY-end shares are available, but a verified matching-date share price is required."
+    },
+    {
+      "metric_id": "revenue_cagr",
+      "label": "Revenue CAGR",
+      "status": "OK",
+      "value": 0.153004689733865,
+      "unit": "%",
+      "expected_independent": "0.153004689733864815963400378013484186923",
+      "verification": "PASS",
+      "interpretation": "FY2023–FY2025, two elapsed years; acquisition effects included."
+    },
+    {
+      "metric_id": "ebitda_cagr",
+      "label": "EBITDA CAGR",
+      "status": "MISSING_INPUTS",
+      "value": null,
+      "unit": "%",
+      "expected_independent": null,
+      "verification": "PASS_UNAVAILABLE",
+      "interpretation": "No compatible reported EBITDA selected. Cash-flow D&A-and-other is not pure D&A. Notes 6/9 disclose rounded depreciation/amortization, so reconstruction would require an explicit definition and rounding policy; no estimate is inserted."
+    },
+    {
+      "metric_id": "net_leverage_trend",
+      "label": "Net leverage change YoY",
+      "status": "MISSING_INPUTS",
+      "value": null,
+      "unit": "x",
+      "expected_independent": null,
+      "verification": "PASS_UNAVAILABLE",
+      "interpretation": "No compatible reported EBITDA selected. Cash-flow D&A-and-other is not pure D&A. Notes 6/9 disclose rounded depreciation/amortization, so reconstruction would require an explicit definition and rounding policy; no estimate is inserted."
+    },
+    {
+      "metric_id": "cash_conversion",
+      "label": "Cash conversion (CFO / EBITDA)",
+      "status": "MISSING_INPUTS",
+      "value": null,
+      "unit": "%",
+      "expected_independent": null,
+      "verification": "PASS_UNAVAILABLE",
+      "interpretation": "No compatible reported EBITDA selected. Cash-flow D&A-and-other is not pure D&A. Notes 6/9 disclose rounded depreciation/amortization, so reconstruction would require an explicit definition and rounding policy; no estimate is inserted."
+    },
+    {
+      "metric_id": "dso",
+      "label": "Days sales outstanding",
+      "status": "OK",
+      "value": 82.1594628075705,
+      "unit": "days",
+      "expected_independent": "82.15946280757053002229132058326589143985",
+      "verification": "PASS",
+      "interpretation": "Proxy: average current net receivables / total revenue x 365; credit sales unavailable."
+    },
+    {
+      "metric_id": "dio",
+      "label": "Days inventory outstanding",
+      "status": "OK",
+      "value": 4.53803326843597,
+      "unit": "days",
+      "expected_independent": "4.538033268435973631178057861119650237386",
+      "verification": "PASS",
+      "interpretation": "Proxy: average inventory / total cost of revenue x 365; service-heavy denominator."
+    },
+    {
+      "metric_id": "dpo",
+      "label": "Days payable outstanding",
+      "status": "OK",
+      "value": 103.31090389498,
+      "unit": "days",
+      "expected_independent": "103.3109038949801322995297787797019275654",
+      "verification": "PASS",
+      "interpretation": "Coarse proxy: average total AP / cost of revenue x 365. AP includes capex; credit purchases unavailable."
+    },
+    {
+      "metric_id": "cash_conversion_cycle",
+      "label": "Cash conversion cycle (CCC)",
+      "status": "OK",
+      "value": -16.6134078189736,
+      "unit": "days",
+      "expected_independent": "-16.61340781897362864606040033531638588816",
+      "verification": "PASS",
+      "interpretation": "Arithmetic CCC under model proxies. Capex AP and service revenue limit economic comparability; negative does not prove superior cash management."
+    }
+  ]
+}

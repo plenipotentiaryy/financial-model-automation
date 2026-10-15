@@ -1,0 +1,1681 @@
+[
+  {
+    "fiscal_year": 2025,
+    "field": "revenue",
+    "input_value": "281724",
+    "input_unit": "USD millions",
+    "upstream_status": "reported",
+    "transformation": "identity",
+    "sources": [
+      {
+        "url": "https://www.microsoft.com/investor/reports/ar25/",
+        "section": "Income Statements",
+        "source_row": "Total revenue",
+        "archive_locator": {
+          "file": "research/microsoft_fy2025/raw/official_report_excerpts.txt",
+          "line": 21,
+          "web_extracted_line": 814
+        }
+      }
+    ],
+    "note": ""
+  },
+  {
+    "fiscal_year": 2024,
+    "field": "revenue",
+    "input_value": "245122",
+    "input_unit": "USD millions",
+    "upstream_status": "reported",
+    "transformation": "identity",
+    "sources": [
+      {
+        "url": "https://www.microsoft.com/investor/reports/ar25/",
+        "section": "Income Statements",
+        "source_row": "Total revenue",
+        "archive_locator": {
+          "file": "research/microsoft_fy2025/raw/official_report_excerpts.txt",
+          "line": 21,
+          "web_extracted_line": 814
+        }
+      }
+    ],
+    "note": ""
+  },
+  {
+    "fiscal_year": 2023,
+    "field": "revenue",
+    "input_value": "211915",
+    "input_unit": "USD millions",
+    "upstream_status": "reported",
+    "transformation": "identity",
+    "sources": [
+      {
+        "url": "https://www.microsoft.com/investor/reports/ar25/",
+        "section": "Income Statements",
+        "source_row": "Total revenue",
+        "archive_locator": {
+          "file": "research/microsoft_fy2025/raw/official_report_excerpts.txt",
+          "line": 21,
+          "web_extracted_line": 814
+        }
+      }
+    ],
+    "note": ""
+  },
+  {
+    "fiscal_year": 2025,
+    "field": "cogs",
+    "input_value": "87831",
+    "input_unit": "USD millions",
+    "upstream_status": "reported",
+    "transformation": "identity",
+    "sources": [
+      {
+        "url": "https://www.microsoft.com/investor/reports/ar25/",
+        "section": "Income Statements",
+        "source_row": "Total cost of revenue",
+        "archive_locator": {
+          "file": "research/microsoft_fy2025/raw/official_report_excerpts.txt",
+          "line": 25,
+          "web_extracted_line": 818
+        }
+      }
+    ],
+    "note": "Total cost of revenue includes service/cloud costs; COGS proxy for this model."
+  },
+  {
+    "fiscal_year": 2024,
+    "field": "cogs",
+    "input_value": "74114",
+    "input_unit": "USD millions",
+    "upstream_status": "reported",
+    "transformation": "identity",
+    "sources": [
+      {
+        "url": "https://www.microsoft.com/investor/reports/ar25/",
+        "section": "Income Statements",
+        "source_row": "Total cost of revenue",
+        "archive_locator": {
+          "file": "research/microsoft_fy2025/raw/official_report_excerpts.txt",
+          "line": 25,
+          "web_extracted_line": 818
+        }
+      }
+    ],
+    "note": "Total cost of revenue includes service/cloud costs; COGS proxy for this model."
+  },
+  {
+    "fiscal_year": 2023,
+    "field": "cogs",
+    "input_value": "65863",
+    "input_unit": "USD millions",
+    "upstream_status": "reported",
+    "transformation": "identity",
+    "sources": [
+      {
+        "url": "https://www.microsoft.com/investor/reports/ar25/",
+        "section": "Income Statements",
+        "source_row": "Total cost of revenue",
+        "archive_locator": {
+          "file": "research/microsoft_fy2025/raw/official_report_excerpts.txt",
+          "line": 25,
+          "web_extracted_line": 818
+        }
+      }
+    ],
+    "note": "Total cost of revenue includes service/cloud costs; COGS proxy for this model."
+  },
+  {
+    "fiscal_year": 2025,
+    "field": "gross_profit",
+    "input_value": "193893",
+    "input_unit": "USD millions",
+    "upstream_status": "reported",
+    "transformation": "identity",
+    "sources": [
+      {
+        "url": "https://www.microsoft.com/investor/reports/ar25/",
+        "section": "Income Statements",
+        "source_row": "Gross margin",
+        "archive_locator": {
+          "file": "research/microsoft_fy2025/raw/official_report_excerpts.txt",
+          "line": 26,
+          "web_extracted_line": 819
+        }
+      }
+    ],
+    "note": "Microsoft's monetary Gross margin line is gross profit, not a percentage."
+  },
+  {
+    "fiscal_year": 2024,
+    "field": "gross_profit",
+    "input_value": "171008",
+    "input_unit": "USD millions",
+    "upstream_status": "reported",
+    "transformation": "identity",
+    "sources": [
+      {
+        "url": "https://www.microsoft.com/investor/reports/ar25/",
+        "section": "Income Statements",
+        "source_row": "Gross margin",
+        "archive_locator": {
+          "file": "research/microsoft_fy2025/raw/official_report_excerpts.txt",
+          "line": 26,
+          "web_extracted_line": 819
+        }
+      }
+    ],
+    "note": "Microsoft's monetary Gross margin line is gross profit, not a percentage."
+  },
+  {
+    "fiscal_year": 2023,
+    "field": "gross_profit",
+    "input_value": "146052",
+    "input_unit": "USD millions",
+    "upstream_status": "reported",
+    "transformation": "identity",
+    "sources": [
+      {
+        "url": "https://www.microsoft.com/investor/reports/ar25/",
+        "section": "Income Statements",
+        "source_row": "Gross margin",
+        "archive_locator": {
+          "file": "research/microsoft_fy2025/raw/official_report_excerpts.txt",
+          "line": 26,
+          "web_extracted_line": 819
+        }
+      }
+    ],
+    "note": "Microsoft's monetary Gross margin line is gross profit, not a percentage."
+  },
+  {
+    "fiscal_year": 2025,
+    "field": "ebit",
+    "input_value": "128528",
+    "input_unit": "USD millions",
+    "upstream_status": "reported",
+    "transformation": "identity",
+    "sources": [
+      {
+        "url": "https://www.microsoft.com/investor/reports/ar25/",
+        "section": "Income Statements",
+        "source_row": "Operating income",
+        "archive_locator": {
+          "file": "research/microsoft_fy2025/raw/official_report_excerpts.txt",
+          "line": 30,
+          "web_extracted_line": 823
+        }
+      }
+    ],
+    "note": "Operating income is used as operating EBIT, not pretax income plus interest."
+  },
+  {
+    "fiscal_year": 2024,
+    "field": "ebit",
+    "input_value": "109433",
+    "input_unit": "USD millions",
+    "upstream_status": "reported",
+    "transformation": "identity",
+    "sources": [
+      {
+        "url": "https://www.microsoft.com/investor/reports/ar25/",
+        "section": "Income Statements",
+        "source_row": "Operating income",
+        "archive_locator": {
+          "file": "research/microsoft_fy2025/raw/official_report_excerpts.txt",
+          "line": 30,
+          "web_extracted_line": 823
+        }
+      }
+    ],
+    "note": "Operating income is used as operating EBIT, not pretax income plus interest."
+  },
+  {
+    "fiscal_year": 2023,
+    "field": "ebit",
+    "input_value": "88523",
+    "input_unit": "USD millions",
+    "upstream_status": "reported",
+    "transformation": "identity",
+    "sources": [
+      {
+        "url": "https://www.microsoft.com/investor/reports/ar25/",
+        "section": "Income Statements",
+        "source_row": "Operating income",
+        "archive_locator": {
+          "file": "research/microsoft_fy2025/raw/official_report_excerpts.txt",
+          "line": 30,
+          "web_extracted_line": 823
+        }
+      }
+    ],
+    "note": "Operating income is used as operating EBIT, not pretax income plus interest."
+  },
+  {
+    "fiscal_year": 2025,
+    "field": "income_tax_expense",
+    "input_value": "21795",
+    "input_unit": "USD millions",
+    "upstream_status": "reported",
+    "transformation": "identity",
+    "sources": [
+      {
+        "url": "https://www.microsoft.com/investor/reports/ar25/",
+        "section": "Income Statements",
+        "source_row": "Provision for income taxes",
+        "archive_locator": {
+          "file": "research/microsoft_fy2025/raw/official_report_excerpts.txt",
+          "line": 33,
+          "web_extracted_line": 826
+        }
+      }
+    ],
+    "note": ""
+  },
+  {
+    "fiscal_year": 2024,
+    "field": "income_tax_expense",
+    "input_value": "19651",
+    "input_unit": "USD millions",
+    "upstream_status": "reported",
+    "transformation": "identity",
+    "sources": [
+      {
+        "url": "https://www.microsoft.com/investor/reports/ar25/",
+        "section": "Income Statements",
+        "source_row": "Provision for income taxes",
+        "archive_locator": {
+          "file": "research/microsoft_fy2025/raw/official_report_excerpts.txt",
+          "line": 33,
+          "web_extracted_line": 826
+        }
+      }
+    ],
+    "note": ""
+  },
+  {
+    "fiscal_year": 2023,
+    "field": "income_tax_expense",
+    "input_value": "16950",
+    "input_unit": "USD millions",
+    "upstream_status": "reported",
+    "transformation": "identity",
+    "sources": [
+      {
+        "url": "https://www.microsoft.com/investor/reports/ar25/",
+        "section": "Income Statements",
+        "source_row": "Provision for income taxes",
+        "archive_locator": {
+          "file": "research/microsoft_fy2025/raw/official_report_excerpts.txt",
+          "line": 33,
+          "web_extracted_line": 826
+        }
+      }
+    ],
+    "note": ""
+  },
+  {
+    "fiscal_year": 2025,
+    "field": "net_income",
+    "input_value": "101832",
+    "input_unit": "USD millions",
+    "upstream_status": "reported",
+    "transformation": "identity",
+    "sources": [
+      {
+        "url": "https://www.microsoft.com/investor/reports/ar25/",
+        "section": "Income Statements",
+        "source_row": "Net income",
+        "archive_locator": {
+          "file": "research/microsoft_fy2025/raw/official_report_excerpts.txt",
+          "line": 34,
+          "web_extracted_line": 827
+        }
+      }
+    ],
+    "note": ""
+  },
+  {
+    "fiscal_year": 2024,
+    "field": "net_income",
+    "input_value": "88136",
+    "input_unit": "USD millions",
+    "upstream_status": "reported",
+    "transformation": "identity",
+    "sources": [
+      {
+        "url": "https://www.microsoft.com/investor/reports/ar25/",
+        "section": "Income Statements",
+        "source_row": "Net income",
+        "archive_locator": {
+          "file": "research/microsoft_fy2025/raw/official_report_excerpts.txt",
+          "line": 34,
+          "web_extracted_line": 827
+        }
+      }
+    ],
+    "note": ""
+  },
+  {
+    "fiscal_year": 2023,
+    "field": "net_income",
+    "input_value": "72361",
+    "input_unit": "USD millions",
+    "upstream_status": "reported",
+    "transformation": "identity",
+    "sources": [
+      {
+        "url": "https://www.microsoft.com/investor/reports/ar25/",
+        "section": "Income Statements",
+        "source_row": "Net income",
+        "archive_locator": {
+          "file": "research/microsoft_fy2025/raw/official_report_excerpts.txt",
+          "line": 34,
+          "web_extracted_line": 827
+        }
+      }
+    ],
+    "note": ""
+  },
+  {
+    "fiscal_year": 2025,
+    "field": "cash_flow_from_operations",
+    "input_value": "136162",
+    "input_unit": "USD millions",
+    "upstream_status": "reported",
+    "transformation": "identity",
+    "sources": [
+      {
+        "url": "https://www.microsoft.com/investor/reports/ar25/",
+        "section": "Cash Flows Statements",
+        "source_row": "Net cash from operations",
+        "archive_locator": {
+          "file": "research/microsoft_fy2025/raw/official_report_excerpts.txt",
+          "line": 121,
+          "web_extracted_line": 910
+        }
+      }
+    ],
+    "note": ""
+  },
+  {
+    "fiscal_year": 2024,
+    "field": "cash_flow_from_operations",
+    "input_value": "118548",
+    "input_unit": "USD millions",
+    "upstream_status": "reported",
+    "transformation": "identity",
+    "sources": [
+      {
+        "url": "https://www.microsoft.com/investor/reports/ar25/",
+        "section": "Cash Flows Statements",
+        "source_row": "Net cash from operations",
+        "archive_locator": {
+          "file": "research/microsoft_fy2025/raw/official_report_excerpts.txt",
+          "line": 121,
+          "web_extracted_line": 910
+        }
+      }
+    ],
+    "note": ""
+  },
+  {
+    "fiscal_year": 2023,
+    "field": "cash_flow_from_operations",
+    "input_value": "87582",
+    "input_unit": "USD millions",
+    "upstream_status": "reported",
+    "transformation": "identity",
+    "sources": [
+      {
+        "url": "https://www.microsoft.com/investor/reports/ar25/",
+        "section": "Cash Flows Statements",
+        "source_row": "Net cash from operations",
+        "archive_locator": {
+          "file": "research/microsoft_fy2025/raw/official_report_excerpts.txt",
+          "line": 121,
+          "web_extracted_line": 910
+        }
+      }
+    ],
+    "note": ""
+  },
+  {
+    "fiscal_year": 2025,
+    "field": "capex",
+    "input_value": "64551",
+    "input_unit": "USD millions",
+    "upstream_status": "reported",
+    "transformation": "negate reported cash outflow",
+    "sources": [
+      {
+        "url": "https://www.microsoft.com/investor/reports/ar25/",
+        "section": "Cash Flows Statements",
+        "source_row": "Additions to property and equipment",
+        "archive_locator": {
+          "file": "research/microsoft_fy2025/raw/official_report_excerpts.txt",
+          "line": 132,
+          "web_extracted_line": 921
+        }
+      }
+    ],
+    "note": "Cash purchases of PP&E only; excludes noncash finance-lease additions, acquisitions and unpaid capex."
+  },
+  {
+    "fiscal_year": 2024,
+    "field": "capex",
+    "input_value": "44477",
+    "input_unit": "USD millions",
+    "upstream_status": "reported",
+    "transformation": "negate reported cash outflow",
+    "sources": [
+      {
+        "url": "https://www.microsoft.com/investor/reports/ar25/",
+        "section": "Cash Flows Statements",
+        "source_row": "Additions to property and equipment",
+        "archive_locator": {
+          "file": "research/microsoft_fy2025/raw/official_report_excerpts.txt",
+          "line": 132,
+          "web_extracted_line": 921
+        }
+      }
+    ],
+    "note": "Cash purchases of PP&E only; excludes noncash finance-lease additions, acquisitions and unpaid capex."
+  },
+  {
+    "fiscal_year": 2023,
+    "field": "capex",
+    "input_value": "28107",
+    "input_unit": "USD millions",
+    "upstream_status": "reported",
+    "transformation": "negate reported cash outflow",
+    "sources": [
+      {
+        "url": "https://www.microsoft.com/investor/reports/ar25/",
+        "section": "Cash Flows Statements",
+        "source_row": "Additions to property and equipment",
+        "archive_locator": {
+          "file": "research/microsoft_fy2025/raw/official_report_excerpts.txt",
+          "line": 132,
+          "web_extracted_line": 921
+        }
+      }
+    ],
+    "note": "Cash purchases of PP&E only; excludes noncash finance-lease additions, acquisitions and unpaid capex."
+  },
+  {
+    "fiscal_year": 2025,
+    "field": "dividends_paid",
+    "input_value": "24082",
+    "input_unit": "USD millions",
+    "upstream_status": "reported",
+    "transformation": "negate reported cash outflow",
+    "sources": [
+      {
+        "url": "https://www.microsoft.com/investor/reports/ar25/",
+        "section": "Cash Flows Statements",
+        "source_row": "Common stock cash dividends paid",
+        "archive_locator": {
+          "file": "research/microsoft_fy2025/raw/official_report_excerpts.txt",
+          "line": 128,
+          "web_extracted_line": 917
+        }
+      }
+    ],
+    "note": ""
+  },
+  {
+    "fiscal_year": 2024,
+    "field": "dividends_paid",
+    "input_value": "21771",
+    "input_unit": "USD millions",
+    "upstream_status": "reported",
+    "transformation": "negate reported cash outflow",
+    "sources": [
+      {
+        "url": "https://www.microsoft.com/investor/reports/ar25/",
+        "section": "Cash Flows Statements",
+        "source_row": "Common stock cash dividends paid",
+        "archive_locator": {
+          "file": "research/microsoft_fy2025/raw/official_report_excerpts.txt",
+          "line": 128,
+          "web_extracted_line": 917
+        }
+      }
+    ],
+    "note": ""
+  },
+  {
+    "fiscal_year": 2023,
+    "field": "dividends_paid",
+    "input_value": "19800",
+    "input_unit": "USD millions",
+    "upstream_status": "reported",
+    "transformation": "negate reported cash outflow",
+    "sources": [
+      {
+        "url": "https://www.microsoft.com/investor/reports/ar25/",
+        "section": "Cash Flows Statements",
+        "source_row": "Common stock cash dividends paid",
+        "archive_locator": {
+          "file": "research/microsoft_fy2025/raw/official_report_excerpts.txt",
+          "line": 128,
+          "web_extracted_line": 917
+        }
+      }
+    ],
+    "note": ""
+  },
+  {
+    "fiscal_year": 2025,
+    "field": "cash_and_equivalents",
+    "input_value": "30242",
+    "input_unit": "USD millions",
+    "upstream_status": "reported",
+    "transformation": "identity",
+    "sources": [
+      {
+        "url": "https://www.microsoft.com/investor/reports/ar25/",
+        "section": "Cash Flows Statements",
+        "source_row": "Cash and cash equivalents, end of period",
+        "archive_locator": {
+          "file": "research/microsoft_fy2025/raw/official_report_excerpts.txt",
+          "line": 142,
+          "web_extracted_line": 931
+        }
+      }
+    ],
+    "note": "Excludes short-term investments, even though Microsoft also reports combined liquidity."
+  },
+  {
+    "fiscal_year": 2024,
+    "field": "cash_and_equivalents",
+    "input_value": "18315",
+    "input_unit": "USD millions",
+    "upstream_status": "reported",
+    "transformation": "identity",
+    "sources": [
+      {
+        "url": "https://www.microsoft.com/investor/reports/ar25/",
+        "section": "Cash Flows Statements",
+        "source_row": "Cash and cash equivalents, end of period",
+        "archive_locator": {
+          "file": "research/microsoft_fy2025/raw/official_report_excerpts.txt",
+          "line": 142,
+          "web_extracted_line": 931
+        }
+      }
+    ],
+    "note": "Excludes short-term investments, even though Microsoft also reports combined liquidity."
+  },
+  {
+    "fiscal_year": 2023,
+    "field": "cash_and_equivalents",
+    "input_value": "34704",
+    "input_unit": "USD millions",
+    "upstream_status": "reported",
+    "transformation": "identity",
+    "sources": [
+      {
+        "url": "https://www.microsoft.com/investor/reports/ar25/",
+        "section": "Cash Flows Statements",
+        "source_row": "Cash and cash equivalents, end of period",
+        "archive_locator": {
+          "file": "research/microsoft_fy2025/raw/official_report_excerpts.txt",
+          "line": 142,
+          "web_extracted_line": 931
+        }
+      }
+    ],
+    "note": "Excludes short-term investments, even though Microsoft also reports combined liquidity."
+  },
+  {
+    "fiscal_year": 2025,
+    "field": "interest_expense",
+    "input_value": "2385",
+    "input_unit": "USD millions",
+    "upstream_status": "reported",
+    "transformation": "negate expense presentation",
+    "sources": [
+      {
+        "url": "https://www.microsoft.com/investor/reports/ar25/",
+        "section": "Note 3 — Other Income (Expense), Net",
+        "source_row": "Interest expense",
+        "archive_locator": {
+          "file": "research/microsoft_fy2025/raw/official_report_excerpts.txt",
+          "line": 172,
+          "web_extracted_line": 1132
+        }
+      }
+    ],
+    "note": "Reported interest expense includes finance-lease interest and excludes capitalized interest; not cash interest paid."
+  },
+  {
+    "fiscal_year": 2024,
+    "field": "interest_expense",
+    "input_value": "2935",
+    "input_unit": "USD millions",
+    "upstream_status": "reported",
+    "transformation": "negate expense presentation",
+    "sources": [
+      {
+        "url": "https://www.microsoft.com/investor/reports/ar25/",
+        "section": "Note 3 — Other Income (Expense), Net",
+        "source_row": "Interest expense",
+        "archive_locator": {
+          "file": "research/microsoft_fy2025/raw/official_report_excerpts.txt",
+          "line": 172,
+          "web_extracted_line": 1132
+        }
+      }
+    ],
+    "note": "Reported interest expense includes finance-lease interest and excludes capitalized interest; not cash interest paid."
+  },
+  {
+    "fiscal_year": 2023,
+    "field": "interest_expense",
+    "input_value": "1968",
+    "input_unit": "USD millions",
+    "upstream_status": "reported",
+    "transformation": "negate expense presentation",
+    "sources": [
+      {
+        "url": "https://www.microsoft.com/investor/reports/ar25/",
+        "section": "Note 3 — Other Income (Expense), Net",
+        "source_row": "Interest expense",
+        "archive_locator": {
+          "file": "research/microsoft_fy2025/raw/official_report_excerpts.txt",
+          "line": 172,
+          "web_extracted_line": 1132
+        }
+      }
+    ],
+    "note": "Reported interest expense includes finance-lease interest and excludes capitalized interest; not cash interest paid."
+  },
+  {
+    "fiscal_year": 2025,
+    "field": "shares_outstanding",
+    "input_value": "7434000000",
+    "input_unit": "shares",
+    "upstream_status": "reported",
+    "transformation": "millions of shares x 1,000,000",
+    "sources": [
+      {
+        "url": "https://www.microsoft.com/investor/reports/ar25/",
+        "section": "Note 15 — Shares Outstanding",
+        "source_row": "Balance, end of year",
+        "archive_locator": {
+          "file": "research/microsoft_fy2025/raw/official_report_excerpts.txt",
+          "line": 298,
+          "web_extracted_line": 1734
+        }
+      }
+    ],
+    "note": "FY-end shares, not weighted-average basic/diluted shares."
+  },
+  {
+    "fiscal_year": 2024,
+    "field": "shares_outstanding",
+    "input_value": "7434000000",
+    "input_unit": "shares",
+    "upstream_status": "reported",
+    "transformation": "millions of shares x 1,000,000",
+    "sources": [
+      {
+        "url": "https://www.microsoft.com/investor/reports/ar25/",
+        "section": "Note 15 — Shares Outstanding",
+        "source_row": "Balance, end of year",
+        "archive_locator": {
+          "file": "research/microsoft_fy2025/raw/official_report_excerpts.txt",
+          "line": 298,
+          "web_extracted_line": 1734
+        }
+      }
+    ],
+    "note": "FY-end shares, not weighted-average basic/diluted shares."
+  },
+  {
+    "fiscal_year": 2023,
+    "field": "shares_outstanding",
+    "input_value": "7432000000",
+    "input_unit": "shares",
+    "upstream_status": "reported",
+    "transformation": "millions of shares x 1,000,000",
+    "sources": [
+      {
+        "url": "https://www.microsoft.com/investor/reports/ar25/",
+        "section": "Note 15 — Shares Outstanding",
+        "source_row": "Balance, end of year",
+        "archive_locator": {
+          "file": "research/microsoft_fy2025/raw/official_report_excerpts.txt",
+          "line": 298,
+          "web_extracted_line": 1734
+        }
+      }
+    ],
+    "note": "FY-end shares, not weighted-average basic/diluted shares."
+  },
+  {
+    "fiscal_year": 2025,
+    "field": "total_assets",
+    "input_value": "619003",
+    "input_unit": "USD millions",
+    "upstream_status": "reported",
+    "transformation": "identity",
+    "sources": [
+      {
+        "url": "https://www.microsoft.com/investor/reports/ar25/",
+        "section": "Balance Sheets",
+        "source_row": "Total assets",
+        "archive_locator": {
+          "file": "research/microsoft_fy2025/raw/official_report_excerpts.txt",
+          "line": 72,
+          "web_extracted_line": 864
+        }
+      }
+    ],
+    "note": ""
+  },
+  {
+    "fiscal_year": 2024,
+    "field": "total_assets",
+    "input_value": "512163",
+    "input_unit": "USD millions",
+    "upstream_status": "reported",
+    "transformation": "identity",
+    "sources": [
+      {
+        "url": "https://www.microsoft.com/investor/reports/ar25/",
+        "section": "Balance Sheets",
+        "source_row": "Total assets",
+        "archive_locator": {
+          "file": "research/microsoft_fy2025/raw/official_report_excerpts.txt",
+          "line": 72,
+          "web_extracted_line": 864
+        }
+      }
+    ],
+    "note": ""
+  },
+  {
+    "fiscal_year": 2025,
+    "field": "total_equity",
+    "input_value": "343479",
+    "input_unit": "USD millions",
+    "upstream_status": "reported",
+    "transformation": "identity",
+    "sources": [
+      {
+        "url": "https://www.microsoft.com/investor/reports/ar25/",
+        "section": "Balance Sheets",
+        "source_row": "Total stockholders’ equity",
+        "archive_locator": {
+          "file": "research/microsoft_fy2025/raw/official_report_excerpts.txt",
+          "line": 95,
+          "web_extracted_line": 887
+        }
+      }
+    ],
+    "note": ""
+  },
+  {
+    "fiscal_year": 2024,
+    "field": "total_equity",
+    "input_value": "268477",
+    "input_unit": "USD millions",
+    "upstream_status": "reported",
+    "transformation": "identity",
+    "sources": [
+      {
+        "url": "https://www.microsoft.com/investor/reports/ar25/",
+        "section": "Balance Sheets",
+        "source_row": "Total stockholders’ equity",
+        "archive_locator": {
+          "file": "research/microsoft_fy2025/raw/official_report_excerpts.txt",
+          "line": 95,
+          "web_extracted_line": 887
+        }
+      }
+    ],
+    "note": ""
+  },
+  {
+    "fiscal_year": 2025,
+    "field": "current_assets",
+    "input_value": "191131",
+    "input_unit": "USD millions",
+    "upstream_status": "reported",
+    "transformation": "identity",
+    "sources": [
+      {
+        "url": "https://www.microsoft.com/investor/reports/ar25/",
+        "section": "Balance Sheets",
+        "source_row": "Total current assets",
+        "archive_locator": {
+          "file": "research/microsoft_fy2025/raw/official_report_excerpts.txt",
+          "line": 65,
+          "web_extracted_line": 857
+        }
+      }
+    ],
+    "note": ""
+  },
+  {
+    "fiscal_year": 2024,
+    "field": "current_assets",
+    "input_value": "159734",
+    "input_unit": "USD millions",
+    "upstream_status": "reported",
+    "transformation": "identity",
+    "sources": [
+      {
+        "url": "https://www.microsoft.com/investor/reports/ar25/",
+        "section": "Balance Sheets",
+        "source_row": "Total current assets",
+        "archive_locator": {
+          "file": "research/microsoft_fy2025/raw/official_report_excerpts.txt",
+          "line": 65,
+          "web_extracted_line": 857
+        }
+      }
+    ],
+    "note": ""
+  },
+  {
+    "fiscal_year": 2025,
+    "field": "current_liabilities",
+    "input_value": "141218",
+    "input_unit": "USD millions",
+    "upstream_status": "reported",
+    "transformation": "identity",
+    "sources": [
+      {
+        "url": "https://www.microsoft.com/investor/reports/ar25/",
+        "section": "Balance Sheets",
+        "source_row": "Total current liabilities",
+        "archive_locator": {
+          "file": "research/microsoft_fy2025/raw/official_report_excerpts.txt",
+          "line": 82,
+          "web_extracted_line": 874
+        }
+      }
+    ],
+    "note": ""
+  },
+  {
+    "fiscal_year": 2024,
+    "field": "current_liabilities",
+    "input_value": "125286",
+    "input_unit": "USD millions",
+    "upstream_status": "reported",
+    "transformation": "identity",
+    "sources": [
+      {
+        "url": "https://www.microsoft.com/investor/reports/ar25/",
+        "section": "Balance Sheets",
+        "source_row": "Total current liabilities",
+        "archive_locator": {
+          "file": "research/microsoft_fy2025/raw/official_report_excerpts.txt",
+          "line": 82,
+          "web_extracted_line": 874
+        }
+      }
+    ],
+    "note": ""
+  },
+  {
+    "fiscal_year": 2025,
+    "field": "inventory",
+    "input_value": "938",
+    "input_unit": "USD millions",
+    "upstream_status": "reported",
+    "transformation": "identity",
+    "sources": [
+      {
+        "url": "https://www.microsoft.com/investor/reports/ar25/",
+        "section": "Balance Sheets",
+        "source_row": "Inventories",
+        "archive_locator": {
+          "file": "research/microsoft_fy2025/raw/official_report_excerpts.txt",
+          "line": 63,
+          "web_extracted_line": 855
+        }
+      }
+    ],
+    "note": ""
+  },
+  {
+    "fiscal_year": 2024,
+    "field": "inventory",
+    "input_value": "1246",
+    "input_unit": "USD millions",
+    "upstream_status": "reported",
+    "transformation": "identity",
+    "sources": [
+      {
+        "url": "https://www.microsoft.com/investor/reports/ar25/",
+        "section": "Balance Sheets",
+        "source_row": "Inventories",
+        "archive_locator": {
+          "file": "research/microsoft_fy2025/raw/official_report_excerpts.txt",
+          "line": 63,
+          "web_extracted_line": 855
+        }
+      }
+    ],
+    "note": ""
+  },
+  {
+    "fiscal_year": 2025,
+    "field": "accounts_receivable",
+    "input_value": "69905",
+    "input_unit": "USD millions",
+    "upstream_status": "reported",
+    "transformation": "identity",
+    "sources": [
+      {
+        "url": "https://www.microsoft.com/investor/reports/ar25/",
+        "section": "Balance Sheets",
+        "source_row": "Accounts receivable, net of allowance for doubtful accounts of $944 and $830",
+        "archive_locator": {
+          "file": "research/microsoft_fy2025/raw/official_report_excerpts.txt",
+          "line": 62,
+          "web_extracted_line": 854
+        }
+      }
+    ],
+    "note": "Current net receivables only; long-term receivables and financing receivables are excluded."
+  },
+  {
+    "fiscal_year": 2024,
+    "field": "accounts_receivable",
+    "input_value": "56924",
+    "input_unit": "USD millions",
+    "upstream_status": "reported",
+    "transformation": "identity",
+    "sources": [
+      {
+        "url": "https://www.microsoft.com/investor/reports/ar25/",
+        "section": "Balance Sheets",
+        "source_row": "Accounts receivable, net of allowance for doubtful accounts of $944 and $830",
+        "archive_locator": {
+          "file": "research/microsoft_fy2025/raw/official_report_excerpts.txt",
+          "line": 62,
+          "web_extracted_line": 854
+        }
+      }
+    ],
+    "note": "Current net receivables only; long-term receivables and financing receivables are excluded."
+  },
+  {
+    "fiscal_year": 2025,
+    "field": "accounts_payable",
+    "input_value": "27724",
+    "input_unit": "USD millions",
+    "upstream_status": "reported",
+    "transformation": "identity",
+    "sources": [
+      {
+        "url": "https://www.microsoft.com/investor/reports/ar25/",
+        "section": "Balance Sheets",
+        "source_row": "Accounts payable",
+        "archive_locator": {
+          "file": "research/microsoft_fy2025/raw/official_report_excerpts.txt",
+          "line": 75,
+          "web_extracted_line": 867
+        }
+      }
+    ],
+    "note": "Includes PP&E payable ($6.9bn FY2025/$4.3bn FY2024); DPO/CCC are coarse model proxies."
+  },
+  {
+    "fiscal_year": 2024,
+    "field": "accounts_payable",
+    "input_value": "21996",
+    "input_unit": "USD millions",
+    "upstream_status": "reported",
+    "transformation": "identity",
+    "sources": [
+      {
+        "url": "https://www.microsoft.com/investor/reports/ar25/",
+        "section": "Balance Sheets",
+        "source_row": "Accounts payable",
+        "archive_locator": {
+          "file": "research/microsoft_fy2025/raw/official_report_excerpts.txt",
+          "line": 75,
+          "web_extracted_line": 867
+        }
+      }
+    ],
+    "note": "Includes PP&E payable ($6.9bn FY2025/$4.3bn FY2024); DPO/CCC are coarse model proxies."
+  },
+  {
+    "fiscal_year": 2025,
+    "field": "total_debt",
+    "input_value": "43151",
+    "input_unit": "USD millions",
+    "upstream_status": "derived_exact",
+    "transformation": "short-term debt + current long-term debt + noncurrent long-term debt",
+    "sources": [
+      {
+        "url": "https://www.microsoft.com/investor/reports/ar25/",
+        "section": "Balance Sheets",
+        "source_row": "Short-term debt",
+        "archive_locator": {
+          "file": "research/microsoft_fy2025/raw/official_report_excerpts.txt",
+          "line": 76,
+          "web_extracted_line": 868
+        }
+      },
+      {
+        "url": "https://www.microsoft.com/investor/reports/ar25/",
+        "section": "Balance Sheets",
+        "source_row": "Current portion of long-term debt",
+        "archive_locator": {
+          "file": "research/microsoft_fy2025/raw/official_report_excerpts.txt",
+          "line": 77,
+          "web_extracted_line": 869
+        }
+      },
+      {
+        "url": "https://www.microsoft.com/investor/reports/ar25/",
+        "section": "Balance Sheets",
+        "source_row": "Long-term debt",
+        "archive_locator": {
+          "file": "research/microsoft_fy2025/raw/official_report_excerpts.txt",
+          "line": 83,
+          "web_extracted_line": 875
+        }
+      }
+    ],
+    "note": "Narrow borrowing-debt definition. Excludes finance and operating leases. Includes FY2024 commercial paper."
+  },
+  {
+    "fiscal_year": 2024,
+    "field": "total_debt",
+    "input_value": "51630",
+    "input_unit": "USD millions",
+    "upstream_status": "derived_exact",
+    "transformation": "short-term debt + current long-term debt + noncurrent long-term debt",
+    "sources": [
+      {
+        "url": "https://www.microsoft.com/investor/reports/ar25/",
+        "section": "Balance Sheets",
+        "source_row": "Short-term debt",
+        "archive_locator": {
+          "file": "research/microsoft_fy2025/raw/official_report_excerpts.txt",
+          "line": 76,
+          "web_extracted_line": 868
+        }
+      },
+      {
+        "url": "https://www.microsoft.com/investor/reports/ar25/",
+        "section": "Balance Sheets",
+        "source_row": "Current portion of long-term debt",
+        "archive_locator": {
+          "file": "research/microsoft_fy2025/raw/official_report_excerpts.txt",
+          "line": 77,
+          "web_extracted_line": 869
+        }
+      },
+      {
+        "url": "https://www.microsoft.com/investor/reports/ar25/",
+        "section": "Balance Sheets",
+        "source_row": "Long-term debt",
+        "archive_locator": {
+          "file": "research/microsoft_fy2025/raw/official_report_excerpts.txt",
+          "line": 83,
+          "web_extracted_line": 875
+        }
+      }
+    ],
+    "note": "Narrow borrowing-debt definition. Excludes finance and operating leases. Includes FY2024 commercial paper."
+  },
+  {
+    "fiscal_year": 2025,
+    "field": "market_value_debt",
+    "input_value": "40400",
+    "input_unit": "USD millions",
+    "upstream_status": "reported_rounded",
+    "transformation": "40.4 billion USD x 1,000",
+    "sources": [
+      {
+        "url": "https://www.microsoft.com/investor/reports/ar25/",
+        "section": "Note 10 — Debt",
+        "source_row": "As of June 30, 2025 and 2024, the estimated fair value of long-term debt, including the current portion, was $40.4 billion and $42.3 billion, respectively. The estimated fair values are based on Level 2 inputs.",
+        "archive_locator": {
+          "file": "research/microsoft_fy2025/raw/definition_notes_excerpts.txt",
+          "line": 195,
+          "web_extracted_line": 1527
+        }
+      }
+    ],
+    "note": "Reported estimate rounded to $0.1bn; long-term borrowings including current portion, with no commercial paper in FY2025; excludes leases."
+  },
+  {
+    "fiscal_year": 2023,
+    "field": "ebitda",
+    "input_value": "unavailable",
+    "input_unit": "",
+    "upstream_status": "unavailable",
+    "transformation": null,
+    "sources": [
+      {
+        "url": "https://www.microsoft.com/investor/reports/ar25/",
+        "section": "Cash Flows — mixed D&A line",
+        "source_row": "Depreciation, amortization, and other",
+        "archive_locator": {
+          "file": "research/microsoft_fy2025/raw/official_report_excerpts.txt",
+          "line": 104,
+          "web_extracted_line": 896
+        }
+      },
+      {
+        "url": "https://www.microsoft.com/investor/reports/ar25/",
+        "section": "Note 6 — rounded depreciation",
+        "source_row": "During fiscal years 2025, 2024, and 2023, depreciation expense was $22.0 billion, $15.2 billion, and $11.0 billion, respectively.",
+        "archive_locator": {
+          "file": "research/microsoft_fy2025/raw/definition_notes_excerpts.txt",
+          "line": 53,
+          "web_extracted_line": 1386
+        }
+      },
+      {
+        "url": "https://www.microsoft.com/investor/reports/ar25/",
+        "section": "Note 9 — rounded amortization",
+        "source_row": "Intangible assets amortization expense was $6.0 billion, $4.8 billion, and $2.5 billion for fiscal years 2025, 2024, and 2023, respectively.",
+        "archive_locator": {
+          "file": "research/microsoft_fy2025/raw/official_report_excerpts.txt",
+          "line": 194,
+          "web_extracted_line": 1476
+        }
+      }
+    ],
+    "note": "No compatible reported EBITDA selected. Cash-flow D&A-and-other is not pure D&A. Notes 6/9 disclose rounded depreciation/amortization, so reconstruction would require an explicit definition and rounding policy; no estimate is inserted."
+  },
+  {
+    "fiscal_year": 2023,
+    "field": "total_debt",
+    "input_value": "",
+    "input_unit": "",
+    "upstream_status": "unavailable",
+    "transformation": null,
+    "sources": [],
+    "note": "Not needed at this historical endpoint and not disclosed in the comparative balance sheets/notes selected for this case."
+  },
+  {
+    "fiscal_year": 2023,
+    "field": "total_assets",
+    "input_value": "",
+    "input_unit": "",
+    "upstream_status": "unavailable",
+    "transformation": null,
+    "sources": [],
+    "note": "Not needed at this historical endpoint and not disclosed in the comparative balance sheets/notes selected for this case."
+  },
+  {
+    "fiscal_year": 2023,
+    "field": "total_equity",
+    "input_value": "",
+    "input_unit": "",
+    "upstream_status": "unavailable",
+    "transformation": null,
+    "sources": [],
+    "note": "Not needed at this historical endpoint and not disclosed in the comparative balance sheets/notes selected for this case."
+  },
+  {
+    "fiscal_year": 2023,
+    "field": "current_assets",
+    "input_value": "",
+    "input_unit": "",
+    "upstream_status": "unavailable",
+    "transformation": null,
+    "sources": [],
+    "note": "Not needed at this historical endpoint and not disclosed in the comparative balance sheets/notes selected for this case."
+  },
+  {
+    "fiscal_year": 2023,
+    "field": "current_liabilities",
+    "input_value": "",
+    "input_unit": "",
+    "upstream_status": "unavailable",
+    "transformation": null,
+    "sources": [],
+    "note": "Not needed at this historical endpoint and not disclosed in the comparative balance sheets/notes selected for this case."
+  },
+  {
+    "fiscal_year": 2023,
+    "field": "inventory",
+    "input_value": "",
+    "input_unit": "",
+    "upstream_status": "unavailable",
+    "transformation": null,
+    "sources": [],
+    "note": "Not needed at this historical endpoint and not disclosed in the comparative balance sheets/notes selected for this case."
+  },
+  {
+    "fiscal_year": 2023,
+    "field": "accounts_receivable",
+    "input_value": "",
+    "input_unit": "",
+    "upstream_status": "unavailable",
+    "transformation": null,
+    "sources": [],
+    "note": "Not needed at this historical endpoint and not disclosed in the comparative balance sheets/notes selected for this case."
+  },
+  {
+    "fiscal_year": 2023,
+    "field": "accounts_payable",
+    "input_value": "",
+    "input_unit": "",
+    "upstream_status": "unavailable",
+    "transformation": null,
+    "sources": [],
+    "note": "Not needed at this historical endpoint and not disclosed in the comparative balance sheets/notes selected for this case."
+  },
+  {
+    "fiscal_year": 2023,
+    "field": "market_cap",
+    "input_value": "unavailable",
+    "input_unit": "",
+    "upstream_status": "unavailable",
+    "transformation": null,
+    "sources": [],
+    "note": "No June 30 closing market capitalization in the selected financial statements. FY-end shares are available, but a verified matching-date share price is required."
+  },
+  {
+    "fiscal_year": 2023,
+    "field": "share_price",
+    "input_value": "unavailable",
+    "input_unit": "",
+    "upstream_status": "unavailable",
+    "transformation": null,
+    "sources": [],
+    "note": "No verified June 30 closing share price in the selected report. The total-return performance index is not a share price."
+  },
+  {
+    "fiscal_year": 2023,
+    "field": "pre_tax_cost_of_debt",
+    "input_value": "unavailable",
+    "input_unit": "",
+    "upstream_status": "unavailable",
+    "transformation": null,
+    "sources": [],
+    "note": "Current marginal market borrowing cost/YTM is not established. Interest expense / debt and lease discount rates are not substituted."
+  },
+  {
+    "fiscal_year": 2023,
+    "field": "risk_free_rate",
+    "input_value": "unavailable",
+    "input_unit": "",
+    "upstream_status": "unavailable",
+    "transformation": null,
+    "sources": [],
+    "note": "Requires a chosen currency-, date- and maturity-matched market assumption; not selected from the report."
+  },
+  {
+    "fiscal_year": 2023,
+    "field": "equity_beta",
+    "input_value": "unavailable",
+    "input_unit": "",
+    "upstream_status": "unavailable",
+    "transformation": null,
+    "sources": [],
+    "note": "Requires a documented estimate, benchmark and observation window; not selected from the report."
+  },
+  {
+    "fiscal_year": 2023,
+    "field": "equity_risk_premium",
+    "input_value": "unavailable",
+    "input_unit": "",
+    "upstream_status": "unavailable",
+    "transformation": null,
+    "sources": [],
+    "note": "Requires an explicit market-risk-premium assumption; not selected from the report."
+  },
+  {
+    "fiscal_year": 2023,
+    "field": "marginal_tax_rate",
+    "input_value": "unavailable",
+    "input_unit": "",
+    "upstream_status": "unavailable",
+    "transformation": null,
+    "sources": [],
+    "note": "Effective tax rate/provision is not a marginal tax-rate assumption for WACC."
+  },
+  {
+    "fiscal_year": 2023,
+    "field": "monthly_recurring_revenue",
+    "input_value": "unavailable",
+    "input_unit": "",
+    "upstream_status": "unavailable",
+    "transformation": null,
+    "sources": [
+      {
+        "url": "https://www.microsoft.com/investor/reports/ar25/",
+        "section": "Note 12 — unearned revenue, not ARR",
+        "source_row": "Total",
+        "archive_locator": {
+          "file": "research/microsoft_fy2025/raw/definition_notes_excerpts.txt",
+          "line": 248,
+          "web_extracted_line": 1643
+        }
+      },
+      {
+        "url": "https://www.microsoft.com/investor/reports/ar25/",
+        "section": "Note 12 — remaining obligations, not ARR",
+        "source_row": "Revenue allocated to remaining performance obligations, which includes unearned revenue and amounts that will be invoiced and recognized as revenue in future periods, was $375 billion as of June 30, 2025, of which $368 billion is related to the commercial portion of revenue. We expect to recognize approximately 40% of our total company remaining performance obligation revenue over the next 12 months and the remainder thereafter.",
+        "archive_locator": {
+          "file": "research/microsoft_fy2025/raw/definition_notes_excerpts.txt",
+          "line": 259,
+          "web_extracted_line": 1654
+        }
+      }
+    ],
+    "note": "Company-wide fiscal-year-end MRR is not provided in the reviewed report. Cloud revenue, deferred revenue and remaining performance obligations are not MRR/ARR."
+  },
+  {
+    "fiscal_year": 2023,
+    "field": "market_value_debt",
+    "input_value": "",
+    "input_unit": "",
+    "upstream_status": "unavailable",
+    "transformation": null,
+    "sources": [],
+    "note": "Not needed at this historical endpoint and not disclosed in the comparative balance sheets/notes selected for this case."
+  },
+  {
+    "fiscal_year": 2024,
+    "field": "ebitda",
+    "input_value": "unavailable",
+    "input_unit": "",
+    "upstream_status": "unavailable",
+    "transformation": null,
+    "sources": [
+      {
+        "url": "https://www.microsoft.com/investor/reports/ar25/",
+        "section": "Cash Flows — mixed D&A line",
+        "source_row": "Depreciation, amortization, and other",
+        "archive_locator": {
+          "file": "research/microsoft_fy2025/raw/official_report_excerpts.txt",
+          "line": 104,
+          "web_extracted_line": 896
+        }
+      },
+      {
+        "url": "https://www.microsoft.com/investor/reports/ar25/",
+        "section": "Note 6 — rounded depreciation",
+        "source_row": "During fiscal years 2025, 2024, and 2023, depreciation expense was $22.0 billion, $15.2 billion, and $11.0 billion, respectively.",
+        "archive_locator": {
+          "file": "research/microsoft_fy2025/raw/definition_notes_excerpts.txt",
+          "line": 53,
+          "web_extracted_line": 1386
+        }
+      },
+      {
+        "url": "https://www.microsoft.com/investor/reports/ar25/",
+        "section": "Note 9 — rounded amortization",
+        "source_row": "Intangible assets amortization expense was $6.0 billion, $4.8 billion, and $2.5 billion for fiscal years 2025, 2024, and 2023, respectively.",
+        "archive_locator": {
+          "file": "research/microsoft_fy2025/raw/official_report_excerpts.txt",
+          "line": 194,
+          "web_extracted_line": 1476
+        }
+      }
+    ],
+    "note": "No compatible reported EBITDA selected. Cash-flow D&A-and-other is not pure D&A. Notes 6/9 disclose rounded depreciation/amortization, so reconstruction would require an explicit definition and rounding policy; no estimate is inserted."
+  },
+  {
+    "fiscal_year": 2024,
+    "field": "market_cap",
+    "input_value": "unavailable",
+    "input_unit": "",
+    "upstream_status": "unavailable",
+    "transformation": null,
+    "sources": [],
+    "note": "No June 30 closing market capitalization in the selected financial statements. FY-end shares are available, but a verified matching-date share price is required."
+  },
+  {
+    "fiscal_year": 2024,
+    "field": "share_price",
+    "input_value": "unavailable",
+    "input_unit": "",
+    "upstream_status": "unavailable",
+    "transformation": null,
+    "sources": [],
+    "note": "No verified June 30 closing share price in the selected report. The total-return performance index is not a share price."
+  },
+  {
+    "fiscal_year": 2024,
+    "field": "pre_tax_cost_of_debt",
+    "input_value": "unavailable",
+    "input_unit": "",
+    "upstream_status": "unavailable",
+    "transformation": null,
+    "sources": [],
+    "note": "Current marginal market borrowing cost/YTM is not established. Interest expense / debt and lease discount rates are not substituted."
+  },
+  {
+    "fiscal_year": 2024,
+    "field": "risk_free_rate",
+    "input_value": "unavailable",
+    "input_unit": "",
+    "upstream_status": "unavailable",
+    "transformation": null,
+    "sources": [],
+    "note": "Requires a chosen currency-, date- and maturity-matched market assumption; not selected from the report."
+  },
+  {
+    "fiscal_year": 2024,
+    "field": "equity_beta",
+    "input_value": "unavailable",
+    "input_unit": "",
+    "upstream_status": "unavailable",
+    "transformation": null,
+    "sources": [],
+    "note": "Requires a documented estimate, benchmark and observation window; not selected from the report."
+  },
+  {
+    "fiscal_year": 2024,
+    "field": "equity_risk_premium",
+    "input_value": "unavailable",
+    "input_unit": "",
+    "upstream_status": "unavailable",
+    "transformation": null,
+    "sources": [],
+    "note": "Requires an explicit market-risk-premium assumption; not selected from the report."
+  },
+  {
+    "fiscal_year": 2024,
+    "field": "marginal_tax_rate",
+    "input_value": "unavailable",
+    "input_unit": "",
+    "upstream_status": "unavailable",
+    "transformation": null,
+    "sources": [],
+    "note": "Effective tax rate/provision is not a marginal tax-rate assumption for WACC."
+  },
+  {
+    "fiscal_year": 2024,
+    "field": "monthly_recurring_revenue",
+    "input_value": "unavailable",
+    "input_unit": "",
+    "upstream_status": "unavailable",
+    "transformation": null,
+    "sources": [
+      {
+        "url": "https://www.microsoft.com/investor/reports/ar25/",
+        "section": "Note 12 — unearned revenue, not ARR",
+        "source_row": "Total",
+        "archive_locator": {
+          "file": "research/microsoft_fy2025/raw/definition_notes_excerpts.txt",
+          "line": 248,
+          "web_extracted_line": 1643
+        }
+      },
+      {
+        "url": "https://www.microsoft.com/investor/reports/ar25/",
+        "section": "Note 12 — remaining obligations, not ARR",
+        "source_row": "Revenue allocated to remaining performance obligations, which includes unearned revenue and amounts that will be invoiced and recognized as revenue in future periods, was $375 billion as of June 30, 2025, of which $368 billion is related to the commercial portion of revenue. We expect to recognize approximately 40% of our total company remaining performance obligation revenue over the next 12 months and the remainder thereafter.",
+        "archive_locator": {
+          "file": "research/microsoft_fy2025/raw/definition_notes_excerpts.txt",
+          "line": 259,
+          "web_extracted_line": 1654
+        }
+      }
+    ],
+    "note": "Company-wide fiscal-year-end MRR is not provided in the reviewed report. Cloud revenue, deferred revenue and remaining performance obligations are not MRR/ARR."
+  },
+  {
+    "fiscal_year": 2024,
+    "field": "market_value_debt",
+    "input_value": "",
+    "input_unit": "",
+    "upstream_status": "unavailable",
+    "transformation": null,
+    "sources": [],
+    "note": "Not needed at this historical endpoint and not disclosed in the comparative balance sheets/notes selected for this case."
+  },
+  {
+    "fiscal_year": 2025,
+    "field": "ebitda",
+    "input_value": "unavailable",
+    "input_unit": "",
+    "upstream_status": "unavailable",
+    "transformation": null,
+    "sources": [
+      {
+        "url": "https://www.microsoft.com/investor/reports/ar25/",
+        "section": "Cash Flows — mixed D&A line",
+        "source_row": "Depreciation, amortization, and other",
+        "archive_locator": {
+          "file": "research/microsoft_fy2025/raw/official_report_excerpts.txt",
+          "line": 104,
+          "web_extracted_line": 896
+        }
+      },
+      {
+        "url": "https://www.microsoft.com/investor/reports/ar25/",
+        "section": "Note 6 — rounded depreciation",
+        "source_row": "During fiscal years 2025, 2024, and 2023, depreciation expense was $22.0 billion, $15.2 billion, and $11.0 billion, respectively.",
+        "archive_locator": {
+          "file": "research/microsoft_fy2025/raw/definition_notes_excerpts.txt",
+          "line": 53,
+          "web_extracted_line": 1386
+        }
+      },
+      {
+        "url": "https://www.microsoft.com/investor/reports/ar25/",
+        "section": "Note 9 — rounded amortization",
+        "source_row": "Intangible assets amortization expense was $6.0 billion, $4.8 billion, and $2.5 billion for fiscal years 2025, 2024, and 2023, respectively.",
+        "archive_locator": {
+          "file": "research/microsoft_fy2025/raw/official_report_excerpts.txt",
+          "line": 194,
+          "web_extracted_line": 1476
+        }
+      }
+    ],
+    "note": "No compatible reported EBITDA selected. Cash-flow D&A-and-other is not pure D&A. Notes 6/9 disclose rounded depreciation/amortization, so reconstruction would require an explicit definition and rounding policy; no estimate is inserted."
+  },
+  {
+    "fiscal_year": 2025,
+    "field": "market_cap",
+    "input_value": "unavailable",
+    "input_unit": "",
+    "upstream_status": "unavailable",
+    "transformation": null,
+    "sources": [],
+    "note": "No June 30 closing market capitalization in the selected financial statements. FY-end shares are available, but a verified matching-date share price is required."
+  },
+  {
+    "fiscal_year": 2025,
+    "field": "share_price",
+    "input_value": "unavailable",
+    "input_unit": "",
+    "upstream_status": "unavailable",
+    "transformation": null,
+    "sources": [],
+    "note": "No verified June 30 closing share price in the selected report. The total-return performance index is not a share price."
+  },
+  {
+    "fiscal_year": 2025,
+    "field": "pre_tax_cost_of_debt",
+    "input_value": "unavailable",
+    "input_unit": "",
+    "upstream_status": "unavailable",
+    "transformation": null,
+    "sources": [],
+    "note": "Current marginal market borrowing cost/YTM is not established. Interest expense / debt and lease discount rates are not substituted."
+  },
+  {
+    "fiscal_year": 2025,
+    "field": "risk_free_rate",
+    "input_value": "unavailable",
+    "input_unit": "",
+    "upstream_status": "unavailable",
+    "transformation": null,
+    "sources": [],
+    "note": "Requires a chosen currency-, date- and maturity-matched market assumption; not selected from the report."
+  },
+  {
+    "fiscal_year": 2025,
+    "field": "equity_beta",
+    "input_value": "unavailable",
+    "input_unit": "",
+    "upstream_status": "unavailable",
+    "transformation": null,
+    "sources": [],
+    "note": "Requires a documented estimate, benchmark and observation window; not selected from the report."
+  },
+  {
+    "fiscal_year": 2025,
+    "field": "equity_risk_premium",
+    "input_value": "unavailable",
+    "input_unit": "",
+    "upstream_status": "unavailable",
+    "transformation": null,
+    "sources": [],
+    "note": "Requires an explicit market-risk-premium assumption; not selected from the report."
+  },
+  {
+    "fiscal_year": 2025,
+    "field": "marginal_tax_rate",
+    "input_value": "unavailable",
+    "input_unit": "",
+    "upstream_status": "unavailable",
+    "transformation": null,
+    "sources": [],
+    "note": "Effective tax rate/provision is not a marginal tax-rate assumption for WACC."
+  },
+  {
+    "fiscal_year": 2025,
+    "field": "monthly_recurring_revenue",
+    "input_value": "unavailable",
+    "input_unit": "",
+    "upstream_status": "unavailable",
+    "transformation": null,
+    "sources": [
+      {
+        "url": "https://www.microsoft.com/investor/reports/ar25/",
+        "section": "Note 12 — unearned revenue, not ARR",
+        "source_row": "Total",
+        "archive_locator": {
+          "file": "research/microsoft_fy2025/raw/definition_notes_excerpts.txt",
+          "line": 248,
+          "web_extracted_line": 1643
+        }
+      },
+      {
+        "url": "https://www.microsoft.com/investor/reports/ar25/",
+        "section": "Note 12 — remaining obligations, not ARR",
+        "source_row": "Revenue allocated to remaining performance obligations, which includes unearned revenue and amounts that will be invoiced and recognized as revenue in future periods, was $375 billion as of June 30, 2025, of which $368 billion is related to the commercial portion of revenue. We expect to recognize approximately 40% of our total company remaining performance obligation revenue over the next 12 months and the remainder thereafter.",
+        "archive_locator": {
+          "file": "research/microsoft_fy2025/raw/definition_notes_excerpts.txt",
+          "line": 259,
+          "web_extracted_line": 1654
+        }
+      }
+    ],
+    "note": "Company-wide fiscal-year-end MRR is not provided in the reviewed report. Cloud revenue, deferred revenue and remaining performance obligations are not MRR/ARR."
+  }
+]

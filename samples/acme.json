@@ -1,0 +1,28 @@
+[
+  {
+    "company_id": "acme",
+    "company_name": "Acme Example",
+    "fiscal_year": 2024,
+    "period_type": "FY",
+    "scope": "consolidated",
+    "currency": "PLN",
+    "monetary_unit": "millions",
+    "revenue": 80,
+    "ebitda": null,
+    "total_debt": null,
+    "cash_and_equivalents": null
+  },
+  {
+    "company_id": "acme",
+    "company_name": "Acme Example",
+    "fiscal_year": 2025,
+    "period_type": "FY",
+    "scope": "consolidated",
+    "currency": "PLN",
+    "monetary_unit": "millions",
+    "revenue": 100,
+    "ebitda": 20,
+    "total_debt": 35,
+    "cash_and_equivalents": 5
+  }
+]

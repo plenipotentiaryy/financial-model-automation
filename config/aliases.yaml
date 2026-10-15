@@ -1,0 +1,82 @@
+company_id:
+- company_id
+company_name:
+- company_name
+- name
+fiscal_year:
+- fiscal_year
+- year
+- fy
+period_type:
+- period_type
+scope:
+- scope
+currency:
+- currency
+monetary_unit:
+- monetary_unit
+revenue:
+- revenue
+- sales
+- turnover
+ebitda:
+- ebitda
+total_debt:
+- total_debt
+- debt
+cash_and_equivalents:
+- cash_and_equivalents
+- cash
+- cash_equivalents
+cogs:
+- cogs
+gross_profit:
+- gross_profit
+ebit:
+- ebit
+net_income:
+- net_income
+interest_expense:
+- interest_expense
+income_tax_expense:
+- income_tax_expense
+cash_flow_from_operations:
+- cash_flow_from_operations
+capex:
+- capex
+dividends_paid:
+- dividends_paid
+total_assets:
+- total_assets
+total_equity:
+- total_equity
+current_assets:
+- current_assets
+current_liabilities:
+- current_liabilities
+inventory:
+- inventory
+accounts_receivable:
+- accounts_receivable
+accounts_payable:
+- accounts_payable
+market_cap:
+- market_cap
+share_price:
+- share_price
+shares_outstanding:
+- shares_outstanding
+pre_tax_cost_of_debt:
+- pre_tax_cost_of_debt
+risk_free_rate:
+- risk_free_rate
+equity_beta:
+- equity_beta
+equity_risk_premium:
+- equity_risk_premium
+marginal_tax_rate:
+- marginal_tax_rate
+monthly_recurring_revenue:
+- monthly_recurring_revenue
+market_value_debt:
+- market_value_debt
