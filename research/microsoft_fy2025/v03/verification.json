@@ -1,0 +1,1090 @@
+{
+  "schema_version": 1,
+  "basis": "Historical FY2025, not current valuation",
+  "source_reconciliations": [
+    {
+      "year": 2025,
+      "income_statement_reconciliations": "PASS"
+    },
+    {
+      "year": 2024,
+      "income_statement_reconciliations": "PASS"
+    },
+    {
+      "year": 2023,
+      "income_statement_reconciliations": "PASS"
+    },
+    {
+      "year": 2024,
+      "balance_sheet_and_debt_reconciliations": "PASS"
+    },
+    {
+      "year": 2025,
+      "balance_sheet_and_debt_reconciliations": "PASS"
+    }
+  ],
+  "variants": {
+    "strict": {
+      "computed": 17,
+      "unavailable": 11,
+      "all_28_verified": true,
+      "calculation": {
+        "status": "RECALCULATED",
+        "engine": "/opt/homebrew/bin/soffice",
+        "cached_formula_cells": 64
+      },
+      "workbook": "outputs/microsoft_v03/strict.xlsx",
+      "sha256": "2f636617830df90373fe75a73be463515abc9a1516c840f75f54b75bc27223ec",
+      "formula_preservation": "PASS",
+      "audit": [
+        {
+          "metric_id": "revenue_growth_yoy",
+          "value": 0.149321562324067,
+          "status": "OK",
+          "note": "Reported consolidated growth; acquisition effects are included, not organic growth. ",
+          "expected_independent": "0.149321562324067199190607126247338060231",
+          "verification": "PASS"
+        },
+        {
+          "metric_id": "ebitda_margin",
+          "value": null,
+          "status": "MISSING_INPUTS",
+          "note": "Missing/unavailable inputs: ebitda FY2025",
+          "expected_independent": null,
+          "verification": "PASS_UNAVAILABLE"
+        },
+        {
+          "metric_id": "net_debt",
+          "value": 12909000000,
+          "status": "OK",
+          "note": "Borrowing debt less cash equivalents only; excludes $64.323bn short-term investments and $46.172bn finance-lease liabilities. ",
+          "expected_independent": "12909000000",
+          "verification": "PASS"
+        },
+        {
+          "metric_id": "net_debt_to_ebitda",
+          "value": null,
+          "status": "MISSING_INPUTS",
+          "note": "Missing/unavailable inputs: ebitda FY2025",
+          "expected_independent": null,
+          "verification": "PASS_UNAVAILABLE"
+        },
+        {
+          "metric_id": "arr",
+          "value": null,
+          "status": "MISSING_INPUTS",
+          "note": "Missing/unavailable inputs: monthly_recurring_revenue FY2025",
+          "expected_independent": null,
+          "verification": "PASS_UNAVAILABLE"
+        },
+        {
+          "metric_id": "wacc",
+          "value": null,
+          "status": "MISSING_INPUTS",
+          "note": "Missing/unavailable inputs: market_cap FY2025, pre_tax_cost_of_debt FY2025, risk_free_rate FY2025, equity_beta FY2025, equity_risk_premium FY2025, marginal_tax_rate FY2025",
+          "expected_independent": null,
+          "verification": "PASS_UNAVAILABLE"
+        },
+        {
+          "metric_id": "gross_margin",
+          "value": 0.688237423861652,
+          "status": "OK",
+          "note": "Computed from compatible reported financial-statement inputs under the documented model convention. ",
+          "expected_independent": "0.6882374238616518294501000979682242194488",
+          "verification": "PASS"
+        },
+        {
+          "metric_id": "ebit_margin",
+          "value": 0.456219562408599,
+          "status": "OK",
+          "note": "Operating income is the selected operating-EBIT definition. ",
+          "expected_independent": "0.4562195624085984864619272763413837656714",
+          "verification": "PASS"
+        },
+        {
+          "metric_id": "net_profit_margin",
+          "value": 0.361460152489671,
+          "status": "OK",
+          "note": "Computed from compatible reported financial-statement inputs under the documented model convention. ",
+          "expected_independent": "0.3614601524896707415768624611321719129361",
+          "verification": "PASS"
+        },
+        {
+          "metric_id": "free_cash_flow",
+          "value": 71611000000,
+          "status": "OK",
+          "note": "CFO less cash PP&E additions. Noncash finance-lease additions and acquisitions are excluded. ",
+          "expected_independent": "71611000000",
+          "verification": "PASS"
+        },
+        {
+          "metric_id": "fcf_margin",
+          "value": 0.254188496542716,
+          "status": "OK",
+          "note": "Uses cash-PP&E FCF, not lease-adjusted FCFF/FCFE. ",
+          "expected_independent": "0.2541884965427155655890162002527296218994",
+          "verification": "PASS"
+        },
+        {
+          "metric_id": "current_ratio",
+          "value": 1.35344644450424,
+          "status": "OK",
+          "note": "Computed from compatible reported financial-statement inputs under the documented model convention. ",
+          "expected_independent": "1.353446444504241668909062584089846903369",
+          "verification": "PASS"
+        },
+        {
+          "metric_id": "quick_ratio",
+          "value": 1.34680423175516,
+          "status": "OK",
+          "note": "Computed from compatible reported financial-statement inputs under the documented model convention. ",
+          "expected_independent": "1.346804231755158690818450905691908963447",
+          "verification": "PASS"
+        },
+        {
+          "metric_id": "interest_coverage",
+          "value": 53.8901467505241,
+          "status": "OK",
+          "note": "Operating income / reported interest expense; excludes capitalized interest from the denominator. ",
+          "expected_independent": "53.89014675052410901467505241090146750524",
+          "verification": "PASS"
+        },
+        {
+          "metric_id": "roa",
+          "value": 0.180047844436626,
+          "status": "OK",
+          "note": "Two-point average total assets at June 30, 2024 and 2025. ",
+          "expected_independent": "0.1800478444366255704290970556045708587422",
+          "verification": "PASS"
+        },
+        {
+          "metric_id": "roe",
+          "value": 0.332808241115374,
+          "status": "OK",
+          "note": "Two-point average stockholders' equity at June 30, 2024 and 2025. ",
+          "expected_independent": "0.3328082411153743079567812064919700109158",
+          "verification": "PASS"
+        },
+        {
+          "metric_id": "enterprise_value",
+          "value": null,
+          "status": "MISSING_INPUTS",
+          "note": "Missing/unavailable inputs: market_cap FY2025",
+          "expected_independent": null,
+          "verification": "PASS_UNAVAILABLE"
+        },
+        {
+          "metric_id": "ev_to_revenue",
+          "value": null,
+          "status": "MISSING_INPUTS",
+          "note": "Missing/unavailable inputs: market_cap FY2025",
+          "expected_independent": null,
+          "verification": "PASS_UNAVAILABLE"
+        },
+        {
+          "metric_id": "ev_to_ebitda",
+          "value": null,
+          "status": "MISSING_INPUTS",
+          "note": "Missing/unavailable inputs: market_cap FY2025, ebitda FY2025",
+          "expected_independent": null,
+          "verification": "PASS_UNAVAILABLE"
+        },
+        {
+          "metric_id": "price_to_earnings",
+          "value": null,
+          "status": "MISSING_INPUTS",
+          "note": "Missing/unavailable inputs: market_cap FY2025",
+          "expected_independent": null,
+          "verification": "PASS_UNAVAILABLE"
+        },
+        {
+          "metric_id": "revenue_cagr",
+          "value": 0.153004689733865,
+          "status": "OK",
+          "note": "FY2023–FY2025, two elapsed years; acquisition effects included. ",
+          "expected_independent": "0.153004689733864815963400378013484186923",
+          "verification": "PASS"
+        },
+        {
+          "metric_id": "ebitda_cagr",
+          "value": null,
+          "status": "MISSING_INPUTS",
+          "note": "Missing/unavailable inputs: ebitda FY2023, ebitda FY2025",
+          "expected_independent": null,
+          "verification": "PASS_UNAVAILABLE"
+        },
+        {
+          "metric_id": "net_leverage_trend",
+          "value": null,
+          "status": "MISSING_INPUTS",
+          "note": "Missing/unavailable inputs: ebitda FY2024, ebitda FY2025",
+          "expected_independent": null,
+          "verification": "PASS_UNAVAILABLE"
+        },
+        {
+          "metric_id": "cash_conversion",
+          "value": null,
+          "status": "MISSING_INPUTS",
+          "note": "Missing/unavailable inputs: ebitda FY2025",
+          "expected_independent": null,
+          "verification": "PASS_UNAVAILABLE"
+        },
+        {
+          "metric_id": "dso",
+          "value": 82.1594628075705,
+          "status": "OK",
+          "note": "Proxy: average current net receivables / total revenue x 365; credit sales unavailable. ",
+          "expected_independent": "82.15946280757053002229132058326589143985",
+          "verification": "PASS"
+        },
+        {
+          "metric_id": "dio",
+          "value": 4.53803326843597,
+          "status": "OK",
+          "note": "Proxy: average inventory / total cost of revenue x 365; service-heavy denominator. ",
+          "expected_independent": "4.538033268435973631178057861119650237386",
+          "verification": "PASS"
+        },
+        {
+          "metric_id": "dpo",
+          "value": 103.31090389498,
+          "status": "OK",
+          "note": "Coarse proxy: average total AP / cost of revenue x 365. AP includes capex; credit purchases unavailable. ",
+          "expected_independent": "103.3109038949801322995297787797019275654",
+          "verification": "PASS"
+        },
+        {
+          "metric_id": "cash_conversion_cycle",
+          "value": -16.6134078189736,
+          "status": "OK",
+          "note": "Arithmetic CCC under model proxies. Capex AP and service revenue limit economic comparability; negative does not prove superior cash management. ",
+          "expected_independent": "-16.61340781897362864606040033531638588816",
+          "verification": "PASS"
+        }
+      ],
+      "derivations": []
+    },
+    "ebitda": {
+      "computed": 22,
+      "unavailable": 6,
+      "all_28_verified": true,
+      "calculation": {
+        "status": "RECALCULATED",
+        "engine": "/opt/homebrew/bin/soffice",
+        "cached_formula_cells": 64
+      },
+      "workbook": "outputs/microsoft_v03/ebitda.xlsx",
+      "sha256": "4c185eabf0cc07ef6c44d9964c0cde5c0e1aebcad6ef445584d8fbdfa082ac7e",
+      "formula_preservation": "PASS",
+      "audit": [
+        {
+          "metric_id": "revenue_growth_yoy",
+          "value": 0.149321562324067,
+          "status": "OK",
+          "note": "Reported consolidated growth; acquisition effects are included, not organic growth. ",
+          "expected_independent": "0.149321562324067199190607126247338060231",
+          "verification": "PASS"
+        },
+        {
+          "metric_id": "ebitda_margin",
+          "value": 0.555607615964561,
+          "status": "OK",
+          "note": "Uses approximate reconstructed operating EBITDA (rounded Notes 6/9). Not reported EBITDA; see Derivations.",
+          "expected_independent": "0.5556076159645610597606167738637815734549",
+          "verification": "PASS"
+        },
+        {
+          "metric_id": "net_debt",
+          "value": 12909000000,
+          "status": "OK",
+          "note": "Borrowing debt less cash equivalents only; excludes $64.323bn short-term investments and $46.172bn finance-lease liabilities. ",
+          "expected_independent": "12909000000",
+          "verification": "PASS"
+        },
+        {
+          "metric_id": "net_debt_to_ebitda",
+          "value": 0.0824708678319534,
+          "status": "OK",
+          "note": "Uses approximate reconstructed operating EBITDA (rounded Notes 6/9). Not reported EBITDA; see Derivations.",
+          "expected_independent": "0.08247086783195338853112542164980067463968",
+          "verification": "PASS"
+        },
+        {
+          "metric_id": "arr",
+          "value": null,
+          "status": "MISSING_INPUTS",
+          "note": "Missing/unavailable inputs: monthly_recurring_revenue FY2025",
+          "expected_independent": null,
+          "verification": "PASS_UNAVAILABLE"
+        },
+        {
+          "metric_id": "wacc",
+          "value": null,
+          "status": "MISSING_INPUTS",
+          "note": "Missing/unavailable inputs: market_cap FY2025, pre_tax_cost_of_debt FY2025, risk_free_rate FY2025, equity_beta FY2025, equity_risk_premium FY2025, marginal_tax_rate FY2025",
+          "expected_independent": null,
+          "verification": "PASS_UNAVAILABLE"
+        },
+        {
+          "metric_id": "gross_margin",
+          "value": 0.688237423861652,
+          "status": "OK",
+          "note": "Computed from compatible reported financial-statement inputs under the documented model convention. ",
+          "expected_independent": "0.6882374238616518294501000979682242194488",
+          "verification": "PASS"
+        },
+        {
+          "metric_id": "ebit_margin",
+          "value": 0.456219562408599,
+          "status": "OK",
+          "note": "Operating income is the selected operating-EBIT definition. ",
+          "expected_independent": "0.4562195624085984864619272763413837656714",
+          "verification": "PASS"
+        },
+        {
+          "metric_id": "net_profit_margin",
+          "value": 0.361460152489671,
+          "status": "OK",
+          "note": "Computed from compatible reported financial-statement inputs under the documented model convention. ",
+          "expected_independent": "0.3614601524896707415768624611321719129361",
+          "verification": "PASS"
+        },
+        {
+          "metric_id": "free_cash_flow",
+          "value": 71611000000,
+          "status": "OK",
+          "note": "CFO less cash PP&E additions. Noncash finance-lease additions and acquisitions are excluded. ",
+          "expected_independent": "71611000000",
+          "verification": "PASS"
+        },
+        {
+          "metric_id": "fcf_margin",
+          "value": 0.254188496542716,
+          "status": "OK",
+          "note": "Uses cash-PP&E FCF, not lease-adjusted FCFF/FCFE. ",
+          "expected_independent": "0.2541884965427155655890162002527296218994",
+          "verification": "PASS"
+        },
+        {
+          "metric_id": "current_ratio",
+          "value": 1.35344644450424,
+          "status": "OK",
+          "note": "Computed from compatible reported financial-statement inputs under the documented model convention. ",
+          "expected_independent": "1.353446444504241668909062584089846903369",
+          "verification": "PASS"
+        },
+        {
+          "metric_id": "quick_ratio",
+          "value": 1.34680423175516,
+          "status": "OK",
+          "note": "Computed from compatible reported financial-statement inputs under the documented model convention. ",
+          "expected_independent": "1.346804231755158690818450905691908963447",
+          "verification": "PASS"
+        },
+        {
+          "metric_id": "interest_coverage",
+          "value": 53.8901467505241,
+          "status": "OK",
+          "note": "Operating income / reported interest expense; excludes capitalized interest from the denominator. ",
+          "expected_independent": "53.89014675052410901467505241090146750524",
+          "verification": "PASS"
+        },
+        {
+          "metric_id": "roa",
+          "value": 0.180047844436626,
+          "status": "OK",
+          "note": "Two-point average total assets at June 30, 2024 and 2025. ",
+          "expected_independent": "0.1800478444366255704290970556045708587422",
+          "verification": "PASS"
+        },
+        {
+          "metric_id": "roe",
+          "value": 0.332808241115374,
+          "status": "OK",
+          "note": "Two-point average stockholders' equity at June 30, 2024 and 2025. ",
+          "expected_independent": "0.3328082411153743079567812064919700109158",
+          "verification": "PASS"
+        },
+        {
+          "metric_id": "enterprise_value",
+          "value": null,
+          "status": "MISSING_INPUTS",
+          "note": "Missing/unavailable inputs: market_cap FY2025",
+          "expected_independent": null,
+          "verification": "PASS_UNAVAILABLE"
+        },
+        {
+          "metric_id": "ev_to_revenue",
+          "value": null,
+          "status": "MISSING_INPUTS",
+          "note": "Missing/unavailable inputs: market_cap FY2025",
+          "expected_independent": null,
+          "verification": "PASS_UNAVAILABLE"
+        },
+        {
+          "metric_id": "ev_to_ebitda",
+          "value": null,
+          "status": "MISSING_INPUTS",
+          "note": "Missing/unavailable inputs: market_cap FY2025 Approximate reconstructed operating EBITDA: operating EBIT + separately disclosed depreciation + intangible amortization; rounded source components. Not reported EBITDA; no extra ROU add-back.",
+          "expected_independent": null,
+          "verification": "PASS_UNAVAILABLE"
+        },
+        {
+          "metric_id": "price_to_earnings",
+          "value": null,
+          "status": "MISSING_INPUTS",
+          "note": "Missing/unavailable inputs: market_cap FY2025",
+          "expected_independent": null,
+          "verification": "PASS_UNAVAILABLE"
+        },
+        {
+          "metric_id": "revenue_cagr",
+          "value": 0.153004689733865,
+          "status": "OK",
+          "note": "FY2023–FY2025, two elapsed years; acquisition effects included. ",
+          "expected_independent": "0.153004689733864815963400378013484186923",
+          "verification": "PASS"
+        },
+        {
+          "metric_id": "ebitda_cagr",
+          "value": 0.238645340160718,
+          "status": "OK",
+          "note": "Uses approximate reconstructed operating EBITDA (rounded Notes 6/9). Not reported EBITDA; see Derivations.",
+          "expected_independent": "0.238645340160718218568119367437779207003",
+          "verification": "PASS"
+        },
+        {
+          "metric_id": "net_leverage_trend",
+          "value": -0.174920987413618,
+          "status": "OK",
+          "note": "Uses approximate reconstructed operating EBITDA (rounded Notes 6/9). Not reported EBITDA; see Derivations.",
+          "expected_independent": "-0.1749209874136176791255000139037289507263",
+          "verification": "PASS"
+        },
+        {
+          "metric_id": "cash_conversion",
+          "value": 0.869889093325156,
+          "status": "OK",
+          "note": "Uses approximate reconstructed operating EBITDA (rounded Notes 6/9). Not reported EBITDA; see Derivations.",
+          "expected_independent": "0.8698890933251558826535827455790657262598",
+          "verification": "PASS"
+        },
+        {
+          "metric_id": "dso",
+          "value": 82.1594628075705,
+          "status": "OK",
+          "note": "Proxy: average current net receivables / total revenue x 365; credit sales unavailable. ",
+          "expected_independent": "82.15946280757053002229132058326589143985",
+          "verification": "PASS"
+        },
+        {
+          "metric_id": "dio",
+          "value": 4.53803326843597,
+          "status": "OK",
+          "note": "Proxy: average inventory / total cost of revenue x 365; service-heavy denominator. ",
+          "expected_independent": "4.538033268435973631178057861119650237386",
+          "verification": "PASS"
+        },
+        {
+          "metric_id": "dpo",
+          "value": 103.31090389498,
+          "status": "OK",
+          "note": "Coarse proxy: average total AP / cost of revenue x 365. AP includes capex; credit purchases unavailable. ",
+          "expected_independent": "103.3109038949801322995297787797019275654",
+          "verification": "PASS"
+        },
+        {
+          "metric_id": "cash_conversion_cycle",
+          "value": -16.6134078189736,
+          "status": "OK",
+          "note": "Arithmetic CCC under model proxies. Capex AP and service revenue limit economic comparability; negative does not prove superior cash management. ",
+          "expected_independent": "-16.61340781897362864606040033531638588816",
+          "verification": "PASS"
+        }
+      ],
+      "derivations": [
+        {
+          "recipe": "operating-ebitda-separate-da-v1",
+          "fiscal_year": 2023,
+          "note": "Approximate reconstructed operating EBITDA: operating EBIT + separately disclosed depreciation + intangible amortization; rounded source components. Not reported EBITDA; no extra ROU add-back.",
+          "components": {
+            "ebit": "88523000000",
+            "ebit_sources": [
+              {
+                "source_file": "/Users/leonidpofa/VSCodeHruchevoPY/quant/Excel_automation/research/microsoft_fy2025/financials.csv",
+                "source_sheet": null,
+                "source_row": 2,
+                "source_column": "ebit",
+                "source_locator": "row 2, column ebit",
+                "original_value": "88523",
+                "original_unit": "millions",
+                "candidate_id": null,
+                "revision": null,
+                "source_sha256": null
+              }
+            ],
+            "depreciation": {
+              "value": "11.0",
+              "unit": "billions",
+              "label": "depreciation",
+              "source_file": "research/microsoft_fy2025/raw/definition_notes_excerpts.txt",
+              "source_sha256": "a6692b935a84d49b38c6fc1ba22169c52a093b0cb09251b6a59cb6773d4e66a9",
+              "locator": {
+                "file": "research/microsoft_fy2025/raw/definition_notes_excerpts.txt",
+                "line": 53,
+                "web_extracted_line": 1386
+              },
+              "url": "https://www.microsoft.com/investor/reports/ar25/",
+              "published_rounding": "0.1 billion USD"
+            },
+            "intangible_amortization": {
+              "value": "2.5",
+              "unit": "billions",
+              "label": "intangible_amortization",
+              "source_file": "research/microsoft_fy2025/raw/official_report_excerpts.txt",
+              "source_sha256": "639edbc6f0c3cc02cad90a481c9789d9e5c48814c7710462b22a635c4f517744",
+              "locator": {
+                "file": "research/microsoft_fy2025/raw/official_report_excerpts.txt",
+                "line": 194,
+                "web_extracted_line": 1476
+              },
+              "url": "https://www.microsoft.com/investor/reports/ar25/",
+              "published_rounding": "0.1 billion USD"
+            }
+          }
+        },
+        {
+          "recipe": "operating-ebitda-separate-da-v1",
+          "fiscal_year": 2024,
+          "note": "Approximate reconstructed operating EBITDA: operating EBIT + separately disclosed depreciation + intangible amortization; rounded source components. Not reported EBITDA; no extra ROU add-back.",
+          "components": {
+            "ebit": "109433000000",
+            "ebit_sources": [
+              {
+                "source_file": "/Users/leonidpofa/VSCodeHruchevoPY/quant/Excel_automation/research/microsoft_fy2025/financials.csv",
+                "source_sheet": null,
+                "source_row": 3,
+                "source_column": "ebit",
+                "source_locator": "row 3, column ebit",
+                "original_value": "109433",
+                "original_unit": "millions",
+                "candidate_id": null,
+                "revision": null,
+                "source_sha256": null
+              }
+            ],
+            "depreciation": {
+              "value": "15.2",
+              "unit": "billions",
+              "label": "depreciation",
+              "source_file": "research/microsoft_fy2025/raw/definition_notes_excerpts.txt",
+              "source_sha256": "a6692b935a84d49b38c6fc1ba22169c52a093b0cb09251b6a59cb6773d4e66a9",
+              "locator": {
+                "file": "research/microsoft_fy2025/raw/definition_notes_excerpts.txt",
+                "line": 53,
+                "web_extracted_line": 1386
+              },
+              "url": "https://www.microsoft.com/investor/reports/ar25/",
+              "published_rounding": "0.1 billion USD"
+            },
+            "intangible_amortization": {
+              "value": "4.8",
+              "unit": "billions",
+              "label": "intangible_amortization",
+              "source_file": "research/microsoft_fy2025/raw/official_report_excerpts.txt",
+              "source_sha256": "639edbc6f0c3cc02cad90a481c9789d9e5c48814c7710462b22a635c4f517744",
+              "locator": {
+                "file": "research/microsoft_fy2025/raw/official_report_excerpts.txt",
+                "line": 194,
+                "web_extracted_line": 1476
+              },
+              "url": "https://www.microsoft.com/investor/reports/ar25/",
+              "published_rounding": "0.1 billion USD"
+            }
+          }
+        },
+        {
+          "recipe": "operating-ebitda-separate-da-v1",
+          "fiscal_year": 2025,
+          "note": "Approximate reconstructed operating EBITDA: operating EBIT + separately disclosed depreciation + intangible amortization; rounded source components. Not reported EBITDA; no extra ROU add-back.",
+          "components": {
+            "ebit": "128528000000",
+            "ebit_sources": [
+              {
+                "source_file": "/Users/leonidpofa/VSCodeHruchevoPY/quant/Excel_automation/research/microsoft_fy2025/financials.csv",
+                "source_sheet": null,
+                "source_row": 4,
+                "source_column": "ebit",
+                "source_locator": "row 4, column ebit",
+                "original_value": "128528",
+                "original_unit": "millions",
+                "candidate_id": null,
+                "revision": null,
+                "source_sha256": null
+              }
+            ],
+            "depreciation": {
+              "value": "22.0",
+              "unit": "billions",
+              "label": "depreciation",
+              "source_file": "research/microsoft_fy2025/raw/definition_notes_excerpts.txt",
+              "source_sha256": "a6692b935a84d49b38c6fc1ba22169c52a093b0cb09251b6a59cb6773d4e66a9",
+              "locator": {
+                "file": "research/microsoft_fy2025/raw/definition_notes_excerpts.txt",
+                "line": 53,
+                "web_extracted_line": 1386
+              },
+              "url": "https://www.microsoft.com/investor/reports/ar25/",
+              "published_rounding": "0.1 billion USD"
+            },
+            "intangible_amortization": {
+              "value": "6.0",
+              "unit": "billions",
+              "label": "intangible_amortization",
+              "source_file": "research/microsoft_fy2025/raw/official_report_excerpts.txt",
+              "source_sha256": "639edbc6f0c3cc02cad90a481c9789d9e5c48814c7710462b22a635c4f517744",
+              "locator": {
+                "file": "research/microsoft_fy2025/raw/official_report_excerpts.txt",
+                "line": 194,
+                "web_extracted_line": 1476
+              },
+              "url": "https://www.microsoft.com/investor/reports/ar25/",
+              "published_rounding": "0.1 billion USD"
+            }
+          }
+        }
+      ]
+    },
+    "ebitda_market": {
+      "computed": 26,
+      "unavailable": 2,
+      "all_28_verified": true,
+      "calculation": {
+        "status": "RECALCULATED",
+        "engine": "/opt/homebrew/bin/soffice",
+        "cached_formula_cells": 64
+      },
+      "workbook": "outputs/microsoft_v03/ebitda_market.xlsx",
+      "sha256": "947beae1be50ffdaff912d014e36884c129780ca0077b214d0c14ec9110d016c",
+      "formula_preservation": "PASS",
+      "audit": [
+        {
+          "metric_id": "revenue_growth_yoy",
+          "value": 0.149321562324067,
+          "status": "OK",
+          "note": "Reported consolidated growth; acquisition effects are included, not organic growth. ",
+          "expected_independent": "0.149321562324067199190607126247338060231",
+          "verification": "PASS"
+        },
+        {
+          "metric_id": "ebitda_margin",
+          "value": 0.555607615964561,
+          "status": "OK",
+          "note": "Uses approximate reconstructed operating EBITDA (rounded Notes 6/9). Not reported EBITDA; see Derivations.",
+          "expected_independent": "0.5556076159645610597606167738637815734549",
+          "verification": "PASS"
+        },
+        {
+          "metric_id": "net_debt",
+          "value": 12909000000,
+          "status": "OK",
+          "note": "Borrowing debt less cash equivalents only; excludes $64.323bn short-term investments and $46.172bn finance-lease liabilities. ",
+          "expected_independent": "12909000000",
+          "verification": "PASS"
+        },
+        {
+          "metric_id": "net_debt_to_ebitda",
+          "value": 0.0824708678319534,
+          "status": "OK",
+          "note": "Uses approximate reconstructed operating EBITDA (rounded Notes 6/9). Not reported EBITDA; see Derivations.",
+          "expected_independent": "0.08247086783195338853112542164980067463968",
+          "verification": "PASS"
+        },
+        {
+          "metric_id": "arr",
+          "value": null,
+          "status": "MISSING_INPUTS",
+          "note": "Missing/unavailable inputs: monthly_recurring_revenue FY2025",
+          "expected_independent": null,
+          "verification": "PASS_UNAVAILABLE"
+        },
+        {
+          "metric_id": "wacc",
+          "value": null,
+          "status": "MISSING_INPUTS",
+          "note": "Missing/unavailable inputs: pre_tax_cost_of_debt FY2025, risk_free_rate FY2025, equity_beta FY2025, equity_risk_premium FY2025, marginal_tax_rate FY2025 Approximate historical market cap: unadjusted USD 497.41 close on 2025-06-30 x 7,434 million FY-end shares; share count is rounded. Not weighted-average shares.",
+          "expected_independent": null,
+          "verification": "PASS_UNAVAILABLE"
+        },
+        {
+          "metric_id": "gross_margin",
+          "value": 0.688237423861652,
+          "status": "OK",
+          "note": "Computed from compatible reported financial-statement inputs under the documented model convention. ",
+          "expected_independent": "0.6882374238616518294501000979682242194488",
+          "verification": "PASS"
+        },
+        {
+          "metric_id": "ebit_margin",
+          "value": 0.456219562408599,
+          "status": "OK",
+          "note": "Operating income is the selected operating-EBIT definition. ",
+          "expected_independent": "0.4562195624085984864619272763413837656714",
+          "verification": "PASS"
+        },
+        {
+          "metric_id": "net_profit_margin",
+          "value": 0.361460152489671,
+          "status": "OK",
+          "note": "Computed from compatible reported financial-statement inputs under the documented model convention. ",
+          "expected_independent": "0.3614601524896707415768624611321719129361",
+          "verification": "PASS"
+        },
+        {
+          "metric_id": "free_cash_flow",
+          "value": 71611000000,
+          "status": "OK",
+          "note": "CFO less cash PP&E additions. Noncash finance-lease additions and acquisitions are excluded. ",
+          "expected_independent": "71611000000",
+          "verification": "PASS"
+        },
+        {
+          "metric_id": "fcf_margin",
+          "value": 0.254188496542716,
+          "status": "OK",
+          "note": "Uses cash-PP&E FCF, not lease-adjusted FCFF/FCFE. ",
+          "expected_independent": "0.2541884965427155655890162002527296218994",
+          "verification": "PASS"
+        },
+        {
+          "metric_id": "current_ratio",
+          "value": 1.35344644450424,
+          "status": "OK",
+          "note": "Computed from compatible reported financial-statement inputs under the documented model convention. ",
+          "expected_independent": "1.353446444504241668909062584089846903369",
+          "verification": "PASS"
+        },
+        {
+          "metric_id": "quick_ratio",
+          "value": 1.34680423175516,
+          "status": "OK",
+          "note": "Computed from compatible reported financial-statement inputs under the documented model convention. ",
+          "expected_independent": "1.346804231755158690818450905691908963447",
+          "verification": "PASS"
+        },
+        {
+          "metric_id": "interest_coverage",
+          "value": 53.8901467505241,
+          "status": "OK",
+          "note": "Operating income / reported interest expense; excludes capitalized interest from the denominator. ",
+          "expected_independent": "53.89014675052410901467505241090146750524",
+          "verification": "PASS"
+        },
+        {
+          "metric_id": "roa",
+          "value": 0.180047844436626,
+          "status": "OK",
+          "note": "Two-point average total assets at June 30, 2024 and 2025. ",
+          "expected_independent": "0.1800478444366255704290970556045708587422",
+          "verification": "PASS"
+        },
+        {
+          "metric_id": "roe",
+          "value": 0.332808241115374,
+          "status": "OK",
+          "note": "Two-point average stockholders' equity at June 30, 2024 and 2025. ",
+          "expected_independent": "0.3328082411153743079567812064919700109158",
+          "verification": "PASS"
+        },
+        {
+          "metric_id": "enterprise_value",
+          "value": 3710654940000,
+          "status": "OK",
+          "note": "Computed from compatible reported financial-statement inputs under the documented model convention.  Approximate historical market cap: unadjusted USD 497.41 close on 2025-06-30 x 7,434 million FY-end shares; share count is rounded. Not weighted-average shares. Historical close x rounded FY-end shares; simplified EV/PE convention.",
+          "expected_independent": "3710654940000.00",
+          "verification": "PASS"
+        },
+        {
+          "metric_id": "ev_to_revenue",
+          "value": 13.1712418537292,
+          "status": "OK",
+          "note": "Computed from compatible reported financial-statement inputs under the documented model convention.  Approximate historical market cap: unadjusted USD 497.41 close on 2025-06-30 x 7,434 million FY-end shares; share count is rounded. Not weighted-average shares. Historical close x rounded FY-end shares; simplified EV/PE convention.",
+          "expected_independent": "13.17124185372918175235336712527154236061",
+          "verification": "PASS"
+        },
+        {
+          "metric_id": "ev_to_ebitda",
+          "value": 23.7060138761116,
+          "status": "OK",
+          "note": "Uses approximate reconstructed operating EBITDA (rounded Notes 6/9). Not reported EBITDA; see Derivations. Historical close x rounded FY-end shares; simplified EV/PE convention.",
+          "expected_independent": "23.70601387611162220177859552284575283655",
+          "verification": "PASS"
+        },
+        {
+          "metric_id": "price_to_earnings",
+          "value": 36.3122195380627,
+          "status": "OK",
+          "note": "Computed from compatible reported financial-statement inputs under the documented model convention.  Approximate historical market cap: unadjusted USD 497.41 close on 2025-06-30 x 7,434 million FY-end shares; share count is rounded. Not weighted-average shares. Historical close x rounded FY-end shares; simplified EV/PE convention.",
+          "expected_independent": "36.31221953806269149186896064105585670516",
+          "verification": "PASS"
+        },
+        {
+          "metric_id": "revenue_cagr",
+          "value": 0.153004689733865,
+          "status": "OK",
+          "note": "FY2023–FY2025, two elapsed years; acquisition effects included. ",
+          "expected_independent": "0.153004689733864815963400378013484186923",
+          "verification": "PASS"
+        },
+        {
+          "metric_id": "ebitda_cagr",
+          "value": 0.238645340160718,
+          "status": "OK",
+          "note": "Uses approximate reconstructed operating EBITDA (rounded Notes 6/9). Not reported EBITDA; see Derivations.",
+          "expected_independent": "0.238645340160718218568119367437779207003",
+          "verification": "PASS"
+        },
+        {
+          "metric_id": "net_leverage_trend",
+          "value": -0.174920987413618,
+          "status": "OK",
+          "note": "Uses approximate reconstructed operating EBITDA (rounded Notes 6/9). Not reported EBITDA; see Derivations.",
+          "expected_independent": "-0.1749209874136176791255000139037289507263",
+          "verification": "PASS"
+        },
+        {
+          "metric_id": "cash_conversion",
+          "value": 0.869889093325156,
+          "status": "OK",
+          "note": "Uses approximate reconstructed operating EBITDA (rounded Notes 6/9). Not reported EBITDA; see Derivations.",
+          "expected_independent": "0.8698890933251558826535827455790657262598",
+          "verification": "PASS"
+        },
+        {
+          "metric_id": "dso",
+          "value": 82.1594628075705,
+          "status": "OK",
+          "note": "Proxy: average current net receivables / total revenue x 365; credit sales unavailable. ",
+          "expected_independent": "82.15946280757053002229132058326589143985",
+          "verification": "PASS"
+        },
+        {
+          "metric_id": "dio",
+          "value": 4.53803326843597,
+          "status": "OK",
+          "note": "Proxy: average inventory / total cost of revenue x 365; service-heavy denominator. ",
+          "expected_independent": "4.538033268435973631178057861119650237386",
+          "verification": "PASS"
+        },
+        {
+          "metric_id": "dpo",
+          "value": 103.31090389498,
+          "status": "OK",
+          "note": "Coarse proxy: average total AP / cost of revenue x 365. AP includes capex; credit purchases unavailable. ",
+          "expected_independent": "103.3109038949801322995297787797019275654",
+          "verification": "PASS"
+        },
+        {
+          "metric_id": "cash_conversion_cycle",
+          "value": -16.6134078189736,
+          "status": "OK",
+          "note": "Arithmetic CCC under model proxies. Capex AP and service revenue limit economic comparability; negative does not prove superior cash management. ",
+          "expected_independent": "-16.61340781897362864606040033531638588816",
+          "verification": "PASS"
+        }
+      ],
+      "derivations": [
+        {
+          "recipe": "operating-ebitda-separate-da-v1",
+          "fiscal_year": 2023,
+          "note": "Approximate reconstructed operating EBITDA: operating EBIT + separately disclosed depreciation + intangible amortization; rounded source components. Not reported EBITDA; no extra ROU add-back.",
+          "components": {
+            "ebit": "88523000000",
+            "ebit_sources": [
+              {
+                "source_file": "/Users/leonidpofa/VSCodeHruchevoPY/quant/Excel_automation/research/microsoft_fy2025/financials.csv",
+                "source_sheet": null,
+                "source_row": 2,
+                "source_column": "ebit",
+                "source_locator": "row 2, column ebit",
+                "original_value": "88523",
+                "original_unit": "millions",
+                "candidate_id": null,
+                "revision": null,
+                "source_sha256": null
+              }
+            ],
+            "depreciation": {
+              "value": "11.0",
+              "unit": "billions",
+              "label": "depreciation",
+              "source_file": "research/microsoft_fy2025/raw/definition_notes_excerpts.txt",
+              "source_sha256": "a6692b935a84d49b38c6fc1ba22169c52a093b0cb09251b6a59cb6773d4e66a9",
+              "locator": {
+                "file": "research/microsoft_fy2025/raw/definition_notes_excerpts.txt",
+                "line": 53,
+                "web_extracted_line": 1386
+              },
+              "url": "https://www.microsoft.com/investor/reports/ar25/",
+              "published_rounding": "0.1 billion USD"
+            },
+            "intangible_amortization": {
+              "value": "2.5",
+              "unit": "billions",
+              "label": "intangible_amortization",
+              "source_file": "research/microsoft_fy2025/raw/official_report_excerpts.txt",
+              "source_sha256": "639edbc6f0c3cc02cad90a481c9789d9e5c48814c7710462b22a635c4f517744",
+              "locator": {
+                "file": "research/microsoft_fy2025/raw/official_report_excerpts.txt",
+                "line": 194,
+                "web_extracted_line": 1476
+              },
+              "url": "https://www.microsoft.com/investor/reports/ar25/",
+              "published_rounding": "0.1 billion USD"
+            }
+          }
+        },
+        {
+          "recipe": "operating-ebitda-separate-da-v1",
+          "fiscal_year": 2024,
+          "note": "Approximate reconstructed operating EBITDA: operating EBIT + separately disclosed depreciation + intangible amortization; rounded source components. Not reported EBITDA; no extra ROU add-back.",
+          "components": {
+            "ebit": "109433000000",
+            "ebit_sources": [
+              {
+                "source_file": "/Users/leonidpofa/VSCodeHruchevoPY/quant/Excel_automation/research/microsoft_fy2025/financials.csv",
+                "source_sheet": null,
+                "source_row": 3,
+                "source_column": "ebit",
+                "source_locator": "row 3, column ebit",
+                "original_value": "109433",
+                "original_unit": "millions",
+                "candidate_id": null,
+                "revision": null,
+                "source_sha256": null
+              }
+            ],
+            "depreciation": {
+              "value": "15.2",
+              "unit": "billions",
+              "label": "depreciation",
+              "source_file": "research/microsoft_fy2025/raw/definition_notes_excerpts.txt",
+              "source_sha256": "a6692b935a84d49b38c6fc1ba22169c52a093b0cb09251b6a59cb6773d4e66a9",
+              "locator": {
+                "file": "research/microsoft_fy2025/raw/definition_notes_excerpts.txt",
+                "line": 53,
+                "web_extracted_line": 1386
+              },
+              "url": "https://www.microsoft.com/investor/reports/ar25/",
+              "published_rounding": "0.1 billion USD"
+            },
+            "intangible_amortization": {
+              "value": "4.8",
+              "unit": "billions",
+              "label": "intangible_amortization",
+              "source_file": "research/microsoft_fy2025/raw/official_report_excerpts.txt",
+              "source_sha256": "639edbc6f0c3cc02cad90a481c9789d9e5c48814c7710462b22a635c4f517744",
+              "locator": {
+                "file": "research/microsoft_fy2025/raw/official_report_excerpts.txt",
+                "line": 194,
+                "web_extracted_line": 1476
+              },
+              "url": "https://www.microsoft.com/investor/reports/ar25/",
+              "published_rounding": "0.1 billion USD"
+            }
+          }
+        },
+        {
+          "recipe": "operating-ebitda-separate-da-v1",
+          "fiscal_year": 2025,
+          "note": "Approximate reconstructed operating EBITDA: operating EBIT + separately disclosed depreciation + intangible amortization; rounded source components. Not reported EBITDA; no extra ROU add-back.",
+          "components": {
+            "ebit": "128528000000",
+            "ebit_sources": [
+              {
+                "source_file": "/Users/leonidpofa/VSCodeHruchevoPY/quant/Excel_automation/research/microsoft_fy2025/financials.csv",
+                "source_sheet": null,
+                "source_row": 4,
+                "source_column": "ebit",
+                "source_locator": "row 4, column ebit",
+                "original_value": "128528",
+                "original_unit": "millions",
+                "candidate_id": null,
+                "revision": null,
+                "source_sha256": null
+              }
+            ],
+            "depreciation": {
+              "value": "22.0",
+              "unit": "billions",
+              "label": "depreciation",
+              "source_file": "research/microsoft_fy2025/raw/definition_notes_excerpts.txt",
+              "source_sha256": "a6692b935a84d49b38c6fc1ba22169c52a093b0cb09251b6a59cb6773d4e66a9",
+              "locator": {
+                "file": "research/microsoft_fy2025/raw/definition_notes_excerpts.txt",
+                "line": 53,
+                "web_extracted_line": 1386
+              },
+              "url": "https://www.microsoft.com/investor/reports/ar25/",
+              "published_rounding": "0.1 billion USD"
+            },
+            "intangible_amortization": {
+              "value": "6.0",
+              "unit": "billions",
+              "label": "intangible_amortization",
+              "source_file": "research/microsoft_fy2025/raw/official_report_excerpts.txt",
+              "source_sha256": "639edbc6f0c3cc02cad90a481c9789d9e5c48814c7710462b22a635c4f517744",
+              "locator": {
+                "file": "research/microsoft_fy2025/raw/official_report_excerpts.txt",
+                "line": 194,
+                "web_extracted_line": 1476
+              },
+              "url": "https://www.microsoft.com/investor/reports/ar25/",
+              "published_rounding": "0.1 billion USD"
+            }
+          }
+        },
+        {
+          "recipe": "close-times-fy-end-shares-v1",
+          "fiscal_year": 2025,
+          "note": "Approximate historical market cap: unadjusted USD 497.41 close on 2025-06-30 x 7,434 million FY-end shares; share count is rounded. Not weighted-average shares.",
+          "components": {
+            "share_price": {
+              "company": "Microsoft Corporation",
+              "date": "2025-06-30",
+              "currency": "USD",
+              "closing_price": "497.41",
+              "price_basis": "Unadjusted closing market price of common stock",
+              "source_url": "https://www.sec.gov/Archives/edgar/data/789019/000119312525245150/d908201ddef14a.htm",
+              "pdf_url": "https://www.sec.gov/Archives/edgar/data/789019/000119312525245150/d908201ddef14a1.pdf",
+              "source_location": "Proxy statement printed page 55, PDF page 61 (one-based), Payments at Termination of Employment; also printed page 53 footnote 2",
+              "quote": "using the closing stock price on June 30, 2025, which was $497.41 per share.",
+              "retrieved_on": "2026-10-15",
+              "acquisition": "SEC PDF read through web tool; direct HTTP PDF download returned 403. This is archived extracted evidence, not an archived original PDF."
+            },
+            "shares_outstanding": "7434000000",
+            "share_sources": [
+              {
+                "source_file": "/Users/leonidpofa/VSCodeHruchevoPY/quant/Excel_automation/research/microsoft_fy2025/financials.csv",
+                "source_sheet": null,
+                "source_row": 4,
+                "source_column": "shares_outstanding",
+                "source_locator": "row 4, column shares_outstanding",
+                "original_value": "7434000000",
+                "original_unit": "count",
+                "candidate_id": null,
+                "revision": null,
+                "source_sha256": null
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "edited_input_recalculation": "PASS",
+  "jev_live": {
+    "status": "NOT_RUN",
+    "reason": "No TYPESAFE_API_KEY configured; no fixture responses used for Microsoft cases"
+  }
+}

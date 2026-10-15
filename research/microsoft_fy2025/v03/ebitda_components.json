@@ -1,0 +1,101 @@
+{
+  "recipe": "operating-ebitda-separate-da-v1",
+  "company_id": "msft",
+  "currency": "USD",
+  "scope": "consolidated",
+  "periods": [
+    {
+      "fiscal_year": 2025,
+      "depreciation": {
+        "value": "22.0",
+        "unit": "billions",
+        "label": "depreciation",
+        "source_file": "research/microsoft_fy2025/raw/definition_notes_excerpts.txt",
+        "source_sha256": "a6692b935a84d49b38c6fc1ba22169c52a093b0cb09251b6a59cb6773d4e66a9",
+        "locator": {
+          "file": "research/microsoft_fy2025/raw/definition_notes_excerpts.txt",
+          "line": 53,
+          "web_extracted_line": 1386
+        },
+        "url": "https://www.microsoft.com/investor/reports/ar25/",
+        "published_rounding": "0.1 billion USD"
+      },
+      "intangible_amortization": {
+        "value": "6.0",
+        "unit": "billions",
+        "label": "intangible_amortization",
+        "source_file": "research/microsoft_fy2025/raw/official_report_excerpts.txt",
+        "source_sha256": "639edbc6f0c3cc02cad90a481c9789d9e5c48814c7710462b22a635c4f517744",
+        "locator": {
+          "file": "research/microsoft_fy2025/raw/official_report_excerpts.txt",
+          "line": 194,
+          "web_extracted_line": 1476
+        },
+        "url": "https://www.microsoft.com/investor/reports/ar25/",
+        "published_rounding": "0.1 billion USD"
+      }
+    },
+    {
+      "fiscal_year": 2024,
+      "depreciation": {
+        "value": "15.2",
+        "unit": "billions",
+        "label": "depreciation",
+        "source_file": "research/microsoft_fy2025/raw/definition_notes_excerpts.txt",
+        "source_sha256": "a6692b935a84d49b38c6fc1ba22169c52a093b0cb09251b6a59cb6773d4e66a9",
+        "locator": {
+          "file": "research/microsoft_fy2025/raw/definition_notes_excerpts.txt",
+          "line": 53,
+          "web_extracted_line": 1386
+        },
+        "url": "https://www.microsoft.com/investor/reports/ar25/",
+        "published_rounding": "0.1 billion USD"
+      },
+      "intangible_amortization": {
+        "value": "4.8",
+        "unit": "billions",
+        "label": "intangible_amortization",
+        "source_file": "research/microsoft_fy2025/raw/official_report_excerpts.txt",
+        "source_sha256": "639edbc6f0c3cc02cad90a481c9789d9e5c48814c7710462b22a635c4f517744",
+        "locator": {
+          "file": "research/microsoft_fy2025/raw/official_report_excerpts.txt",
+          "line": 194,
+          "web_extracted_line": 1476
+        },
+        "url": "https://www.microsoft.com/investor/reports/ar25/",
+        "published_rounding": "0.1 billion USD"
+      }
+    },
+    {
+      "fiscal_year": 2023,
+      "depreciation": {
+        "value": "11.0",
+        "unit": "billions",
+        "label": "depreciation",
+        "source_file": "research/microsoft_fy2025/raw/definition_notes_excerpts.txt",
+        "source_sha256": "a6692b935a84d49b38c6fc1ba22169c52a093b0cb09251b6a59cb6773d4e66a9",
+        "locator": {
+          "file": "research/microsoft_fy2025/raw/definition_notes_excerpts.txt",
+          "line": 53,
+          "web_extracted_line": 1386
+        },
+        "url": "https://www.microsoft.com/investor/reports/ar25/",
+        "published_rounding": "0.1 billion USD"
+      },
+      "intangible_amortization": {
+        "value": "2.5",
+        "unit": "billions",
+        "label": "intangible_amortization",
+        "source_file": "research/microsoft_fy2025/raw/official_report_excerpts.txt",
+        "source_sha256": "639edbc6f0c3cc02cad90a481c9789d9e5c48814c7710462b22a635c4f517744",
+        "locator": {
+          "file": "research/microsoft_fy2025/raw/official_report_excerpts.txt",
+          "line": 194,
+          "web_extracted_line": 1476
+        },
+        "url": "https://www.microsoft.com/investor/reports/ar25/",
+        "published_rounding": "0.1 billion USD"
+      }
+    }
+  ]
+}
