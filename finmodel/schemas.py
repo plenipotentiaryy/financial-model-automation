@@ -30,6 +30,9 @@ class Source:
     source_locator: str
     original_value: Any
     original_unit: str | None = None
+    candidate_id: str | None = None
+    revision: int | None = None
+    source_sha256: str | None = None
 
 
 @dataclass
@@ -52,6 +55,7 @@ class Observation:
     value_status: str
     measurement_basis: str
     sources: list[Source]
+    derivation: dict | None = None
 
 
 @dataclass
@@ -65,6 +69,7 @@ class Company:
     issues: list[Issue] = field(default_factory=list)
     metric_statuses: dict[str, dict[str, str]] = field(default_factory=dict)
     source_files: set[str] = field(default_factory=set)
+    review_audit: dict | None = None
 
     @property
     def latest_year(self) -> int | None:
@@ -87,7 +92,7 @@ class Company:
 
     def value(self, metric: str, year: int | None = None) -> Decimal | None:
         obs = self.observations.get((metric, year if year is not None else self.latest_year))
-        return obs.canonical_value if obs and obs.value_status == "reported" else None
+        return obs.canonical_value if obs and obs.value_status in {"reported", "derived_approximate"} else None
 
 
 @dataclass

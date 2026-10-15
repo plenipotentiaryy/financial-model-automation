@@ -72,10 +72,17 @@ def write_reports(directory, company, records, outcome, calculation, config, tem
         "configuration_sha256": {name: configuration_hash(value) for name, value in config.items()},
         "calculation": calculation, "available_calculation_engine": detect_engine(),
         "metric_statuses": company.metric_statuses,
-        "counts": {"reported_observations": sum(o.value_status == "reported" for o in company.observations.values()), "missing_observations": sum(o.value_status != "reported" for o in company.observations.values()), "metrics_ready": sum(s["status"] == "OK" for s in company.metric_statuses.values()), "metrics_total": len(company.metric_statuses), "errors": sum(i.severity == "error" for i in issues), "warnings": sum(i.severity == "warning" for i in issues)},
+        "counts": {"reported_observations": sum(o.value_status == "reported" for o in company.observations.values()), "derived_observations": sum(o.value_status == "derived_approximate" for o in company.observations.values()), "missing_observations": sum(o.value_status not in {"reported", "derived_approximate"} for o in company.observations.values()), "metrics_ready": sum(s["status"] == "OK" for s in company.metric_statuses.values()), "metrics_total": len(company.metric_statuses), "errors": sum(i.severity == "error" for i in issues), "warnings": sum(i.severity == "warning" for i in issues)},
         "observations": list(company.observations.values()),
         "issues": issues,
     }
+    if company.review_audit is not None:
+        manifest["input_mode"] = "approved_candidates"
+        manifest["review_audit_sha256"] = configuration_hash(company.review_audit)
+        (directory / "review_audit.json").write_text(json_text(company.review_audit))
+    else:
+        manifest["input_mode"] = "prepared_data"
+    manifest["derivations"] = [o.derivation for o in company.observations.values() if o.derivation]
     (directory / "run_manifest.json").write_text(json_text(manifest), encoding="utf-8")
     return manifest
 
@@ -84,7 +91,7 @@ def publish_reports(staged: Path, destination: Path):
     # Only application-owned report directories can be replaced. Never delete
     # arbitrary user directories passed as an output path.
     if destination.exists():
-        expected = {"validation.json", "validation.txt", "source_map.csv", "run_manifest.json"}
+        expected = {"validation.json", "validation.txt", "source_map.csv", "run_manifest.json", "review_audit.json"}
         if any(p.name not in expected or not p.is_file() for p in destination.iterdir()):
             raise ModelError(f"Report directory contains unrelated files: {destination}")
         for path in destination.iterdir():

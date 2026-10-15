@@ -100,9 +100,11 @@ def build_company(company, template, output, config, *, overwrite=False, calcula
             try:
                 if not template.is_file():
                     raise ModelError(f"Template not found: {template}")
+                verify_source_hashes(company)
                 populate(template, staged, company, config["template_map"], records, "RECALCULATED" if calculate else "FORMULA_NOT_RECALCULATED")
                 if calculate:
                     calculation = recalculate(staged)
+                verify_source_hashes(company)
                 outcome = "SUCCESS_WITH_WARNINGS" if any(i.severity == "warning" for i in company.issues) or not calculate else "SUCCESS"
             except (ModelError, OSError, ValueError, TypeError, KeyError, IndexError, SyntaxError, BadZipFile, InvalidFileException) as exc:
                 failure = Issue("RECALCULATION_FAILED" if calculate and staged.exists() else "EXPORT_FAILED", str(exc), "error", company.company_id)
@@ -114,3 +116,15 @@ def build_company(company, template, output, config, *, overwrite=False, calcula
         if outcome != "FAILED":
             os.replace(staged, output)
     return manifest
+
+
+def verify_source_hashes(company):
+    """Recheck evidence at build boundaries, including after a slow engine call."""
+    from hashlib import sha256
+    seen = set()
+    for obs in company.observations.values():
+        for source in obs.sources:
+            if source.source_sha256 and (source.source_file, source.source_sha256) not in seen:
+                seen.add((source.source_file, source.source_sha256))
+                if sha256(Path(source.source_file).read_bytes()).hexdigest() != source.source_sha256:
+                    raise ModelError(f"SOURCE_CHANGED: {source.source_file}")

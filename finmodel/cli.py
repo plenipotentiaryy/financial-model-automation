@@ -12,6 +12,17 @@ from .schemas import ModelError
 from .service import build_company, configurations, load_dataset, report_path, safe_name
 
 
+def positive_budget(value):
+    from decimal import Decimal, InvalidOperation
+    try:
+        amount = Decimal(value)
+        if not amount.is_finite() or amount <= 0:
+            raise InvalidOperation
+    except InvalidOperation:
+        raise argparse.ArgumentTypeError("cost limit must be a positive finite USD amount") from None
+    return str(amount)
+
+
 def parser():
     root = argparse.ArgumentParser(prog="finmodel", description="Offline financial data to traceable Excel models")
     commands = root.add_subparsers(dest="command", required=True)
@@ -31,15 +42,34 @@ def parser():
         if name == "batch":
             command.add_argument("--input-dir", required=True, type=Path)
         else:
-            command.add_argument("--input", required=True, type=Path)
+            if name == "build":
+                source = command.add_mutually_exclusive_group(required=True)
+                source.add_argument("--input", type=Path, help="Explicit prepared-data import (no Jev gate)")
+                source.add_argument("--run", type=Path, help="Only approved candidates from a review run")
+            else:
+                command.add_argument("--input", required=True, type=Path)
             command.add_argument("--company", help="Exact company_id selection")
         if name in {"build", "batch"}:
             command.add_argument("--template", type=Path, default=Path("samples/template.xlsx"))
             command.add_argument("--recalculate", action="store_true", help="Require actual LibreOffice recalculation")
         if name == "build":
             command.add_argument("--output", type=Path, required=True)
+            command.add_argument("--derive-ebitda", type=Path, help="Explicit component evidence JSON; prepared-data mode only")
         else:
             command.add_argument("--output-dir", type=Path, default=Path("outputs/validation" if name == "validate" else "outputs/batch"))
+    extract = commands.add_parser("extract", help="Extract evidence-bound candidates; never approves values")
+    extract.add_argument("--input", type=Path, required=True, nargs="+")
+    extract.add_argument("--run-dir", type=Path, required=True)
+    extract.add_argument("--sheet")
+    extract.add_argument("--context", type=Path, help="JSON company/period/unit context; claims checked by reviewer")
+    verify = commands.add_parser("verify", help="Verify with official Jev API; abstain on errors")
+    verify.add_argument("--run", required=True, type=Path)
+    verify.add_argument("--provider", choices=["jev"], required=True)
+    verify.add_argument("--max-cost-usd", required=True, type=positive_budget)
+    review = commands.add_parser("review", help="Serve local evidence review at 127.0.0.1")
+    review.add_argument("--run", required=True, type=Path)
+    review.add_argument("--port", type=int, default=8765)
+    review.add_argument("--no-open", action="store_true")
     return root
 
 
@@ -55,6 +85,39 @@ def run(args):
         names = initialize(args.directory.resolve(), args.overwrite)
         print(f"Initialized {len(names)} files in {args.directory.resolve()}")
         return 0
+    if args.command in {"extract", "verify", "review"}:
+        import json
+        from .review.store import Store
+        if args.command == "extract":
+            from .review.extract import extract_run
+            context = json.loads(args.context.read_text()) if args.context else {}
+            print(json_text(extract_run(args.input, args.run_dir, context, args.sheet)))
+            return 0
+        store = Store(args.run)
+        if args.command == "verify":
+            from .review.jev import verify_run
+            result = verify_run(store, args.max_cost_usd)
+            (store.path.parent / "verification.json").write_text(json_text(result))
+            print(json_text(result))
+            return 1 if result["status"] in {"NOT_RUN", "COMPLETED_WITH_ERRORS"} else 0
+        if not 1024 <= args.port <= 65535:
+            raise ModelError("Review port must be between 1024 and 65535")
+        from .review.ui import create_app
+        import uvicorn
+        import threading
+        import webbrowser
+        import subprocess
+        url = f"http://127.0.0.1:{args.port}"
+        def open_page():
+            if sys.platform == "darwin":
+                subprocess.run(["open", "-a", "Safari", url], check=False)
+            else:
+                webbrowser.open(url)
+        if not args.no_open:
+            threading.Timer(1, open_page).start()
+        print(f"Review: {url} (Ctrl+C to stop)")
+        uvicorn.run(create_app(store, args.port), host="127.0.0.1", port=args.port)
+        return 0
     config = configurations(args.aliases, args.template_map, args.metric_definitions)
     if args.command == "explain":
         metric = config["metric_definitions"].get(args.metric_id)
@@ -62,6 +125,20 @@ def run(args):
             raise ModelError(f"Unknown metric {args.metric_id}; available: {', '.join(config['metric_definitions'])}")
         print(json_text({"metric_id": args.metric_id, **metric}), end="")
         return 0
+    if args.command == "build" and args.run:
+        if args.derive_ebitda:
+            raise ModelError("Derivation bundles are prepared-data inputs; not allowed to bypass approval in --run mode")
+        from .review.store import Store
+        from .review.gate import export_companies
+        store = Store(args.run)
+        companies = list(export_companies(store, config["metric_definitions"], args.company).values())
+        if args.company:
+            companies = [c for c in companies if c.company_id == args.company]
+        if len(companies) != 1:
+            raise ModelError("Select exactly one company with --company")
+        manifest = build_company(companies[0], args.template, args.output, config, overwrite=args.overwrite, calculate=args.recalculate)
+        print_result(manifest)
+        return 1 if manifest["outcome"] == "FAILED" else 0
     if args.command == "batch":
         if not args.input_dir.is_dir():
             raise ModelError(f"Input directory not found: {args.input_dir}")
@@ -97,6 +174,11 @@ def run(args):
         if len(companies) != 1:
             detail = "; ".join(i.message for i in dataset.issues if i.severity == "error")
             raise ModelError(detail or "build requires exactly one company; use --company or batch")
+        if args.derive_ebitda:
+            import json
+            from .derivations import reconstruct_ebitda
+            reconstruct_ebitda(companies[0], json.loads(args.derive_ebitda.read_text()))
+            companies[0].source_files.add(str(args.derive_ebitda.resolve()))
         manifest = build_company(companies[0], args.template, args.output, config, overwrite=args.overwrite, calculate=args.recalculate)
         print_result(manifest)
         print(f"Reports: {args.output.resolve().with_name(args.output.stem + '.reports')}")

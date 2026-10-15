@@ -4,10 +4,10 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "finmodel-automation"
-version = "0.2.0"
+version = "0.3.0"
 description = "Offline, auditable financial data to fixed Excel models"
 requires-python = ">=3.11"
-dependencies = ["openpyxl==3.1.5", "PyYAML==6.0.3"]
+dependencies = ["openpyxl==3.1.5", "PyYAML==6.0.3", "httpx==0.28.1", "pdfplumber==0.11.7", "fastapi==0.115.12", "uvicorn==0.34.2"]
 
 [project.optional-dependencies]
 dev = ["pytest==8.4.2"]
@@ -20,4 +20,5 @@ include = ["finmodel*"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
+pythonpath = ["."]
 markers = ["engine: requires a real LibreOffice installation"]

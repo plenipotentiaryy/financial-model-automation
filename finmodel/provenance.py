@@ -33,5 +33,7 @@ def source_records(company, mapping, metrics):
                 "destination_cell": ", ".join(destinations[key]) if key in destinations else None,
                 "dependent_metrics": ", ".join(dict.fromkeys(dependent)),
                 "measurement_basis": observation.measurement_basis,
+                "candidate_id": source.candidate_id, "revision": source.revision,
+                "source_sha256": source.source_sha256, "derivation": observation.derivation,
             })
     return records

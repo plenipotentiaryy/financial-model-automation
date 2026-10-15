@@ -7,3 +7,8 @@ build/
 dist/
 outputs/
 .DS_Store
+
+.finmodel/
+.env
+.env.*
+FINANCIAL_MODEL_AUTOMATION_CODEX.md
